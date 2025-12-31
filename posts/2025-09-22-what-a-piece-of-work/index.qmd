@@ -42,11 +42,15 @@ canonical-url: https://www.lumosinsight.co.uk/posts/2025-09-22-what-a-piece-of-w
 
 I spent the last week of holiday time plowing through a scholastic backlog which included, among other things, a biography of Claude Shannon[^1]. The book, a celebration of play, curiosity, and intuition, also surfaced threads of thought that feel strikingly relevant to our present moment—when we find ourselves questioning our place in the world amid the tools we’ve built.
 
+[^1]: Jimmy Soni & Rob Goodman (2017). *A Mind at Play: How Claude Shannon Invented the Information Age*. Simon & Schuster.
+
 ## Shannon and the Playful Machines
 
 Shannon’s career is often distilled to a few seismic contributions. As a young researcher, he showed how symbolic logic could be hardwired into electronic circuits—a discovery that laid the groundwork for digital computing. Later, his Mathematical Theory of Communication[^2] defined the principles of information itself, inaugurating the Information Age. Yet Shannon was never just a theoretician. His genius was inseparable from his playfulness: he built mechanical toys, juggled while cycling through Bell Labs’ corridors, and tinkered with contraptions that blurred the line between science and amusement.
 
-Among these experiments were forays into what we would come to call artificial intelligence—a chess-playing machine, a maze-solving mouse, early attempts at “thinking devices”. But what struck me most were not the gadgets themselves, but Shannon’s reflections on their implications. _“I’m a machine and you’re a machine, and we both think don’t we?”_ He once remarked with characteristic levity. Like much of his work it presaged futures we are only now beginning to grapple with. Beneath the playfulness, it gestures toward a tension that has only grown sharper: if machines can think, then what remains of us?
+[^2]: Claude E. Shannon (1948). *A Mathematical Theory of Communication*. *Bell System Technical Journal*, 27(3), 379–423; 27(4), 623–656.
+
+Among these experiments were forays into what we would come to call artificial intelligence—a chess-playing machine, a maze-solving mouse, early attempts at “thinking devices”. But what struck me most were not the gadgets themselves, but Shannon’s reflections on their implications. *“I’m a machine and you’re a machine, and we both think don’t we?”* He once remarked with characteristic levity. Like much of his work it presaged futures we are only now beginning to grapple with. Beneath the playfulness, it gestures toward a tension that has only grown sharper: if machines can think, then what remains of us?
 
 The idea that our worth is somehow tied up in our ability to think — and indeed in our rationality more broadly — is, in some ways, the original sin that has led to the psychodrama now playing out before us. If we define our humanity by our rationality, what else could we have expected?
 
@@ -55,6 +59,8 @@ Somewhat uncomfortably, I find myself drawn to the conclusion that the primacy o
 ## Hamlet’s Quintessence of Dust
 
 > “What a piece of work is a man! how noble in reason! how infinite in faculties! in form and moving how express and admirable! in action how like an angel! in apprehension how like a god! the beauty of the world! the paragon of animals"[^3]
+
+[^3]: William Shakespeare (ca. 1600–1601). *Hamlet, Prince of Denmark*, Act II, Scene II.
 
 Here Hamlet, burdened with grief over his father’s death and disgusted by his mother’s hasty remarriage, exalts humanity as the crowning work of nature — rational, capable of understanding, nearly divine. And yet, almost in the same breath, he collapses this grandeur:
 
@@ -69,9 +75,3 @@ Writing at the turn of the seventeenth century, Shakespeare stood at the cusp of
 And here we find an essential truth: humanity has always redefined itself, inventing new sources of meaning, elevating new values, crowning new heroes, and conjuring new demons. Each revolution has carried within it the seeds of its undoing. The Renaissance exalted man as the paragon of animals, only for Shakespeare to show how quickly grandeur collapses into dust. The Enlightenment enthroned reason as our crown, only for Shannon’s playful machines — and today’s silicon minds — to expose how easily reason can be replicated. Every age makes its wager, and every wager sets the stage for its own unraveling.
 
 From Hamlet’s “quintessence of dust” to Shannon’s playful “I’m a machine, you’re a machine,” the material has shifted — dust to silicon, thought to circuitry — but the tension endures. Across centuries we return to the same ambivalence: reason exalted, yet always shadowed by futility. We remain caught not in the question of whether we are machines, but in deciding what kind we will choose to be.
-
-[^1]: Jimmy Soni & Rob Goodman (2017). *A Mind at Play: How Claude Shannon Invented the Information Age*. Simon & Schuster.
-
-[^2]: Claude E. Shannon (1948). *A Mathematical Theory of Communication*. *Bell System Technical Journal*, 27(3), 379–423; 27(4), 623–656.
-
-[^3]: William Shakespeare (ca. 1600–1601). *Hamlet, Prince of Denmark*, Act II, Scene II.
