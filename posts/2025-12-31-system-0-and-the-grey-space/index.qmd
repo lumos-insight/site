@@ -13,6 +13,7 @@ open-graph:
   description: "On AI, cognition, and the meaning-making gap."
   image: https://www.lumosinsight.co.uk/posts/2025-12-31-system-0-and-the-grey-space/header.png
   image-alt: "Abstract representation of cognitive layers, flowers, and tentacles in grey space"
+  site-url: https://www.lumosinsight.co.uk/posts/2025-12-31-system-0-and-the-grey-space/
 
 twitter-card:
   card: "summary_large_image"
