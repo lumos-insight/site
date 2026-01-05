@@ -50,7 +50,9 @@ The underlying thread: understanding how humans and machines create, share, and
 augment knowledge. The method: treating learning as a lived process, documented
 in public.
 
-If this work intersects with yours, reach out.
+If this work intersects with yours, reach out:
+
+<i class="fa-brands fa-twitter"></i> [@LumosInsight](https://twitter.com/LumosInsight) | <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/company/lumos-insight) | <i class="fa-solid fa-bolt"></i> [Nostr](https://primal.net/p/nprofile1qqsru8js46pw2f4t9ufcdn0jm2wpjpf5thc64603e6w80s5jxvj37vc6pl92r)
 
 ---
 
