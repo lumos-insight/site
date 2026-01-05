@@ -9,20 +9,49 @@ title: "Lumos Insight"
 </div>
 
 
-We live in an age of information excess—a flood of data that often obscures as much as it reveals. New sources and structures of information creating noise and confusion, reducing our clarity of vision and preventing us from finding truth. 
+This site documents ongoing research at the intersection of knowledge systems,
+measurement, and artificial intelligence—exploring how we extend, augment, and
+embody cognition through human-machine collaboration.
 
-Our goal in this information-rich world is true understanding, which connects disparate pieces and reveals relationships, enabling meaningful action. This understanding is deepened and enriched through social learning—an iterative, collaborative process where insights and interpretations are continuously refined and shared.
+The questions may have evolved from measuring human behavior to measuring meaning
+itself, but the core challenge remains: how do we make the invisible visible, the
+tacit explicit, and the immeasurable measurable?
 
-Insight is where the transformation begins. It’s the bridge between raw information and true understanding, emerging as knowledge flows from one person to another, evolving through shared perspectives. As information flows from one perspective to another, it is transformed. Each layer of understanding builds upon the last, gaining depth and dimension through collective reflection and application.
-  
-# Methodology
+## Background
 
-At Lumos Insight, we generate insight through a structured, social learning approach. By fostering shared reflection and open exploration, we refine information into actionable understanding. Our approach is built on a cycle of learning, reflection, and application, creating a flow of insights that deepens with each pass. By sharing our learning publicly, we contribute to a broader knowledge ecosystem, allowing insights to evolve and improve as they’re applied in new contexts. This iterative knowledge spiral is at the heart of our work.
+Lumos Insight began with psychometric survey development—inferring meaning from
+human behavior through validated measurement. This foundation in cognitive
+assessment design—operationalizing constructs, validating instruments, measuring
+latent variables—now informs how I approach questions of semantic quantification
+and human-AI interaction.
 
-# Background
+More recently, I've been exploring related questions:
 
-Lumos Insight began with psychometric validation, a field focused on inferring meaning from human behavior. Psychometric validation allows us to interpret complex human responses as measurable insights, giving organizations a clearer view of the motivations, capabilities, and potential of real people. This foundation has equipped Lumos Insight to expand its focus, applying these same principles to draw meaningful insights from data more broadly.
+- How do we quantify and represent meaning in language?
+- How do knowledge and understanding emerge from human-AI collaboration?
+- What changes in how we think when our cognitive partners are machines?
 
-Whether we’re interpreting behavior or analyzing data trends, our work aims to help organizations cut through the noise, turning data into human-centered, actionable solutions. Let Lumos Insight guide you from information overload to clarity, understanding, and impact.
+Posts here trace a path from knowledge creation (SECI model, cognitive scaffolding)
+through semantic quantification (measuring meaning, embeddings as linguistic objects)
+to the lived experience of thinking with AI systems (journaling, local augmentation,
+System 0).
 
+Alongside this theoretical work, I'm experimenting with augmentation software—
+exploring the interface between human cognition and machine intelligence through
+hands-on development and testing. This work draws on principles from cognitive
+assessment design: how do we instrument thought, measure understanding, and
+validate that our tools actually augment rather than distort?
 
+## Approach
+
+This is research in motion, not marketing. Posts are snapshots of thinking in progress—experiments that failed, methods being refined, questions still open. Some build on previous work. Some contradict it. That's the point.
+
+The underlying thread: understanding how humans and machines create, share, and
+augment knowledge. The method: treating learning as a lived process, documented
+in public.
+
+If this work intersects with yours, reach out.
+
+---
+
+*Previous work in psychometric consulting available on request.*

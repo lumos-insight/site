@@ -4,153 +4,30 @@
     "href": "about.html",
     "title": "Lumos Insight",
     "section": "",
-    "text": "We live in an age of information excess—a flood of data that often obscures as much as it reveals. New sources and structures of information creating noise and confusion, reducing our clarity of vision and preventing us from finding truth.\nOur goal in this information-rich world is true understanding, which connects disparate pieces and reveals relationships, enabling meaningful action. This understanding is deepened and enriched through social learning—an iterative, collaborative process where insights and interpretations are continuously refined and shared.\nInsight is where the transformation begins. It’s the bridge between raw information and true understanding, emerging as knowledge flows from one person to another, evolving through shared perspectives. As information flows from one perspective to another, it is transformed. Each layer of understanding builds upon the last, gaining depth and dimension through collective reflection and application.\n\nMethodology\nAt Lumos Insight, we generate insight through a structured, social learning approach. By fostering shared reflection and open exploration, we refine information into actionable understanding. Our approach is built on a cycle of learning, reflection, and application, creating a flow of insights that deepens with each pass. By sharing our learning publicly, we contribute to a broader knowledge ecosystem, allowing insights to evolve and improve as they’re applied in new contexts. This iterative knowledge spiral is at the heart of our work.\n\n\nBackground\nLumos Insight began with psychometric validation, a field focused on inferring meaning from human behavior. Psychometric validation allows us to interpret complex human responses as measurable insights, giving organizations a clearer view of the motivations, capabilities, and potential of real people. This foundation has equipped Lumos Insight to expand its focus, applying these same principles to draw meaningful insights from data more broadly.\nWhether we’re interpreting behavior or analyzing data trends, our work aims to help organizations cut through the noise, turning data into human-centered, actionable solutions. Let Lumos Insight guide you from information overload to clarity, understanding, and impact.",
+    "text": "This site documents ongoing research at the intersection of knowledge systems, measurement, and artificial intelligence—exploring how we extend, augment, and embody cognition through human-machine collaboration.\nThe questions may have evolved from measuring human behavior to measuring meaning itself, but the core challenge remains: how do we make the invisible visible, the tacit explicit, and the immeasurable measurable?",
     "crumbs": [
       "About"
     ]
   },
   {
-    "objectID": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html",
-    "href": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html",
-    "title": "Embedded vectors as linguistic objects",
-    "section": "",
-    "text": "Recently, researchers have begun to explore the possibility that values derived from word embeddings may carry meaning we can apply to the words themselves."
-  },
-  {
-    "objectID": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html#cosine-similarity",
-    "href": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html#cosine-similarity",
-    "title": "Embedded vectors as linguistic objects",
-    "section": "Cosine similarity",
-    "text": "Cosine similarity\nAnyway, the metric we’re talking about, cosine similarity, is a metric used to quantify how similar two vectors are by calculating the cosine of the angle between them. In the context of word embeddings if two items have a high cosine similarity, it means they are closer to each other in semantic space. We can also use this data to perform clustering analyses and dimension reduction, in an attempt to tease out the relationship between category and cluster."
-  },
-  {
-    "objectID": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html#footnotes",
-    "href": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html#footnotes",
-    "title": "Embedded vectors as linguistic objects",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nHernandez and Nie (2022) investigated the relationship between item embeddings and item-level intercorrelations. In their study, they trained a model to take pairs of items as input and predict the empirical correlation between them. This suggested that items with high semantic similarity also showed similar response patterns, opening new avenues for understanding how language influences response behavior.↩︎\nRelatedly Wulff and Mata (2023) follow up studies revealed that the the average cosine similarity between item embeddings could predict internal consistency reliability—a key psychometric metric, and items on different scales had lower similarities than items on the same scales↩︎\nAlso cosine similarity might not be similarity.↩︎"
-  },
-  {
-    "objectID": "posts/2024-09-06-measuring-meaning/index.html",
-    "href": "posts/2024-09-06-measuring-meaning/index.html",
-    "title": "Measuring Meaning",
-    "section": "",
-    "text": "One of the key innovations that has contributed to the development of LLMs is the ability to convert words into embedded vectors, or vectors of word embeddings. Word embeddings offer a way of quantifying words while retaining some of their meaning. Prior to this development, computational text analysis was particularly challenging. This is because analysing textual information requires that we first quantify it in some way; convert some dimensions of the text’s characteristics, features, and hopefully meaning, into numerical information. Earlier approaches were as simple as counting word frequencies. From there, the unit of analysis changed, moving from individual words to combinations of 2 or more (n-grams). Generating word embeddings, the next step beyond this, involves specifying word tokens, and describing them in terms of their relationship with others."
-  },
-  {
-    "objectID": "posts/2024-09-06-measuring-meaning/index.html#footnotes",
-    "href": "posts/2024-09-06-measuring-meaning/index.html#footnotes",
-    "title": "Measuring Meaning",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nYou may also have heard of N-grams due to their association with one Robert L. Mercer, famous for associations with Cambridge Analytica, Brexit campaign, Breitbart News, and for his stint at elite Hedge Fund Renaissance Technologies. Who says NLP doesn’t pay?↩︎\n“Attention Is All You Need” - Link↩︎"
-  },
-  {
-    "objectID": "posts/2023-06-06-seci-knowledge-creation/index.html",
-    "href": "posts/2023-06-06-seci-knowledge-creation/index.html",
-    "title": "The SECI model & knowledge creation",
-    "section": "",
-    "text": "Knowledge, in all its forms, is fundamental to our understanding of the world around us, and is key to navigating the uncertainties of life. But knowledge, like the world it is supposed to reflect, is not a static entity. As Peter Drucker puts it, “Knowledge is different from all other resources. It makes itself constantly obsolete, so that today’s advanced knowledge is tomorrow’s ignorance. And the knowledge that matters is subject to rapid and abrupt shifts.” As knowledge changes so must we, a fact which underscores the necessity of continuous learning and innovation."
-  },
-  {
-    "objectID": "posts/2023-06-06-seci-knowledge-creation/index.html#socialisation",
-    "href": "posts/2023-06-06-seci-knowledge-creation/index.html#socialisation",
-    "title": "The SECI model & knowledge creation",
-    "section": "Socialisation",
-    "text": "Socialisation\nSocialisation involves the transmission of tacit knowledge between individuals through shared experiences, such as an apprenticeship or immersion in a foreign culture. Essentially, it is the process of learning by observation, imitation, and practice, thus creating the raw material for the production of new knowledge."
-  },
-  {
-    "objectID": "posts/2023-06-06-seci-knowledge-creation/index.html#externalisation",
-    "href": "posts/2023-06-06-seci-knowledge-creation/index.html#externalisation",
-    "title": "The SECI model & knowledge creation",
-    "section": "Externalisation",
-    "text": "Externalisation\nExternalisation is the subsequent step, which involves converting tacit knowledge into explicit forms. Knowledge is articulated, crystallised, and thereby made shareable through various means like metaphors, analogies, concepts, or documents. This step paves the way for the creation of new, explicit knowledge that can be utilised by others."
-  },
-  {
-    "objectID": "posts/2023-06-06-seci-knowledge-creation/index.html#combination",
-    "href": "posts/2023-06-06-seci-knowledge-creation/index.html#combination",
-    "title": "The SECI model & knowledge creation",
-    "section": "Combination",
-    "text": "Combination\nCombination concerns itself with the systematisation and integration of explicit knowledge. Various types of explicit knowledge - data, report insights, document details - are collated, often assisted by computerised networks or databases. This process can involve categorising or reclassifying explicit knowledge into new clusters, which are then shared within the organisation, enhancing collective understanding and knowledge."
-  },
-  {
-    "objectID": "posts/2023-06-06-seci-knowledge-creation/index.html#internalisation",
-    "href": "posts/2023-06-06-seci-knowledge-creation/index.html#internalisation",
-    "title": "The SECI model & knowledge creation",
-    "section": "Internalisation",
-    "text": "Internalisation\nLastly, internalisation is the process by which explicit knowledge is absorbed and embodied by individuals, reverting back into tacit knowledge. This often occurs through ‘learning-by-doing’, or when individuals reflect on and practice newly acquired knowledge. Internalisation cultivates an individual’s proficiency and capacity for innovation. The internalised tacit knowledge, once shared, contributes to the organisational knowledge pool. As individuals connect, recognise patterns, and synthesise fields, ideas, and concepts, a new cycle of the SECI model begins, fostering continuous knowledge creation and learning.\n\nKnowledge propels us forward, obsoleting itself as it transforms our understanding of the world around us. The SECI model provides a stable framework for orienting ourselves, encouraging continuous learning and innovation while accounting for change and disruption. Navigating the uncertainties of our world, the continuous conversion and circulation of knowledge - from tacit to explicit, individual to collective, and back again - empowers us to adapt, grow, and innovate. It also forces us to come to acknowledge the multifaceted process that is learning. The purpose of this post and those that follow is to serve as an example of this knowledge creation process, opening the floor for further contemplation, critique, and collaboration, aiming to cultivate learning, share understanding, and maybe even create something new."
-  },
-  {
-    "objectID": "posts/2024-05-22-cultivating-habits-ai/index.html",
-    "href": "posts/2024-05-22-cultivating-habits-ai/index.html",
-    "title": "Cultivating Journalling Habits with AI",
-    "section": "",
-    "text": "Journalling has never been a consistent habit for me. Despite starting numerous times with a new notebook and the best of intentions, my efforts tended to quickly devolve into scribbled reminders and half-hearted notes. Over time, I’d inevitably abandon the effort, only to pick it up again months later. This cycle of inconsistent documentation often felt artificial—writing felt meaningful when there was something significant to note, less so when it merely served as a reminder of daily routines.\nLike so many others, I’ve recently fallen down the rabbit hole of Large Language Models (LLMs)—statistical models that combine contemporary machine learning with vast amounts of data to mimic and understand human language. The advent of LLMs however, presented an opportunity to create a slightly stickier solution. Rather than focusing on the specific outputs of these models, I found the concept of a conversational debrief with an AI to be a more interactive and engaging way to journal daily events.\nTo leverage this, I built a graphical user interface (GUI) that interfaced with a local LLM, enabling me to have daily debriefs in text or audio through a back-and-forth conversation. This project provided an excuse to work on my Python skills, while also introducing me to more complex concepts like retrieval-augmented generation (RAG). However, the challenge of maintaining and updating a local AI assistant soon became apparent—especially as many features I sought were readily available through existing platforms.\nThis realization prompted a shift in my approach. Instead of engineering a specific way of interacting with the LLM, I needed to embrace flexibility in how I recorded and kept notes—be it a voice note or a quick text entry. I learned that the consistency of documentation wasn’t bound by the interface I used but by how regularly I could capture, record, and organize my thoughts using the tools at my disposal; a process which itself made the value of consistency harder to ignore.\nThis new strategy has proven quite fruitful. It allows me to write notes across various modalities and devices while focusing more on utilizing LLMs to search over and analyze this content. Previously it wasn’t clear who I was writing for or why. Now I find myself motivated by the mere fact that the data exists, and provides an opportunity for me to learn and analyse later. The journey taught me that sometimes, understanding what we truly need comes from trying the hard way first."
-  },
-  {
-    "objectID": "posts/2024-09-06-beyond-responding/index.html",
-    "href": "posts/2024-09-06-beyond-responding/index.html",
-    "title": "Beyond Responding",
-    "section": "",
-    "text": "The field of psychometric assessment - if not measurement world in general - is focused on demonstrating the validity of measures. What is the evidence this value means what it represents? Do these numbers actually represent reality?\nIn psychometrics in particuar we ask:\nThe key concern here is evidence—observations that can support these claims. Think of them as theoretical tent pegs: “People who did this were also more likely to do that” and so on. Note that some people think this is not entirely justified as an endeavour1."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "about.html#background",
+    "href": "about.html#background",
     "title": "Lumos Insight",
-    "section": "",
-    "text": "We live in an age of information excess—a flood of data that often obscures as much as it reveals. New sources and structures of information creating noise and confusion, reducing our clarity of vision and preventing us from finding truth.\nOur goal in this information-rich world is true understanding, which connects disparate pieces and reveals relationships, enabling meaningful action. This understanding is deepened and enriched through social learning—an iterative, collaborative process where insights and interpretations are continuously refined and shared.\nInsight is where the transformation begins. It’s the bridge between raw information and true understanding, emerging as knowledge flows from one person to another, evolving through shared perspectives. As information flows from one perspective to another, it is transformed. Each layer of understanding builds upon the last, gaining depth and dimension through collective reflection and application.\n\nMethodology\nAt Lumos Insight, we generate insight through a structured, social learning approach. By fostering shared reflection and open exploration, we refine information into actionable understanding. Our approach is built on a cycle of learning, reflection, and application, creating a flow of insights that deepens with each pass. By sharing our learning publicly, we contribute to a broader knowledge ecosystem, allowing insights to evolve and improve as they’re applied in new contexts. This iterative knowledge spiral is at the heart of our work.\n\n\nBackground\nLumos Insight began with psychometric validation, a field focused on inferring meaning from human behavior. Psychometric validation allows us to interpret complex human responses as measurable insights, giving organizations a clearer view of the motivations, capabilities, and potential of real people. This foundation has equipped Lumos Insight to expand its focus, applying these same principles to draw meaningful insights from data more broadly.\nWhether we’re interpreting behavior or analyzing data trends, our work aims to help organizations cut through the noise, turning data into human-centered, actionable solutions. Let Lumos Insight guide you from information overload to clarity, understanding, and impact."
-  },
-  {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "Posts",
-    "section": "",
-    "text": "System 0 and the Grey Space\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nTechnology\n\n\n\nOn AI, cognition, and the meaning-making gap.\n\n\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHuman or Dancer?\n\n\n\n\n\n\ntheology\n\n\ntechnology\n\n\nculture\n\n\n\nReflecting on Midson’s Cyborg Theology, Haraway’s cyborg provocation, and why The Killers might have more to do with theology than we think.\n\n\n\n\n\nSep 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding Cognitive Scaffolds: Instruction Verbs and Language Proficiency\n\n\n\n\n\n\nLearning Science\n\n\nLanguage\n\n\nCognitive Psychology\n\n\n\nInstruction verbs as cognitive building blocks, linked to CEFR levels, with insights from skill acquisition, levels of processing, and cognitive load.\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWhat a Piece of Work\n\n\n\n\n\n\nAI & Society\n\n\nHistory of Ideas\n\n\nLiterature & Ideas\n\n\n\nFrom Shannon’s playful machines to Hamlet’s ambivalence, a reflection on reason, fragility, and what defines us.\n\n\n\n\n\nSep 22, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLocal Augmentation\n\n\n\n\n\n\nKnowledge management\n\n\nCognitive augmentation\n\n\n\nPutting things together\n\n\n\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe Shape of Ideas\n\n\n\n\n\n\nThematic analysis\n\n\nTextual visualisation\n\n\n\nPart 2 - Focused Frequencies\n\n\n\n\n\nNov 24, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe Shape of Ideas\n\n\n\n\n\n\nThematic analysis\n\n\nTextual visualisation\n\n\n\nPart 1 - Frequencies\n\n\n\n\n\nNov 2, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMeasuring Meaning\n\n\n\n\n\n\nSemantic quantification\n\n\n\nTurning words into numbers\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBeyond Responding\n\n\n\n\n\n\nPsychometric validation\n\n\n\nUsing behaviours as meaning\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded vectors as linguistic objects\n\n\n\n\n\n\nSemantic quantification\n\n\nSemantic and Conceptual clustering\n\n\n\nFinding new structures of meaning\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nCultivating Journalling Habits with AI\n\n\n\n\n\n\nLarge Language Models\n\n\nKnowledge management\n\n\n\nLearning by doing it the hard way\n\n\n\n\n\nMay 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe SECI model & knowledge creation\n\n\n\n\n\n\nKnowledge\n\n\nLearning\n\n\n\nAs knowledge changes, so must we. \n\n\n\n\n\nJun 6, 2023\n\n\n\n\n\n\nNo matching items",
+    "section": "Background",
+    "text": "Background\nLumos Insight began with psychometric survey development—inferring meaning from human behavior through validated measurement. This foundation in cognitive assessment design—operationalizing constructs, validating instruments, measuring latent variables—now informs how I approach questions of semantic quantification and human-AI interaction.\nMore recently, I’ve been exploring related questions:\n\nHow do we quantify and represent meaning in language?\nHow do knowledge and understanding emerge from human-AI collaboration?\nWhat changes in how we think when our cognitive partners are machines?\n\nPosts here trace a path from knowledge creation (SECI model, cognitive scaffolding) through semantic quantification (measuring meaning, embeddings as linguistic objects) to the lived experience of thinking with AI systems (journaling, local augmentation, System 0).\nAlongside this theoretical work, I’m experimenting with augmentation software— exploring the interface between human cognition and machine intelligence through hands-on development and testing. This work draws on principles from cognitive assessment design: how do we instrument thought, measure understanding, and validate that our tools actually augment rather than distort?",
     "crumbs": [
-      "Posts"
+      "About"
     ]
   },
   {
-    "objectID": "posts/2024-09-06-beyond-responding/index.html#footnotes",
-    "href": "posts/2024-09-06-beyond-responding/index.html#footnotes",
-    "title": "Beyond Responding",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nSydney University professor Joel Michell has a fair bit to say on the extent to which psychological constructs can be quantified in a way that is mathematically relevant and justifiable.↩︎"
-  },
-  {
-    "objectID": "posts/2024-10-05-/index.html",
-    "href": "posts/2024-10-05-/index.html",
-    "title": "Work in progress",
-    "section": "",
-    "text": "Previously talked about word embeddings.\nSome reports on the relationship between word embeddings and psychometric characteristics. Let’s demonstrate step by step, understand how this works.\nIn my current set up, I use lm-studio. Handles the model interaction. Host model on a local server and interact, sending json with different parameters. Code chunk that has the interaction of sending strings and receiving embeddings back.\n\nConvert strings into word embeddings\nCalculate cosine similarity between each pair of words\nAverage cosine similarity of? Maybe correlation?\n\nFirst, let’s generate some embeddings. To demonstrate what I mean, below we have a string and a set of parameters that represent this string in latent space. The vector of numbers you see here is truncated, with the length being 738 in total.\n\n\n\n\nEmbedded String and Truncated Embedding Vector\n\n\nString\nEmbeddings\n\n\n\n\nThe vector of numbers in the column 'Embeddings' is the embedded representation of this statement.\n0.0294, 0.0683, -0.1596, -0.0648, 0.0532, -0.0354, 0.0582, -0.0249, -0.0375, -0.0313, -0.0613, -0.0321, 0.0754, -0.0107, -0.0135, 0.0394, -0.0031, ...\n\n\n\n\n\n\n\n\nWe can do the same now with each of the items in the big 5 aspects scale.\nTable with\n\n\n\n\n\n\n\n\n\nParallel analysis suggests that the number of factors =  NA  and the number of components =  11 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTop Items with Highest Component Scores for Each Principal Component\n\n\nPC1\nPC2\nPC3\nPC4\nPC5\nPC6\nPC7\nPC8\nPC9\nPC10\nPC11\n\n\n\n\nGet upset easily.\nAm indifferent to the feelings of others.\nGet angry easily.\nKnow how to captivate people.\nSee myself as a good leader.\nDo not have an assertive personality.d\nThink quickly.\nAm afraid of many things.\nAm not embarrassed easily.\nSeldom feel blue.\nAvoid philosophical discussions.\n\n\nGet easily agitated.\nFeel others’ emotions.\nAm filled with doubts about things.\nHave a rich vocabulary.\nAm not interested in other people’s problems.\nDo not like poetry.\nAm easily discouraged.\nRarely get caught up in the excitement.\nPostpone decisions.\nSee that rules are observed.\nLack the talent for influencing people.\n\n\nLike to do things for others.\nSympathize with others’ feelings.\nLove to reflect on things.\nAm not bothered by disorder.\nCan’t be bothered with other’s needs.\nBecome overwhelmed by events.\nLove a good fight.\nWaste my time.\nAm hard to get to know.\nRespect authority.\nLaugh a lot.\n\n\nRarely get irritated.\nGet things done quickly.\nGet easily agitated.\nWant everything to be “just right.”\nAvoid philosophical discussions.\nHave a strong personality.\nWant every detail taken care of.\nDislike routine.\nFormulate ideas clearly.\nSeldom notice the emotional aspects of paintings and pictures.\nSeek conflict.\n\n\nGet angry easily.\nThink quickly.\nCan talk others into doing things.\nMake friends easily.\nShow my feelings when I’m happy.\nLack the talent for influencing people.\nHave a lot of fun.\nHave a lot of fun.\nReveal little about myself.\nNeed a creative outlet.\nMake friends easily.\n\n\n\n\n\n\n\n\n\n\nCalculating scores\nOne thing that would be interesting to do next, would be to generate scores based on the components that are identified here. Internal consistency, correlations between scores. Observe factor structure even. We can’t do that today, don’t have responses.\nPoint out along the way, the number of principal components here is somewhat arbitrary. Could be up to 25 even.\n\n\nCosine similarity\n\nTableHeatmap\n\n\n\n\n\n\n\nAverage Cosine Similarities Between Aspects\n\n\n\nVolatility\nWithdrawal\nCompassion\nPoliteness\nIndustriousness\nOrderliness\nEnthusiasm\nAssertiveness\nIntellect\nOpenness\n\n\n\n\nVolatility\n0.64\n0.51\n0.47\n0.46\n0.45\n0.44\n0.49\n0.47\n0.45\n0.45\n\n\nWithdrawal\n0.51\n0.52\n0.48\n0.43\n0.42\n0.41\n0.47\n0.45\n0.44\n0.46\n\n\nCompassion\n0.47\n0.48\n0.63\n0.50\n0.44\n0.45\n0.49\n0.51\n0.43\n0.48\n\n\nPoliteness\n0.46\n0.43\n0.50\n0.49\n0.43\n0.41\n0.45\n0.50\n0.42\n0.41\n\n\nIndustriousness\n0.45\n0.42\n0.44\n0.43\n0.50\n0.44\n0.42\n0.45\n0.46\n0.42\n\n\nOrderliness\n0.44\n0.41\n0.45\n0.41\n0.44\n0.48\n0.40\n0.42\n0.41\n0.41\n\n\nEnthusiasm\n0.49\n0.47\n0.49\n0.45\n0.42\n0.40\n0.48\n0.47\n0.43\n0.45\n\n\nAssertiveness\n0.47\n0.45\n0.51\n0.50\n0.45\n0.42\n0.47\n0.53\n0.44\n0.44\n\n\nIntellect\n0.45\n0.44\n0.43\n0.42\n0.46\n0.41\n0.43\n0.44\n0.52\n0.46\n\n\nOpenness\n0.45\n0.46\n0.48\n0.41\n0.42\n0.41\n0.45\n0.44\n0.46\n0.51\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nI’d like to add some description to these aspects, perhaps by taking the embeddings of the entire aspect, and then looking up the single words or n grams that have the highest cosine similarity, as a means of ‘describing’ that cluster.\n\n\nPCA\nWe’ve already done PCA on the embeddings. This told us about the clusters of words (fill out), which we laid out above.\nWe now have a similarity matrix - a matrix of pairwise cosine similarities between each item’s embeddings. What would dimensionality reduction look like here? Basically, groups of items that tend to be similar to one another.\nNeed to apply some interpretation here. What does it mean to have three clusters based on the pairwise cosine similarities? What do clusters mean, what dissociates them?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  [1] 1 1 1 1 1 1 1 1 1 1 2 1 2 1 2 2 1 1 1 1 3 3 3 3 3 3 3 3 3 1 2 1 3 1 1 1 3\n [38] 2 2 1 2 2 2 2 2 1 2 2 2 2 2 2 2 2 2 2 2 3 3 1 1 3 1 1 1 1 3 1 2 1 2 1 1 1\n [75] 3 2 1 1 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n\n\n\n\n\n\n\n\n\n  [1] 3 3 3 3 3 3 3 3 3 3 2 3 2 3 2 2 3 3 3 3 1 1 1 1 1 1 1 1 1 3 2 3 1 3 1 1 1\n [38] 2 3 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 2 3 1 3 3 3 2 1 2 3 3 2 3 1 3\n [75] 1 2 3 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 2 2 2 2 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe can also use each item as a node, and treat their cosine similarities as edge strength, to visualise the relationships between items.\n\n\n\n\n\n\n\n\n\nPoint to the new articles by guenole, and the working paper. They address difference metrics maybe\nNow that we’ve done that the results either show that strings are similar when they’re categorised together, or not. Either way, we’re going to take the items, concatenate them together in a single chunk, and convert to embeddings. Is this the best way to do this? Not sure. Single words that are most similar to this item?"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/quantification-of-meaning.html",
-    "href": "subjects/quantification-of-meaning/quantification-of-meaning.html",
-    "title": "Quantification of Meaning: From Semiotics to NLP",
-    "section": "",
-    "text": "Welcome to the Quantification of Meaning! Here you’ll find all the relevant materials."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/quantification-of-meaning.html#slide-decks",
-    "href": "subjects/quantification-of-meaning/quantification-of-meaning.html#slide-decks",
-    "title": "Quantification of Meaning",
-    "section": "",
-    "text": "Introduction to Semiotics"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/quantification-of-meaning.html#slides",
-    "href": "subjects/quantification-of-meaning/quantification-of-meaning.html#slides",
-    "title": "Quantification of Meaning: From Semiotics to NLP",
-    "section": "Slides",
-    "text": "Slides\n\nIntroduction to Semiotics\nSigns and Systems of Meaning\nSemiotic Analysis Techniques"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/introduction-to-semiotics.html",
-    "href": "subjects/quantification-of-meaning/introduction-to-semiotics.html",
-    "title": "Introduction to Semiotics",
-    "section": "",
-    "text": "Understand the basic concepts and terminology in semiotics.\nExplore the contributions of key figures like Ferdinand de Saussure, Charles Peirce, and Roland Barthes.\nAnalyze how signs and symbols operate in language, media, and culture.\n\n\n\n\n\n\nDefinition: Semiotics is the study of signs and symbols as elements of communicative behavior.\nPurpose: Helps us understand how language and other forms of communication convey meaning beyond mere words.\nRelevance: Provides the theoretical foundation for understanding meaning, crucial for later quantification.\n\n\n\n\n\nSign: The basic unit of meaning; anything that can stand for something else.\nSignifier: The form a sign takes (e.g., a word, image, sound).\nSignified: The concept or idea that the signifier represents.\n\n\n\n\n\n\n\n\n\nContribution: Signs consist of a signifier (form) and a signified (concept).\nPrinciples:\n\nArbitrariness of the Sign: No inherent link between signifier and signified.\nStructuralism: Signs are understood within the structure of language.\n\nExample: The word “tree” has no natural connection to the object it refers to.\n\n\n\n\n\n\nContribution: Introduced a triadic model: representamen (sign), object, and interpretant (meaning).\nTypes of Signs:\n\nIcon: Resembles the object (e.g., photograph).\nIndex: Directly connected (e.g., smoke as index of fire).\nSymbol: Based on convention (e.g., words).\n\nExample: A flag is a symbol, smoke is an index of fire, and a cartoon is an icon.\n\n\n\n\n\n\nContribution: Extended semiotics to cultural objects.\nConcepts:\n\nDenotation (literal meaning) vs. Connotation (cultural meaning).\nMythologies: Everyday objects convey societal myths and ideologies.\n\nExample: A red rose denotes a flower but connotes love and romance.\n\n\n\n\n\n\n\n\n\nSignifier and Signified relationship.\nExample: Stop sign (Signifier = red octagon; Signified = “Stop”).\n\n\n\n\n\n\nDefinition: Contrasting pairs of concepts (e.g., light vs. dark, male vs. female).\nApplication: Shaping societal norms and perception.\n\n\n\n\n\n\nStructuralism: Meaning arises from relationships within a system.\nSemiotic Analysis: How signs construct reality, culture, and identity.\n\n\n\n\n\n\n\n\n\nAnalyze words, phrases, and symbols used in advertising, social media, etc.\nExample: Emojis function as signs, conveying emotions without words.\n\n\n\n\n\n\nDissect signs in ads to understand their persuasive meaning.\nExample: Green in marketing signifies eco-friendliness.\n\n\n\n\n\n\nSigns as indicators of cultural symbols and identity.\nExample: National flags symbolize national identity; clothing brands signal social status.\n\n\n\n\n\n\n\n\n\nDefinition: A meme is a unit of cultural information—often humorous—spread rapidly online. Memes are signs, combining images, text, and cultural references.\nSignifier: The image or text in the meme.\nSignified: The idea or cultural reference behind the meme.\n\n\n\n\n\n\nPepe the Frog:\n\nSignifier: The image of the frog.\nSignified: Initially humorous content, later evolving into various cultural and political meanings.\nConnotation: Depending on context, it could symbolize internet humor or political movements.\n\n\n\n\n\n\n\nMemes build on layers of meaning: Many memes reference other memes or cultural moments, creating complex systems of signs.\nExample: The “Distracted Boyfriend” meme:\n\nDenotation: A man looks away from his girlfriend to admire another woman.\nConnotation: It has become a symbol of shifting priorities or interests, used in varied contexts.\n\n\n\n\n\n\n\nMemes can convey broader ideologies or cultural myths, like political views or societal commentary.\nExample: Political memes can signify not just humor but also cultural commentary or propaganda.\n\n\n\n\n\n\n\n\n\nObjective: Apply semiotic concepts to analyze advertisements.\nInstructions:\n\nChoose an advertisement.\nIdentify key signs and classify them (icon, index, or symbol).\nDiscuss the signifier and signified of each element and its connotations.\n\nDiscussion Questions:\n\nHow do the signs work together to convey a message?\nWhat cultural or ideological myths are present?\n\n\n\n\n\n\n\n\n\n\nHow do signs shape our understanding of reality?\nCan you think of other examples where the meaning of a sign is culturally specific?\nHow might semiotics apply to digital media and online communication?\n\n\n\n\n\n\nWrite a short paragraph on a sign you encounter in daily life.\nAnalyze it using semiotic principles (signifier, signified, and possible connotations)."
+    "objectID": "about.html#approach",
+    "href": "about.html#approach",
+    "title": "Lumos Insight",
+    "section": "Approach",
+    "text": "Approach\nThis is research in motion, not marketing. Posts are snapshots of thinking in progress—experiments that failed, methods being refined, questions still open. Some build on previous work. Some contradict it. That’s the point.\nThe underlying thread: understanding how humans and machines create, share, and augment knowledge. The method: treating learning as a lived process, documented in public.\nIf this work intersects with yours, reach out.\n\nPrevious work in psychometric consulting available on request.",
+    "crumbs": [
+      "About"
+    ]
   },
   {
     "objectID": "subjects/quantification-of-meaning/introduction-to-semiotics.html#learning-objectives",
@@ -207,243 +84,6 @@
     "title": "Introduction to Semiotics",
     "section": "Reflection and Discussion",
     "text": "Reflection and Discussion\nDiscussion Prompts\n\nHow do signs shape our understanding of reality?\nCan you think of other examples where the meaning of a sign is culturally specific?\nHow might semiotics apply to digital media and online communication?"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-3.html",
-    "href": "subjects/quantification-of-meaning/Untitled-3.html",
-    "title": "Quantification of Meaning: Semiotic Analysis Techniques",
-    "section": "",
-    "text": "Learn practical techniques for semiotic analysis in text, visual media, and advertising.\n\nUnderstand qualitative coding and thematic analysis as methods for studying signs and symbols.\nApply semiotic analysis techniques to real-world examples.\n\n\n\n\n\n\n\n\n\n\nDefinition: Semiotic analysis is a method used to interpret signs and symbols in texts, images, and media. It focuses on uncovering the underlying meaning of signs and their cultural or social significance.\nApplication: This method is widely used in media studies, cultural studies, and advertising analysis to reveal hidden ideologies or myths behind visual and textual content.\n\n\n\n\n\n\n\n\n\nObjective: Uncover the underlying meaning in written language.\nSteps:\n\nIdentify Signs: Look for words, phrases, metaphors, or symbols that function as signs.\nSignifier and Signified: Analyze the relationship between the literal (signifier) and the conceptual (signified).\nContext: Consider the cultural or social context in which the text appears.\n\nExample: A news headline might use certain words or metaphors to influence the reader’s perception of an event.\n\n\n\n\n\n\nObjective: Interpret signs in images, films, and other visual content.\nSteps:\n\nIdentify Visual Elements: Look at colors, shapes, symbols, and layout.\nDenotation and Connotation: Analyze the literal representation (denotation) and its associative or cultural meanings (connotation).\nCultural Codes: Explore how certain visual cues align with cultural expectations or myths.\n\nExample: A political cartoon may use exaggerated imagery to symbolize power dynamics or societal critique.\n\n\n\n\n\n\nObjective: Deconstruct the meaning in advertisements and how they communicate with audiences.\nSteps:\n\nIdentify Key Signs: Consider brand symbols, colors, slogans, and imagery.\nTarget Audience: Analyze how the advertisement addresses its audience through signs and symbols.\nMyths and Ideologies: Explore how ads reflect broader cultural or ideological messages.\n\nExample: A luxury car advertisement may use symbols of wealth and freedom to target high-income consumers.\n\n\n\n\n\n\n\n\n\nDefinition: Qualitative coding is the process of categorizing and labeling text, images, or media based on recurring signs or themes.\nSteps:\n\nOpen Coding: Start by identifying all potential signs and symbols.\nAxial Coding: Group related signs into categories or themes.\nSelective Coding: Focus on the most significant or frequent categories to build a coherent narrative.\n\nExample: In analyzing a set of advertisements, you might label signs of luxury, freedom, or eco-friendliness.\n\n\n\n\n\n\nDefinition: Thematic analysis involves identifying, analyzing, and reporting patterns or themes within data. It’s used to interpret meaning from signs across a set of texts or images.\nSteps:\n\nFamiliarization: Immerse yourself in the material by reading or viewing it multiple times.\nGenerate Codes: Label signs or features with codes that reflect their meaning.\nSearch for Themes: Group codes into overarching themes that tell a story about the material.\nReview Themes: Ensure that themes are coherent and well-supported by evidence.\n\nExample: Analyzing a series of TV commercials to identify recurring themes of family, success, or environmentalism.\n\n\n\n\n\n\n\n\n\nObjective: Use semiotic analysis to analyze a text, visual media, or advertisement.\nInstructions:\n\nChoose an advertisement or a short text (e.g., magazine ad, social media post).\nUse qualitative coding to identify key signs.\nApply thematic analysis to uncover underlying myths or ideologies.\n\nDiscussion Questions:\n\nWhat signs or symbols did you identify?\nHow do these signs contribute to the overall meaning?\nWhat themes or cultural ideologies did you discover?\n\n\n\n\n\n\n\n\n\n\nDenotation: A woman standing on a beach with a sunset in the background.\nConnotation: The imagery connotes freedom, beauty, and serenity.\nMyth: The ad promotes the idea that buying this perfume will grant the consumer a sense of elegance and emotional freedom.\n\n\n\n\n\n\n\n\n\nHow does qualitative coding help us uncover hidden meanings in media?\nWhat are the strengths and limitations of thematic analysis in understanding semiotic systems?\nIn what ways does semiotic analysis reveal the cultural or ideological underpinnings of everyday objects?\n\n\n\n\n\n\n\nTask: Conduct a semiotic analysis of an advertisement or media text.\nFocus:\n\nIdentify key signs and symbols (use qualitative coding).\nPerform a thematic analysis to uncover underlying ideologies or myths.\n\nExample: Analyze a fast-food ad for its use of cultural symbols (e.g., convenience, family, or happiness) and discuss the broader themes and ideologies it promotes."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-3.html#learning-objectives",
-    "href": "subjects/quantification-of-meaning/Untitled-3.html#learning-objectives",
-    "title": "Quantification of Meaning: Semiotic Analysis Techniques",
-    "section": "",
-    "text": "Learn practical techniques for semiotic analysis in text, visual media, and advertising.\n\nUnderstand qualitative coding and thematic analysis as methods for studying signs and symbols.\nApply semiotic analysis techniques to real-world examples."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-3.html#semiotic-analysis-introduction",
-    "href": "subjects/quantification-of-meaning/Untitled-3.html#semiotic-analysis-introduction",
-    "title": "Quantification of Meaning: Semiotic Analysis Techniques",
-    "section": "",
-    "text": "Definition: Semiotic analysis is a method used to interpret signs and symbols in texts, images, and media. It focuses on uncovering the underlying meaning of signs and their cultural or social significance.\nApplication: This method is widely used in media studies, cultural studies, and advertising analysis to reveal hidden ideologies or myths behind visual and textual content."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-3.html#practical-techniques-analyzing-text-visual-media-and-advertising",
-    "href": "subjects/quantification-of-meaning/Untitled-3.html#practical-techniques-analyzing-text-visual-media-and-advertising",
-    "title": "Quantification of Meaning: Semiotic Analysis Techniques",
-    "section": "",
-    "text": "Objective: Uncover the underlying meaning in written language.\nSteps:\n\nIdentify Signs: Look for words, phrases, metaphors, or symbols that function as signs.\nSignifier and Signified: Analyze the relationship between the literal (signifier) and the conceptual (signified).\nContext: Consider the cultural or social context in which the text appears.\n\nExample: A news headline might use certain words or metaphors to influence the reader’s perception of an event.\n\n\n\n\n\n\nObjective: Interpret signs in images, films, and other visual content.\nSteps:\n\nIdentify Visual Elements: Look at colors, shapes, symbols, and layout.\nDenotation and Connotation: Analyze the literal representation (denotation) and its associative or cultural meanings (connotation).\nCultural Codes: Explore how certain visual cues align with cultural expectations or myths.\n\nExample: A political cartoon may use exaggerated imagery to symbolize power dynamics or societal critique.\n\n\n\n\n\n\nObjective: Deconstruct the meaning in advertisements and how they communicate with audiences.\nSteps:\n\nIdentify Key Signs: Consider brand symbols, colors, slogans, and imagery.\nTarget Audience: Analyze how the advertisement addresses its audience through signs and symbols.\nMyths and Ideologies: Explore how ads reflect broader cultural or ideological messages.\n\nExample: A luxury car advertisement may use symbols of wealth and freedom to target high-income consumers."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-3.html#methods-qualitative-coding-and-thematic-analysis",
-    "href": "subjects/quantification-of-meaning/Untitled-3.html#methods-qualitative-coding-and-thematic-analysis",
-    "title": "Quantification of Meaning: Semiotic Analysis Techniques",
-    "section": "",
-    "text": "Definition: Qualitative coding is the process of categorizing and labeling text, images, or media based on recurring signs or themes.\nSteps:\n\nOpen Coding: Start by identifying all potential signs and symbols.\nAxial Coding: Group related signs into categories or themes.\nSelective Coding: Focus on the most significant or frequent categories to build a coherent narrative.\n\nExample: In analyzing a set of advertisements, you might label signs of luxury, freedom, or eco-friendliness.\n\n\n\n\n\n\nDefinition: Thematic analysis involves identifying, analyzing, and reporting patterns or themes within data. It’s used to interpret meaning from signs across a set of texts or images.\nSteps:\n\nFamiliarization: Immerse yourself in the material by reading or viewing it multiple times.\nGenerate Codes: Label signs or features with codes that reflect their meaning.\nSearch for Themes: Group codes into overarching themes that tell a story about the material.\nReview Themes: Ensure that themes are coherent and well-supported by evidence.\n\nExample: Analyzing a series of TV commercials to identify recurring themes of family, success, or environmentalism."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-3.html#practical-activity-applying-semiotic-analysis-techniques",
-    "href": "subjects/quantification-of-meaning/Untitled-3.html#practical-activity-applying-semiotic-analysis-techniques",
-    "title": "Quantification of Meaning: Semiotic Analysis Techniques",
-    "section": "",
-    "text": "Objective: Use semiotic analysis to analyze a text, visual media, or advertisement.\nInstructions:\n\nChoose an advertisement or a short text (e.g., magazine ad, social media post).\nUse qualitative coding to identify key signs.\nApply thematic analysis to uncover underlying myths or ideologies.\n\nDiscussion Questions:\n\nWhat signs or symbols did you identify?\nHow do these signs contribute to the overall meaning?\nWhat themes or cultural ideologies did you discover?"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-3.html#case-study-semiotic-analysis-of-an-advertisement",
-    "href": "subjects/quantification-of-meaning/Untitled-3.html#case-study-semiotic-analysis-of-an-advertisement",
-    "title": "Quantification of Meaning: Semiotic Analysis Techniques",
-    "section": "",
-    "text": "Denotation: A woman standing on a beach with a sunset in the background.\nConnotation: The imagery connotes freedom, beauty, and serenity.\nMyth: The ad promotes the idea that buying this perfume will grant the consumer a sense of elegance and emotional freedom."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-3.html#discussion-exploring-semiotic-techniques",
-    "href": "subjects/quantification-of-meaning/Untitled-3.html#discussion-exploring-semiotic-techniques",
-    "title": "Quantification of Meaning: Semiotic Analysis Techniques",
-    "section": "",
-    "text": "How does qualitative coding help us uncover hidden meanings in media?\nWhat are the strengths and limitations of thematic analysis in understanding semiotic systems?\nIn what ways does semiotic analysis reveal the cultural or ideological underpinnings of everyday objects?"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-3.html#reflection-assignment",
-    "href": "subjects/quantification-of-meaning/Untitled-3.html#reflection-assignment",
-    "title": "Quantification of Meaning: Semiotic Analysis Techniques",
-    "section": "",
-    "text": "Task: Conduct a semiotic analysis of an advertisement or media text.\nFocus:\n\nIdentify key signs and symbols (use qualitative coding).\nPerform a thematic analysis to uncover underlying ideologies or myths.\n\nExample: Analyze a fast-food ad for its use of cultural symbols (e.g., convenience, family, or happiness) and discuss the broader themes and ideologies it promotes."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-2.html",
-    "href": "subjects/quantification-of-meaning/Untitled-2.html",
-    "title": "Quantification of Meaning: Signs and Systems of Meaning",
-    "section": "",
-    "text": "Understand structuralism and post-structuralism in relation to semiotics.\nExplore binary oppositions, myths, and ideologies as systems of meaning.\nApply semiotic analysis to everyday objects and communication.\n\n\n\n\n\n\n\n\n\nDefinition: A theoretical framework that sees signs and meaning as part of a larger structure (or system) in language and culture.\nKey Concept: Meaning arises not from individual signs but from their relationship within a structured system.\nFounder: Ferdinand de Saussure introduced structuralism, focusing on langue (language as a system) vs. parole (individual speech).\nExample: A word gains meaning because of its position in relation to other words (e.g., “hot” vs. “cold”).\n\n\n\n\n\n\nDefinition: A theoretical approach that critiques and moves beyond structuralism, emphasizing the instability of meaning.\nKey Concept: Meaning is fluid and constantly shifting due to the complexities of interpretation and context.\nFounder: Jacques Derrida, with his theory of deconstruction, argued that meaning is never fixed and always open to reinterpretation.\nExample: A text can have multiple interpretations, and meaning is shaped by context and cultural assumptions.\n\n\n\n\n\n\n\n\n\nBinary Oppositions: Pairs of opposite concepts that define meaning by their relationship to each other (e.g., light vs. dark, male vs. female).\nOrigin: Structuralists argue that meaning is constructed through these oppositions, as part of larger systems of signs.\n\n\n\n\n\n\nGood vs. Evil: Common in storytelling, where characters are divided into these moral binaries.\nNature vs. Culture: Used to explore the tension between the natural world and human society.\nSelf vs. Other: A key concept in identity formation, where one’s identity is shaped by what it is not.\n\n\n\n\n\n\n\nExample: “Luxury vs. Necessity” in product advertising.\n\nAdvertisements often use this binary to create a sense of exclusivity or status around luxury products.\n\nAnalysis: Look at how words and images are paired to emphasize this contrast, shaping consumer perception.\n\n\n\n\n\n\n\n\nMyth: A type of speech or cultural narrative that gives signs ideological meaning, often tied to societal norms.\nExample: The image of a French soldier saluting the flag is not just a literal action, but a myth that conveys patriotism, duty, and loyalty.\nApplication: Barthes applied this concept to everything from fashion to politics, revealing the hidden ideologies behind everyday signs.\n\n\n\n\n\n\nDefinition: Ideologies are the frameworks of belief that shape how people understand the world, often communicated through systems of signs.\nCultural Codes: These are shared systems of meaning that people in a culture understand implicitly (e.g., a white wedding dress as a sign of purity).\nExample: In media, the way certain groups are represented (or not represented) can reveal underlying ideologies about race, gender, or class.\n\n\n\n\n\n\n\nExample: The Apple logo.\n\nDenotation: A stylized apple with a bite taken out.\nConnotation: Innovation, simplicity, sophistication.\nMyth: Apple as the symbol of technological progress and rebellion against traditional tech.\n\nAnalysis: Break down how the design, colors, and brand messaging reinforce this myth.\n\n\n\n\n\n\n\n\nObjective: Apply semiotic analysis to an everyday object or advertisement.\nInstructions:\n\nChoose an object or ad.\nIdentify the binary oppositions at play.\nAnalyze the myth and ideology it conveys.\n\nExample: A car advertisement—look for contrasts like “freedom vs. constraint” or “adventure vs. routine.”\n\n\n\n\n\n\n\n\n\nHow do binary oppositions simplify complex concepts and shape perception?\nIn what ways do myths and ideologies influence how we understand culture and society?\nCan post-structuralism help us understand the instability of meaning in today’s digital world, such as in memes or social media?\n\n\n\n\n\n\n\nWrite a short analysis of an everyday object, advertisement, or piece of media.\nFocus on the following:\n\nIdentify key binary oppositions.\nAnalyze the myth or ideology being communicated.\n\nExample: Analyze the meaning behind a fast-food logo (e.g., McDonald’s golden arches as a sign of comfort, quick service, and American culture)."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-2.html#learning-objectives",
-    "href": "subjects/quantification-of-meaning/Untitled-2.html#learning-objectives",
-    "title": "Quantification of Meaning: Signs and Systems of Meaning",
-    "section": "",
-    "text": "Understand structuralism and post-structuralism in relation to semiotics.\nExplore binary oppositions, myths, and ideologies as systems of meaning.\nApply semiotic analysis to everyday objects and communication."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-2.html#theoretical-frameworks-structuralism-vs.-post-structuralism",
-    "href": "subjects/quantification-of-meaning/Untitled-2.html#theoretical-frameworks-structuralism-vs.-post-structuralism",
-    "title": "Quantification of Meaning: Signs and Systems of Meaning",
-    "section": "",
-    "text": "Definition: A theoretical framework that sees signs and meaning as part of a larger structure (or system) in language and culture.\nKey Concept: Meaning arises not from individual signs but from their relationship within a structured system.\nFounder: Ferdinand de Saussure introduced structuralism, focusing on langue (language as a system) vs. parole (individual speech).\nExample: A word gains meaning because of its position in relation to other words (e.g., “hot” vs. “cold”).\n\n\n\n\n\n\nDefinition: A theoretical approach that critiques and moves beyond structuralism, emphasizing the instability of meaning.\nKey Concept: Meaning is fluid and constantly shifting due to the complexities of interpretation and context.\nFounder: Jacques Derrida, with his theory of deconstruction, argued that meaning is never fixed and always open to reinterpretation.\nExample: A text can have multiple interpretations, and meaning is shaped by context and cultural assumptions."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-2.html#binary-oppositions-creating-meaning-through-contrast",
-    "href": "subjects/quantification-of-meaning/Untitled-2.html#binary-oppositions-creating-meaning-through-contrast",
-    "title": "Quantification of Meaning: Signs and Systems of Meaning",
-    "section": "",
-    "text": "Binary Oppositions: Pairs of opposite concepts that define meaning by their relationship to each other (e.g., light vs. dark, male vs. female).\nOrigin: Structuralists argue that meaning is constructed through these oppositions, as part of larger systems of signs.\n\n\n\n\n\n\nGood vs. Evil: Common in storytelling, where characters are divided into these moral binaries.\nNature vs. Culture: Used to explore the tension between the natural world and human society.\nSelf vs. Other: A key concept in identity formation, where one’s identity is shaped by what it is not."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-2.html#case-study-binary-oppositions-in-advertising",
-    "href": "subjects/quantification-of-meaning/Untitled-2.html#case-study-binary-oppositions-in-advertising",
-    "title": "Quantification of Meaning: Signs and Systems of Meaning",
-    "section": "",
-    "text": "Example: “Luxury vs. Necessity” in product advertising.\n\nAdvertisements often use this binary to create a sense of exclusivity or status around luxury products.\n\nAnalysis: Look at how words and images are paired to emphasize this contrast, shaping consumer perception."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-2.html#myth-and-ideology-in-semiotics",
-    "href": "subjects/quantification-of-meaning/Untitled-2.html#myth-and-ideology-in-semiotics",
-    "title": "Quantification of Meaning: Signs and Systems of Meaning",
-    "section": "",
-    "text": "Myth: A type of speech or cultural narrative that gives signs ideological meaning, often tied to societal norms.\nExample: The image of a French soldier saluting the flag is not just a literal action, but a myth that conveys patriotism, duty, and loyalty.\nApplication: Barthes applied this concept to everything from fashion to politics, revealing the hidden ideologies behind everyday signs.\n\n\n\n\n\n\nDefinition: Ideologies are the frameworks of belief that shape how people understand the world, often communicated through systems of signs.\nCultural Codes: These are shared systems of meaning that people in a culture understand implicitly (e.g., a white wedding dress as a sign of purity).\nExample: In media, the way certain groups are represented (or not represented) can reveal underlying ideologies about race, gender, or class."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-2.html#case-study-myth-in-everyday-objects",
-    "href": "subjects/quantification-of-meaning/Untitled-2.html#case-study-myth-in-everyday-objects",
-    "title": "Quantification of Meaning: Signs and Systems of Meaning",
-    "section": "",
-    "text": "Example: The Apple logo.\n\nDenotation: A stylized apple with a bite taken out.\nConnotation: Innovation, simplicity, sophistication.\nMyth: Apple as the symbol of technological progress and rebellion against traditional tech.\n\nAnalysis: Break down how the design, colors, and brand messaging reinforce this myth."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-2.html#practical-activity-analyzing-signs-and-systems-of-meaning",
-    "href": "subjects/quantification-of-meaning/Untitled-2.html#practical-activity-analyzing-signs-and-systems-of-meaning",
-    "title": "Quantification of Meaning: Signs and Systems of Meaning",
-    "section": "",
-    "text": "Objective: Apply semiotic analysis to an everyday object or advertisement.\nInstructions:\n\nChoose an object or ad.\nIdentify the binary oppositions at play.\nAnalyze the myth and ideology it conveys.\n\nExample: A car advertisement—look for contrasts like “freedom vs. constraint” or “adventure vs. routine.”"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-2.html#discussion-the-power-of-signs-and-systems",
-    "href": "subjects/quantification-of-meaning/Untitled-2.html#discussion-the-power-of-signs-and-systems",
-    "title": "Quantification of Meaning: Signs and Systems of Meaning",
-    "section": "",
-    "text": "How do binary oppositions simplify complex concepts and shape perception?\nIn what ways do myths and ideologies influence how we understand culture and society?\nCan post-structuralism help us understand the instability of meaning in today’s digital world, such as in memes or social media?"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/Untitled-2.html#reflection-assignment",
-    "href": "subjects/quantification-of-meaning/Untitled-2.html#reflection-assignment",
-    "title": "Quantification of Meaning: Signs and Systems of Meaning",
-    "section": "",
-    "text": "Write a short analysis of an everyday object, advertisement, or piece of media.\nFocus on the following:\n\nIdentify key binary oppositions.\nAnalyze the myth or ideology being communicated.\n\nExample: Analyze the meaning behind a fast-food logo (e.g., McDonald’s golden arches as a sign of comfort, quick service, and American culture)."
-  },
-  {
-    "objectID": "subjects/subjects.html",
-    "href": "subjects/subjects.html",
-    "title": "Subjects",
-    "section": "",
-    "text": "Courses\nHere are the available courses:\n\nQuantification of meaning",
-    "crumbs": [
-      "Subjects"
-    ]
-  },
-  {
-    "objectID": "subjects.html",
-    "href": "subjects.html",
-    "title": "Subjects",
-    "section": "",
-    "text": "Here are the available courses:\n\nQuantification of Meaning",
-    "crumbs": [
-      "Subjects"
-    ]
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning.html",
-    "href": "subjects/quantification-of-meaning.html",
-    "title": "Quantification of Meaning: From Semiotics to NLP",
-    "section": "",
-    "text": "Welcome to the Quantification of Meaning! Here you’ll find all the relevant materials.\n\n\n\n\nIntroduction to Semiotics"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning.html#slides",
-    "href": "subjects/quantification-of-meaning.html#slides",
-    "title": "Quantification of Meaning: From Semiotics to NLP",
-    "section": "",
-    "text": "Introduction to Semiotics"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#learning-objectives",
-    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#learning-objectives",
-    "title": "Semiotic Analysis Techniques",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nLearn practical techniques for semiotic analysis in text, visual media, and advertising.\nUnderstand qualitative coding and thematic analysis as methods for studying signs and symbols.\nApply semiotic analysis techniques to real-world examples."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#semiotic-analysis-introduction",
-    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#semiotic-analysis-introduction",
-    "title": "Semiotic Analysis Techniques",
-    "section": "Semiotic Analysis: Introduction",
-    "text": "Semiotic Analysis: Introduction\nWhat is Semiotic Analysis?\n\nDefinition: Semiotic analysis is a method used to interpret signs and symbols in texts, images, and media. It focuses on uncovering the underlying meaning of signs and their cultural or social significance.\nApplication: This method is widely used in media studies, cultural studies, and advertising analysis to reveal hidden ideologies or myths behind visual and textual content."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#practical-techniques-analyzing-text-visual-media-and-advertising",
-    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#practical-techniques-analyzing-text-visual-media-and-advertising",
-    "title": "Semiotic Analysis Techniques",
-    "section": "Practical Techniques: Analyzing Text, Visual Media, and Advertising",
-    "text": "Practical Techniques: Analyzing Text, Visual Media, and Advertising\nAnalyzing Text\n\nObjective: Uncover the underlying meaning in written language.\nSteps:\n\nIdentify Signs: Look for words, phrases, metaphors, or symbols that function as signs.\nSignifier and Signified: Analyze the relationship between the literal (signifier) and the conceptual (signified).\nContext: Consider the cultural or social context in which the text appears.\n\nExample: A news headline might use certain words or metaphors to influence the reader’s perception of an event."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#methods-qualitative-coding-and-thematic-analysis",
-    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#methods-qualitative-coding-and-thematic-analysis",
-    "title": "Semiotic Analysis Techniques",
-    "section": "Methods: Qualitative Coding and Thematic Analysis",
-    "text": "Methods: Qualitative Coding and Thematic Analysis\nQualitative Coding\n\nDefinition: Qualitative coding is the process of categorizing and labeling text, images, or media based on recurring signs or themes.\nSteps:\n\nOpen Coding: Start by identifying all potential signs and symbols.\nAxial Coding: Group related signs into categories or themes.\nSelective Coding: Focus on the most significant or frequent categories to build a coherent narrative.\n\nExample: In analyzing a set of advertisements, you might label signs of luxury, freedom, or eco-friendliness."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#practical-activity-applying-semiotic-analysis-techniques",
-    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#practical-activity-applying-semiotic-analysis-techniques",
-    "title": "Semiotic Analysis Techniques",
-    "section": "Practical Activity: Applying Semiotic Analysis Techniques",
-    "text": "Practical Activity: Applying Semiotic Analysis Techniques\nGroup Activity\n\nObjective: Use semiotic analysis to analyze a text, visual media, or advertisement.\nInstructions:\n\nChoose an advertisement or a short text (e.g., magazine ad, social media post).\nUse qualitative coding to identify key signs.\nApply thematic analysis to uncover underlying myths or ideologies.\n\nDiscussion Questions:\n\nWhat signs or symbols did you identify?\nHow do these signs contribute to the overall meaning?\nWhat themes or cultural ideologies did you discover?"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#case-study-semiotic-analysis-of-an-advertisement",
-    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#case-study-semiotic-analysis-of-an-advertisement",
-    "title": "Semiotic Analysis Techniques",
-    "section": "Case Study: Semiotic Analysis of an Advertisement",
-    "text": "Case Study: Semiotic Analysis of an Advertisement\nExample: Perfume Ad\n\nDenotation: A woman standing on a beach with a sunset in the background.\nConnotation: The imagery connotes freedom, beauty, and serenity.\nMyth: The ad promotes the idea that buying this perfume will grant the consumer a sense of elegance and emotional freedom."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#discussion-exploring-semiotic-techniques",
-    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#discussion-exploring-semiotic-techniques",
-    "title": "Semiotic Analysis Techniques",
-    "section": "Discussion: Exploring Semiotic Techniques",
-    "text": "Discussion: Exploring Semiotic Techniques\nKey Questions\n\nHow does qualitative coding help us uncover hidden meanings in media?\nWhat are the strengths and limitations of thematic analysis in understanding semiotic systems?\nIn what ways does semiotic analysis reveal the cultural or ideological underpinnings of everyday objects?"
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#reflection-assignment",
-    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#reflection-assignment",
-    "title": "Semiotic Analysis Techniques",
-    "section": "Reflection Assignment",
-    "text": "Reflection Assignment\n\nTask: Conduct a semiotic analysis of an advertisement or media text.\nFocus:\n\nIdentify key signs and symbols (use qualitative coding).\nPerform a thematic analysis to uncover underlying ideologies or myths.\n\nExample: Analyze a fast-food ad for its use of cultural symbols (e.g., convenience, family, or happiness) and discuss the broader themes and ideologies it promotes."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html",
-    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html",
-    "title": "Semiotic Analysis Techniques",
-    "section": "",
-    "text": "Learn practical techniques for semiotic analysis in text, visual media, and advertising.\n\nUnderstand qualitative coding and thematic analysis as methods for studying signs and symbols.\nApply semiotic analysis techniques to real-world examples.\n\n\n\n\n\n\n\n\n\n\nDefinition: Semiotic analysis is a method used to interpret signs and symbols in texts, images, and media. It focuses on uncovering the underlying meaning of signs and their cultural or social significance.\nApplication: This method is widely used in media studies, cultural studies, and advertising analysis to reveal hidden ideologies or myths behind visual and textual content.\n\n\n\n\n\n\n\n\n\nObjective: Uncover the underlying meaning in written language.\nSteps:\n\nIdentify Signs: Look for words, phrases, metaphors, or symbols that function as signs.\nSignifier and Signified: Analyze the relationship between the literal (signifier) and the conceptual (signified).\nContext: Consider the cultural or social context in which the text appears.\n\nExample: A news headline might use certain words or metaphors to influence the reader’s perception of an event.\n\n\n\n\n\n\nObjective: Interpret signs in images, films, and other visual content.\nSteps:\n\nIdentify Visual Elements: Look at colors, shapes, symbols, and layout.\nDenotation and Connotation: Analyze the literal representation (denotation) and its associative or cultural meanings (connotation).\nCultural Codes: Explore how certain visual cues align with cultural expectations or myths.\n\nExample: A political cartoon may use exaggerated imagery to symbolize power dynamics or societal critique.\n\n\n\n\n\n\nObjective: Deconstruct the meaning in advertisements and how they communicate with audiences.\nSteps:\n\nIdentify Key Signs: Consider brand symbols, colors, slogans, and imagery.\nTarget Audience: Analyze how the advertisement addresses its audience through signs and symbols.\nMyths and Ideologies: Explore how ads reflect broader cultural or ideological messages.\n\nExample: A luxury car advertisement may use symbols of wealth and freedom to target high-income consumers.\n\n\n\n\n\n\n\n\n\nDefinition: Qualitative coding is the process of categorizing and labeling text, images, or media based on recurring signs or themes.\nSteps:\n\nOpen Coding: Start by identifying all potential signs and symbols.\nAxial Coding: Group related signs into categories or themes.\nSelective Coding: Focus on the most significant or frequent categories to build a coherent narrative.\n\nExample: In analyzing a set of advertisements, you might label signs of luxury, freedom, or eco-friendliness.\n\n\n\n\n\n\nDefinition: Thematic analysis involves identifying, analyzing, and reporting patterns or themes within data. It’s used to interpret meaning from signs across a set of texts or images.\nSteps:\n\nFamiliarization: Immerse yourself in the material by reading or viewing it multiple times.\nGenerate Codes: Label signs or features with codes that reflect their meaning.\nSearch for Themes: Group codes into overarching themes that tell a story about the material.\nReview Themes: Ensure that themes are coherent and well-supported by evidence.\n\nExample: Analyzing a series of TV commercials to identify recurring themes of family, success, or environmentalism.\n\n\n\n\n\n\n\n\n\nObjective: Use semiotic analysis to analyze a text, visual media, or advertisement.\nInstructions:\n\nChoose an advertisement or a short text (e.g., magazine ad, social media post).\nUse qualitative coding to identify key signs.\nApply thematic analysis to uncover underlying myths or ideologies.\n\nDiscussion Questions:\n\nWhat signs or symbols did you identify?\nHow do these signs contribute to the overall meaning?\nWhat themes or cultural ideologies did you discover?\n\n\n\n\n\n\n\n\n\n\nDenotation: A woman standing on a beach with a sunset in the background.\nConnotation: The imagery connotes freedom, beauty, and serenity.\nMyth: The ad promotes the idea that buying this perfume will grant the consumer a sense of elegance and emotional freedom.\n\n\n\n\n\n\n\n\n\nHow does qualitative coding help us uncover hidden meanings in media?\nWhat are the strengths and limitations of thematic analysis in understanding semiotic systems?\nIn what ways does semiotic analysis reveal the cultural or ideological underpinnings of everyday objects?\n\n\n\n\n\n\n\nTask: Conduct a semiotic analysis of an advertisement or media text.\nFocus:\n\nIdentify key signs and symbols (use qualitative coding).\nPerform a thematic analysis to uncover underlying ideologies or myths.\n\nExample: Analyze a fast-food ad for its use of cultural symbols (e.g., convenience, family, or happiness) and discuss the broader themes and ideologies it promotes."
-  },
-  {
-    "objectID": "subjects/quantification-of-meaning/signs-and-systems-of-meaning.html",
-    "href": "subjects/quantification-of-meaning/signs-and-systems-of-meaning.html",
-    "title": "Quantification of Meaning: Signs and Systems of Meaning",
-    "section": "",
-    "text": "Understand structuralism and post-structuralism in relation to semiotics.\nExplore binary oppositions, myths, and ideologies as systems of meaning.\nApply semiotic analysis to everyday objects and communication.\n\n\n\n\n\n\n\n\n\nDefinition: A theoretical framework that sees signs and meaning as part of a larger structure (or system) in language and culture.\nKey Concept: Meaning arises not from individual signs but from their relationship within a structured system.\nFounder: Ferdinand de Saussure introduced structuralism, focusing on langue (language as a system) vs. parole (individual speech).\nExample: A word gains meaning because of its position in relation to other words (e.g., “hot” vs. “cold”).\n\n\n\n\n\n\nDefinition: A theoretical approach that critiques and moves beyond structuralism, emphasizing the instability of meaning.\nKey Concept: Meaning is fluid and constantly shifting due to the complexities of interpretation and context.\nFounder: Jacques Derrida, with his theory of deconstruction, argued that meaning is never fixed and always open to reinterpretation.\nExample: A text can have multiple interpretations, and meaning is shaped by context and cultural assumptions.\n\n\n\n\n\n\n\n\n\nBinary Oppositions: Pairs of opposite concepts that define meaning by their relationship to each other (e.g., light vs. dark, male vs. female).\nOrigin: Structuralists argue that meaning is constructed through these oppositions, as part of larger systems of signs.\n\n\n\n\n\n\nGood vs. Evil: Common in storytelling, where characters are divided into these moral binaries.\nNature vs. Culture: Used to explore the tension between the natural world and human society.\nSelf vs. Other: A key concept in identity formation, where one’s identity is shaped by what it is not.\n\n\n\n\n\n\n\nExample: “Luxury vs. Necessity” in product advertising.\n\nAdvertisements often use this binary to create a sense of exclusivity or status around luxury products.\n\nAnalysis: Look at how words and images are paired to emphasize this contrast, shaping consumer perception.\n\n\n\n\n\n\n\n\nMyth: A type of speech or cultural narrative that gives signs ideological meaning, often tied to societal norms.\nExample: The image of a French soldier saluting the flag is not just a literal action, but a myth that conveys patriotism, duty, and loyalty.\nApplication: Barthes applied this concept to everything from fashion to politics, revealing the hidden ideologies behind everyday signs.\n\n\n\n\n\n\nDefinition: Ideologies are the frameworks of belief that shape how people understand the world, often communicated through systems of signs.\nCultural Codes: These are shared systems of meaning that people in a culture understand implicitly (e.g., a white wedding dress as a sign of purity).\nExample: In media, the way certain groups are represented (or not represented) can reveal underlying ideologies about race, gender, or class.\n\n\n\n\n\n\n\nExample: The Apple logo.\n\nDenotation: A stylized apple with a bite taken out.\nConnotation: Innovation, simplicity, sophistication.\nMyth: Apple as the symbol of technological progress and rebellion against traditional tech.\n\nAnalysis: Break down how the design, colors, and brand messaging reinforce this myth.\n\n\n\n\n\n\n\n\nObjective: Apply semiotic analysis to an everyday object or advertisement.\nInstructions:\n\nChoose an object or ad.\nIdentify the binary oppositions at play.\nAnalyze the myth and ideology it conveys.\n\nExample: A car advertisement—look for contrasts like “freedom vs. constraint” or “adventure vs. routine.”\n\n\n\n\n\n\n\n\n\nHow do binary oppositions simplify complex concepts and shape perception?\nIn what ways do myths and ideologies influence how we understand culture and society?\nCan post-structuralism help us understand the instability of meaning in today’s digital world, such as in memes or social media?\n\n\n\n\n\n\n\nWrite a short analysis of an everyday object, advertisement, or piece of media.\nFocus on the following:\n\nIdentify key binary oppositions.\nAnalyze the myth or ideology being communicated.\n\nExample: Analyze the meaning behind a fast-food logo (e.g., McDonald’s golden arches as a sign of comfort, quick service, and American culture)."
   },
   {
     "objectID": "subjects/quantification-of-meaning/signs-and-systems-of-meaning.html#learning-objectives",
@@ -509,193 +149,46 @@
     "text": "Reflection Assignment\n\nWrite a short analysis of an everyday object, advertisement, or piece of media.\nFocus on the following:\n\nIdentify key binary oppositions.\nAnalyze the myth or ideology being communicated.\n\nExample: Analyze the meaning behind a fast-food logo (e.g., McDonald’s golden arches as a sign of comfort, quick service, and American culture)."
   },
   {
-    "objectID": "posts/2024-11-02-the-shape-of-ideas-part-1/index.html",
-    "href": "posts/2024-11-02-the-shape-of-ideas-part-1/index.html",
-    "title": "The Shape of Ideas",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lumos Insight",
     "section": "",
-    "text": "I’ve been fascinated for a while now by the prospect that knowledge, concepts, and ideas might be represented as geometric forms. Put simply, I’ve felt drawn to the question, “What is the shape of an idea?” This might sound like an ambitious question to answer—and it’s fair to say that I’m not quite there yet. Still, it’s fertile ground for exploration. After all, we’re living in an age characterized by the proliferation of analytical techniques suited for just this kind of inquiry.\nThese methods are, admittedly, quite specialized, rooted in fields like quantitative linguistics and computer science. But thanks to these very tools, we now have accessible resources—like chatbots, text analysis libraries, and visualization software—that help us learn, experiment, and build on our understanding. And what is it that we should be doing with these tools, if not not satisfying our curiosity by answering ambitious questions?\nWe may not yet be able to literally “see” an idea’s shape, but we can get closer to it by uncovering patterns and connections in language that hint at the structure of thought itself. Starting with a straightforward approach like Term Frequency (TF) analysis, we can identify the most frequently occurring words and concepts in a text. This might seem simple, but it lays a foundation, showing us the key ideas that will pave the way for further exploration. From there, we can take it a step further, examining co-occurrences and visualising the relationships between words, slowly beginning to sketch the contours of an idea’s “shape” in language.\n\nThe Text\nHere, I start with the text On Liberty by John Stuart Mill. A seminal work in political philosophy, On Liberty provides a framework for exploring the balance between state authority and individual freedoms. Mill argues for the importance of personal autonomy, emphasizing that individuals should be free to pursue their own paths, provided they do not harm others in the process. His work highlights the need for limits on societal and governmental control, advocating for the protection of individual rights as essential to a vibrant, progressive society.\nTo begin with, we need to load in the text.\n\n\n\nNext, we need to break this text down into individual words, a process known as tokenization. We’ll also remove common words that don’t add much meaning, like “and” or “are.” After tokenizing the text words, and removing stopwords, we calculate Term Frequency by counting the occurrence of each word. See below, where the word frequencies have been calculated and then sorted, to show the top 10 words and their frequencies.\n\n\n\n\nTop 10 Most Frequent Words\n\n\nWord\nFrequency\n\n\n\n\nopinion\n153\n\n\nsociety\n115\n\n\nhuman\n106\n\n\nopinions\n104\n\n\npeople\n97\n\n\ntruth\n96\n\n\npersons\n93\n\n\nliberty\n91\n\n\nconduct\n88\n\n\nindividual\n88\n\n\n\n\n\n\n\n\nAlright, now we have a list of words and their frequencies. While these frequencies give us a sense of the text’s main content, they don’t really illustrate the relationships between concepts or the progression of ideas throughout the work. Some terms may need cleaning up (for instance, “opinion” vs. “opinions” or “persons” vs. “people”), but even that requires judgment about whether these variations carry different meanings or appear in distinct contexts. For now, we’ll work with the terms as they are and focus on visualizing the relationships between them.\n\n\nCo-occurrence analysis\nTo visualize the relationships between our top 10 most frequent words, we’ll examine how they occur together within the text. This approach—called a co-occurrence analysis—will help reveal patterns and associations between terms.\nFirst, we define a window of co-occurrence—in this case, 1—which essentially means we’re looking at pairs of consecutive words. Whenever two of these words appear side-by-side in the text, we count that as a co-occurrence (don’t forget, we’ve removed stopwords, so these words will co-occur more than you may think).\nNote that this window choice of 1 could be whatever we want it to be. However, by keeping the window small for now we limit our focus to direct, immediate relationships rather than looser connections that might dilute the strength of association.\nBelow, we can see that of our top 10 most frequently occurring words, the 2 that appear together the most are opinion and truth, followed by society and individual. Immediately, this makes intuitive sense, afterall On Liberty is an exploration of the relationship between society and individuals, and explores how this is in part due to the nature of/ how they interact with truth and opinion\nBelow, we can see that among our top 10 most frequently occurring words, the pair that appears together most often is opinion and truth, followed by society and individual. This immediately aligns with the themes of On Liberty, which we already know to be an exploration of the relationship between society and individuals, and how these interactions are shaped by concepts of truth and opinion.\n\n\n\n\nTop 10 Word Co-Occurrences\n\n\nWord 1\nWord 2\nFrequency\n\n\n\n\nopinion\ntruth\n29\n\n\nsociety\nindividual\n26\n\n\nopinions\nopinion\n23\n\n\ntruth\nopinion\n21\n\n\ntruth\nopinions\n20\n\n\nindividual\nsociety\n17\n\n\nopinions\ntruth\n17\n\n\nconduct\nsociety\n16\n\n\nhuman\npersons\n16\n\n\nindividual\nliberty\n15\n\n\n\n\n\n\n\n\nSo that’s quite satisfying, at least we know that a simple count of word frequencies and co-occurrences can get us some pretty representative information. This isn’t quite yet the shape of an idea though, we need a few more steps to visualise these relationships. The next step is to create a co-occurrence matrix.\n\n\nCo-occurrence network graph\nA co-occurrence matrix is a table that shows how often each word appears alongside every other word within a specified window of text. In this matrix, rows and columns represent words, and each cell contains the co-occurrence count for that word pair. For instance, if liberty and individual appear near each other 15 times, the matrix will show this count in the corresponding cell. This matrix provides a comprehensive view of all pairwise word relationships in the text, quantifying the connections between each word.\nOnce we have this co-occurrence matrix, we can take it a step further by translating it into a network graph. In the network graph, each word is represented as a node and the connections between them—based on their co-occurrence counts—are shown as edges. The weight of each edge (i.e., the thickness of the line connecting two words) reflects the frequency of co-occurrence.\n\n\n\n\n\n\n\n\n\nNow we have a visual representation of the relationships between the top 10 words in John Stuart Mill’s On Liberty. Technically speaking, this is a relatively simple achievement, but it’s been a valuable exercise in setting up foundational concepts we’ll revisit later. Word frequency alone is a fairly basic approach, but it serves as a stepping stone toward more sophisticated methods like TF-IDF. Eventually, we’ll be extracting topics statistically, representing words as embeddings and performing more complex analyses, but for now, this is a useful start.\n\n\n\n\nOn Liberty has become, partly by chance and partly by choice, my go-to text for exploring text analysis projects. Even with these basic techniques, the key themes of the text are already beginning to emerge. The tension between society and the individual appears, in part, as a struggle over truth and opinion. While this may not be exactly what I meant by identifying the “shape of an idea,” it’s quite fitting and tells us something valuable about the shape of ideas—that they’re molded by the individuals who hold them and the world they inhabit."
+    "text": "We live in an age of information excess—a flood of data that often obscures as much as it reveals. New sources and structures of information creating noise and confusion, reducing our clarity of vision and preventing us from finding truth.\nOur goal in this information-rich world is true understanding, which connects disparate pieces and reveals relationships, enabling meaningful action. This understanding is deepened and enriched through social learning—an iterative, collaborative process where insights and interpretations are continuously refined and shared.\nInsight is where the transformation begins. It’s the bridge between raw information and true understanding, emerging as knowledge flows from one person to another, evolving through shared perspectives. As information flows from one perspective to another, it is transformed. Each layer of understanding builds upon the last, gaining depth and dimension through collective reflection and application.\n\nMethodology\nAt Lumos Insight, we generate insight through a structured, social learning approach. By fostering shared reflection and open exploration, we refine information into actionable understanding. Our approach is built on a cycle of learning, reflection, and application, creating a flow of insights that deepens with each pass. By sharing our learning publicly, we contribute to a broader knowledge ecosystem, allowing insights to evolve and improve as they’re applied in new contexts. This iterative knowledge spiral is at the heart of our work.\n\n\nBackground\nLumos Insight began with psychometric validation, a field focused on inferring meaning from human behavior. Psychometric validation allows us to interpret complex human responses as measurable insights, giving organizations a clearer view of the motivations, capabilities, and potential of real people. This foundation has equipped Lumos Insight to expand its focus, applying these same principles to draw meaningful insights from data more broadly.\nWhether we’re interpreting behavior or analyzing data trends, our work aims to help organizations cut through the noise, turning data into human-centered, actionable solutions. Let Lumos Insight guide you from information overload to clarity, understanding, and impact."
   },
   {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html",
-    "title": "The Shape of Ideas",
+    "objectID": "posts/2025-03-15-local-augmentation/index.html",
+    "href": "posts/2025-03-15-local-augmentation/index.html",
+    "title": "Local Augmentation",
     "section": "",
-    "text": "In the previous post, we explored how examining word frequencies can help infer meaning from a text. We also demonstrated how analyzing word co-occurrence provides additional layers of information, allowing us to discern relationships between terms and their significance in shaping the broader themes of the document.\nIn this post, we’ll expand on these approaches by focusing on more discrete chunks of text, such as individual chapters. This segmentation enables us to isolate the specific themes and concepts associated with particular sections, providing a clearer view of the detailed arguments that underpin the broader narrative. By examining these localized patterns, we can also better understand how overarching themes are constructed from more specific ideas.\nFinally, we’ll introduce a method for identifying the relative importance of words within the context of the entire document: TF-IDF (Term Frequency-Inverse Document Frequency). This technique allows us to highlight the words that are particularly significant in a given section, shedding light on how distinct arguments and emphases contribute to the text as a whole. Using these methods, we’ll uncover new ways of exploring the structure and meaning of the work."
+    "text": "I’ve been using local LLMs for a while now, in a couple of different ways. Part of this usage is straightforward interaction: pushing their limits, seeing how far I can go, and also exploring aspects of natural language processing (NLP).\nIf I’m going to keep experimenting, I want to objectify and measure the text outputs I’m getting. That’s part of the motivation behind some of the work I’ve done previously, where I’m playing with different ways of extracting and quantifying meaning in text. That’s just one use-case though, falling more in the bucket of ‘traditional’ natural language processing. I didn’t need LLM’s to do most of that previously, though it’s certainly helped to learn about them. However, I have noticed that the remainder of my LLM based activities include production of structured output from unstructured data (read, constraining outputs to json), as well as transforming or reconfiguring text in some way (for example, summarising)."
   },
   {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#frequency-table",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#frequency-table",
-    "title": "The Shape of Ideas 2",
-    "section": "Frequency table",
-    "text": "Frequency table\nFollowing code chunk is supposed to count frequencies per chapter (top 10?)\nThe below tabset is supposed to show chapter by chapter, the top 10 word frequencies\n\nChapter 1Chapter 2Chapter 3Chapter 4Chapter 5\n\n\n\n\n\n\nTop 10 Word Frequencies\n\n\ndoc_id\nword\nfrequency\n\n\n\n\n1\nsociety\n27\n\n\n1\npower\n26\n\n\n1\ngovernment\n21\n\n\n1\nliberty\n20\n\n\n1\nindividual\n19\n\n\n1\npeople\n18\n\n\n1\nconduct\n16\n\n\n1\nopinion\n16\n\n\n1\nprinciple\n13\n\n\n1\nmankind\n12\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTop 10 Word Frequencies\n\n\ndoc_id\nword\nfrequency\n\n\n\n\n2\nopinion\n98\n\n\n2\ntruth\n85\n\n\n2\nopinions\n67\n\n\n2\nmankind\n33\n\n\n2\ntrue\n31\n\n\n2\nmind\n28\n\n\n2\nhuman\n27\n\n\n2\npersons\n27\n\n\n2\npeople\n26\n\n\n2\ndoctrines\n26\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTop 10 Word Frequencies\n\n\ndoc_id\nword\nfrequency\n\n\n\n\n3\nhuman\n46\n\n\n3\npeople\n28\n\n\n3\ncharacter\n24\n\n\n3\nnature\n22\n\n\n3\nlife\n21\n\n\n3\nindividuality\n19\n\n\n3\nstrong\n18\n\n\n3\npersons\n17\n\n\n3\nopinions\n15\n\n\n3\ncustom\n15\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTop 10 Word Frequencies\n\n\ndoc_id\nword\nfrequency\n\n\n\n\n4\nsociety\n37\n\n\n4\nconduct\n30\n\n\n4\nperson\n28\n\n\n4\npublic\n26\n\n\n4\nsocial\n22\n\n\n4\nmoral\n19\n\n\n4\npersons\n19\n\n\n4\nindividual\n17\n\n\n4\nopinion\n17\n\n\n4\nwrong\n15\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTop 10 Word Frequencies - Chapter 5\n\n\ndoc_id\nword\nfrequency\n\n\n\n\n5\ngovernment\n35\n\n\n5\nliberty\n34\n\n\n5\neducation\n25\n\n\n5\nfree\n24\n\n\n5\npublic\n23\n\n\n5\npersons\n21\n\n\n5\nsociety\n20\n\n\n5\nperson\n18\n\n\n5\nfreedom\n18\n\n\n5\nquestion\n16"
+    "objectID": "posts/2025-03-15-local-augmentation/index.html#text-analytics-pipelines",
+    "href": "posts/2025-03-15-local-augmentation/index.html#text-analytics-pipelines",
+    "title": "Local Augmentation",
+    "section": "Text Analytics Pipelines",
+    "text": "Text Analytics Pipelines\nOne recent application has been to incorporate LLMs into an analytics pipeline:\n\nSummarizing text that has already been partitioned according to certain rules or categories.\nProviding an immediate thematic overview by grouping text into already-existing categories. So far, this is mostly text analysis–not as heavy on LLM usage as I initially thought. I’ve still relied on topic modeling with TF-IDF, n-gram counts, word frequency, and co-occurrence to see how words or ideas cluster together.\n\nHowever, one area I want to explore more is word co-occurrence combined with word embeddings. The idea is to generate a series of “coordinates” (e.g., sentence or paragraph embeddings) and compare similarities across time to map how ideas form and develop. That’s something I’ll be dabbling with soon."
   },
   {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#tf-idf-per-chapter",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#tf-idf-per-chapter",
-    "title": "The Shape of Ideas 2",
-    "section": "TF-IDF per chapter",
-    "text": "TF-IDF per chapter"
+    "objectID": "posts/2025-03-15-local-augmentation/index.html#daily-audio-logs",
+    "href": "posts/2025-03-15-local-augmentation/index.html#daily-audio-logs",
+    "title": "Local Augmentation",
+    "section": "Daily Audio Logs",
+    "text": "Daily Audio Logs\nDaily logs and check-ins were one of my earliest experiments:\n\nI started with a custom GUI chat to record day-to-day happenings.\nThis quickly became unwieldy, so I switched to simply recording audio files.\nNow, my focus is on the analysis and extraction of structured information from those recordings.\n\nThe workflow (in principle):\n\nTranscribe the audio using a speech-to-text tool.\nFeed that text to an LLM with a specific prompt that instructs it to return a JSON object containing dates, events, “remind me” items, or anything else worth extracting.\nStore that JSON in a database for easy retrieval and queries.\n\nThe biggest challenge now is deciding how best to store the data. I’m leaning toward a local PostgreSQL server, but that’s a topic for an entirely separate post."
   },
   {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#co-occurrence-matrix",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#co-occurrence-matrix",
-    "title": "The Shape of Ideas 2",
-    "section": "Co-occurrence matrix",
-    "text": "Co-occurrence matrix"
+    "objectID": "posts/2025-03-15-local-augmentation/index.html#document-annotations",
+    "href": "posts/2025-03-15-local-augmentation/index.html#document-annotations",
+    "title": "Local Augmentation",
+    "section": "Document Annotations",
+    "text": "Document Annotations\nAnother area where LLMs have helped is processing my document annotations:\nI’ve been making a lot more highlights and notes—on my computer and my e-book reader. These have always felt ephemeral and scattered across different filesystems. Now, when I finish reading, I extract the annotations and summarize them using an LLM. I’m still experimenting with context windows and how prompts should incorporate page references, but even a basic summary of my notes is valuable. It lets me quickly revisit what I’ve read. And by embedding these summaries (or the text itself), I can later query them in a more dynamic way."
   },
   {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-1-1",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-1-1",
-    "title": "The Shape of Ideas 2",
-    "section": "Chapter 1",
-    "text": "Chapter 1\n\n\n\n\nTop 10 Word Co-Occurrences\n\n\nWord 1\nWord 2\nFrequency\n\n\n\n\nsociety\nindividual\n8\n\n\nconduct\nopinion\n5\n\n\ngovernment\npower\n5\n\n\nindividual\nsociety\n5\n\n\npeople\npower\n5\n\n\npower\ngovernment\n5\n\n\nopinion\nsociety\n4\n\n\ngovernment\nopinion\n3\n\n\ngovernment\npeople\n3\n\n\nindividual\nopinion\n3"
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-2-1",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-2-1",
-    "title": "The Shape of Ideas 2",
-    "section": "Chapter 2",
-    "text": "Chapter 2\n\n\n\n\nTop 10 Word Co-Occurrences\n\n\nWord 1\nWord 2\nFrequency\n\n\n\n\nmankind\nopinion\n12\n\n\nopinion\nmankind\n12\n\n\npeople\nopinion\n9\n\n\nmankind\npeople\n5\n\n\nopinion\nconduct\n5\n\n\nconduct\nmankind\n4\n\n\ngovernment\npeople\n4\n\n\nopinion\npeople\n4\n\n\npeople\nconduct\n4\n\n\nconduct\npeople\n3"
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-3-1",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-3-1",
-    "title": "The Shape of Ideas 2",
-    "section": "Chapter 3",
-    "text": "Chapter 3\n\n\n\n\nTop 10 Word Co-Occurrences\n\n\nWord 1\nWord 2\nFrequency\n\n\n\n\npeople\nconduct\n7\n\n\nindividual\npeople\n6\n\n\nopinion\nmankind\n5\n\n\nconduct\npeople\n3\n\n\nliberty\npeople\n3\n\n\npeople\nopinion\n3\n\n\npeople\nsociety\n3\n\n\npower\nopinion\n3\n\n\npower\nsociety\n3\n\n\nsociety\npeople\n3"
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-4-1",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-4-1",
-    "title": "The Shape of Ideas 2",
-    "section": "Chapter 4",
-    "text": "Chapter 4\n\n\n\n\nTop 10 Word Co-Occurrences\n\n\nWord 1\nWord 2\nFrequency\n\n\n\n\nsociety\nconduct\n8\n\n\nconduct\nsociety\n6\n\n\nindividual\nsociety\n6\n\n\nconduct\nindividual\n5\n\n\nopinion\nconduct\n5\n\n\nconduct\nopinion\n4\n\n\nopinion\npeople\n4\n\n\nsociety\nindividual\n4\n\n\nconduct\npeople\n3\n\n\nliberty\nsociety\n3"
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-5-1",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-5-1",
-    "title": "The Shape of Ideas 2",
-    "section": "Chapter 5",
-    "text": "Chapter 5\n\n\n\n\nTop 10 Word Co-Occurrences\n\n\nWord 1\nWord 2\nFrequency\n\n\n\n\nindividual\nliberty\n5\n\n\npower\ngovernment\n5\n\n\nprinciple\nliberty\n5\n\n\nconduct\nprinciple\n4\n\n\nliberty\ngovernment\n4\n\n\nliberty\npeople\n4\n\n\nsociety\nconduct\n4\n\n\nconduct\nindividual\n3\n\n\nconduct\nsociety\n3\n\n\ngovernment\nconduct\n3"
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-1-introductory",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-1-introductory",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 1: Introductory",
-    "text": "Chapter 1: Introductory\nIn the opening chapter, Mill establishes the central tension between society and the individual, evident in the frequent pairing of these terms. The co-occurrence matrix emphasizes: - “Society - Individual”: Reflecting the core question of where societal authority ends and personal liberty begins. Mill underscores the need to protect individuality from societal overreach. - “Government - Power”: Highlighting Mill’s concern with the historical expansion of governmental power and its potential to suppress freedoms. - “People - Power” (5): Exploring the risks of majority rule in democracies, where “the people” may wield power as oppressively as monarchs."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-2-of-the-liberty-of-thought-and-discussion",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-2-of-the-liberty-of-thought-and-discussion",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 2: Of The Liberty Of Thought And Discussion",
-    "text": "Chapter 2: Of The Liberty Of Thought And Discussion\nThis chapter is concerned with the value of free expression and debate. Word co-occurrences analyis highlights the importance of: - “Mankind - Opinion” (12): Highlighting Mill’s argument that the progress of humanity depends on the collision of diverse opinions, which challenge norms and uncover truths. - “People - Opinion” (9): Reflecting the relationship between collective societal beliefs and individual dissent. Mill defends the necessity of tolerating unpopular opinions. - “Mankind - People” (5): Emphasizing the collective benefits of individual intellectual freedom."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-3-of-individuality-as-one-of-the-elements-of-well-being",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-3-of-individuality-as-one-of-the-elements-of-well-being",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 3: Of Individuality, As One Of The Elements Of Well-being",
-    "text": "Chapter 3: Of Individuality, As One Of The Elements Of Well-being\nHere, Mill argues for the importance of individuality in resisting societal conformity: - “People - Conduct” (7): Highlighting Mill’s critique of the “tyranny of custom,” where societal expectations suppress individual decision-making. - “Individual - People” (6): Showing the tension between personal freedoms and societal norms, with individuality framed as essential for societal progress. - “Opinion - Mankind” (5): Connecting intellectual diversity with the advancement of humanity."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-4-of-the-limits-to-the-authority-of-society-over-the-individual",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-4-of-the-limits-to-the-authority-of-society-over-the-individual",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 4: Of The Limits To The Authority Of Society Over The Individual",
-    "text": "Chapter 4: Of The Limits To The Authority Of Society Over The Individual\nMill explores the boundaries of societal control over individual actions, with co-occurrence analysis revealing: - “Society - Conduct” (8): Reflecting debates on when societal intervention in personal behavior is justified—specifically, when actions harm others. - “Individual - Society” (6): Highlighting the reciprocal obligations between individuals and the society that protects them. - “Opinion - Conduct” (5): Connecting how personal opinions influence actions and when these actions warrant societal scrutiny."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-5-applications",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-5-applications",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 5: Applications",
-    "text": "Chapter 5: Applications\n\nThe final chapter applies Mill’s principles to practical governance, emphasizing the tension between liberty and state power\n\n“Individual - Liberty” (5): Centralizing Mill’s belief that individual freedom is essential for personal and societal progress.\n“Power - Government” (5): Highlighting Mill’s critique of bureaucratic overreach and the need to limit governmental authority.\n“Principle - Liberty” (5): Reflecting Mill’s philosophical groundwork for determining when societal intervention is justified.\n“Conduct - Society” (3): Reinforcing the nuanced balance between personal autonomy and collective welfare."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#progression-through-the-text",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#progression-through-the-text",
-    "title": "The Shape of Ideas",
-    "section": "Progression Through the Text",
-    "text": "Progression Through the Text\nWhen applied across each of the chapters, word co-occurrence and network analyses reveal a progression of themes throughout the text:\n\nIntroductory (Chapter 1): Focused on establishing the tension between societal authority and individual liberty.\nOf The Liberty Of Thought And Discussion (Chapter 2): Emphasizes intellectual freedom as a prerequisite for societal progress.\nOf Individuality, As One Of The Elements Of Well-being (Chapter 3): Advocates for personal autonomy as a counterbalance to societal conformity.\nOf The Limits To The Authority Of Society Over The Individual (Chapter 4): Explores when societal intervention in individual conduct is justified.\nApplications (Chapter 5): Applies these principles to practical governance, advocating for decentralized power and personal responsibility."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#what-does-tf-idf-measure",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#what-does-tf-idf-measure",
-    "title": "The Shape of Ideas",
-    "section": "What Does TF-IDF Measure?",
-    "text": "What Does TF-IDF Measure?\n\nTerm Frequency (TF)\nTF is a straightforward measure of how often a word appears in a specific document, relative to the total number of words in that document. For example, if the word “liberty” appears 50 times in Chapter 1, and Chapter 1 contains 1,000 words, the term frequency for “liberty” in that chapter is 0.05 (5%).\n\n\nInverse Document Frequency (IDF)\nIDF measures how unique or rare a word is across the entire collection of documents (in this case, the chapters of On Liberty). Words that appear in many or all chapters (like “society” or “individual”) receive a low IDF score because they are not specific to any single chapter. Conversely, words that appear in only one or a few chapters receive a high IDF score, indicating that they are particularly characteristic of those sections.\n\n\nTF-IDF Score:\nThe final TF-IDF score is calculated by multiplying a word’s TF by its IDF. This score prioritizes words that are frequent in a specific document but relatively rare across the rest of the collection, helping us identify terms that best represent the unique focus of each chapter.\nWhy Is TF-IDF Useful? TF-IDF adds nuance to our analysis by addressing the shortcomings of simple frequency-based methods. While co-occurrence counts reveal relationships between common terms, they don’t differentiate between words that are central to a specific chapter and words that are common across the entire text. TF-IDF fills this gap, pinpointing the key terms that make each chapter distinct.\nFor example:\nIn Chapter 1, “tyranny” might have a high TF-IDF score because it appears frequently there but less so in subsequent chapters. This would suggest that the chapter has a particular focus on critiquing tyranny, even if “liberty” is more frequent across the entire text. In Chapter 3, terms like “individuality” or “custom” might stand out, reflecting its emphasis on personal autonomy and societal norms. By applying TF-IDF, we can uncover not just recurring themes but the specific terms and ideas that define each chapter, providing a sharper lens for understanding the structure and argument of On Liberty. This technique is particularly valuable for examining how Mill shifts his focus from general principles to more applied discussions, and for highlighting the unique vocabulary that drives his argument in each section.\nTF-IDF, therefore, is not just another measure of word frequency; it is a tool for weighting words by their contextual importance."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-1-2",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-1-2",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 1",
-    "text": "Chapter 1\n\n\n\n\nTop 10 TF-IDF Words by Chapter\n\n\nChapter\nWord\nn\ntf\nidf\nTF-IDF Score\n\n\n\n\n1\nexternal\n5\n0.0026\n1.6094\n0.0042\n\n\n1\nmandates\n3\n0.0016\n1.6094\n0.0025\n\n\n1\nruled\n3\n0.0016\n1.6094\n0.0025\n\n\n1\nrulers\n8\n0.0042\n0.5108\n0.0022\n\n\n1\nindependence\n4\n0.0021\n0.9163\n0.0019\n\n\n1\nlimitation\n4\n0.0021\n0.9163\n0.0019\n\n\n1\nrightfully\n4\n0.0021\n0.9163\n0.0019\n\n\n1\nanswerable\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nascendancy\n2\n0.0011\n1.6094\n0.0017\n\n\n1\ndislikings\n2\n0.0011\n1.6094\n0.0017\n\n\n1\ndisturbed\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nelective\n2\n0.0011\n1.6094\n0.0017\n\n\n1\ngreece\n2\n0.0011\n1.6094\n0.0017\n\n\n1\ninfringe\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nliking\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nlikings\n2\n0.0011\n1.6094\n0.0017\n\n\n1\noccupied\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nperceived\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nportions\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nruling\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nservility\n2\n0.0011\n1.6094\n0.0017\n\n\n1\ntyrannising\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nvultures\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nwait\n2\n0.0011\n1.6094\n0.0017"
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-2-2",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-2-2",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 2",
-    "text": "Chapter 2\n\n\n\n\nTop 10 TF-IDF Words by Chapter\n\n\nChapter\nWord\nn\ntf\nidf\nTF-IDF Score\n\n\n\n\n2\ndoctrines\n26\n0.0050\n0.9163\n0.0045\n\n\n2\nfalse\n13\n0.0025\n1.6094\n0.0040\n\n\n2\ntruth\n85\n0.0162\n0.2231\n0.0036\n\n\n2\ninfallibility\n11\n0.0021\n1.6094\n0.0034\n\n\n2\nerror\n16\n0.0031\n0.9163\n0.0028\n\n\n2\nethics\n8\n0.0015\n1.6094\n0.0025\n\n\n2\npersecution\n14\n0.0027\n0.9163\n0.0024\n\n\n2\nchristian\n25\n0.0048\n0.5108\n0.0024\n\n\n2\nassumption\n7\n0.0013\n1.6094\n0.0021\n\n\n2\nhearing\n7\n0.0013\n1.6094\n0.0021\n\n\n2\nrejected\n7\n0.0013\n1.6094\n0.0021"
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-3-2",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-3-2",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 3",
-    "text": "Chapter 3\n\n\n\n\nTop 10 TF-IDF Words by Chapter\n\n\nChapter\nWord\nn\ntf\nidf\nTF-IDF Score\n\n\n\n\n3\noriginality\n10\n0.0040\n1.6094\n0.0064\n\n\n3\ngenius\n8\n0.0032\n1.6094\n0.0051\n\n\n3\nimpulses\n13\n0.0052\n0.9163\n0.0047\n\n\n3\ncustomary\n5\n0.0020\n1.6094\n0.0032\n\n\n3\nweak\n5\n0.0020\n1.6094\n0.0032\n\n\n3\ncustoms\n8\n0.0032\n0.9163\n0.0029\n\n\n3\nconformity\n4\n0.0016\n1.6094\n0.0026\n\n\n3\neccentricity\n4\n0.0016\n1.6094\n0.0026\n\n\n3\nmediocrity\n4\n0.0016\n1.6094\n0.0026\n\n\n3\nnoble\n4\n0.0016\n1.6094\n0.0026"
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-4-2",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-4-2",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 4",
-    "text": "Chapter 4\n\n\n\n\nTop 10 TF-IDF Words by Chapter\n\n\nChapter\nWord\nn\ntf\nidf\nTF-IDF Score\n\n\n\n\n4\npunished\n5\n0.0019\n1.6094\n0.0031\n\n\n4\namusements\n4\n0.0015\n1.6094\n0.0025\n\n\n4\ndistaste\n4\n0.0015\n1.6094\n0.0025\n\n\n4\ngross\n4\n0.0015\n1.6094\n0.0025\n\n\n4\nalliance\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nbarbarism\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nbreaks\n3\n0.0011\n1.6094\n0.0018\n\n\n4\ndispleases\n3\n0.0011\n1.6094\n0.0018\n\n\n4\ndistinction\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nfermented\n3\n0.0011\n1.6094\n0.0018\n\n\n4\ninvades\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nmussulmans\n3\n0.0011\n1.6094\n0.0018\n\n\n4\npork\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nsunday\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nvicious\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nworkmen\n3\n0.0011\n1.6094\n0.0018"
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-5-2",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-5-2",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 5",
-    "text": "Chapter 5\n\n\n\n\nTop 10 TF-IDF Words by Chapter\n\n\nChapter\nWord\nn\ntf\nidf\nTF-IDF Score\n\n\n\n\n5\nbureaucracy\n11\n0.0035\n1.6094\n0.0056\n\n\n5\ncrime\n9\n0.0028\n1.6094\n0.0046\n\n\n5\ncentral\n8\n0.0025\n1.6094\n0.0040\n\n\n5\nlocal\n8\n0.0025\n1.6094\n0.0040\n\n\n5\nchild\n7\n0.0022\n1.6094\n0.0035\n\n\n5\nengagements\n6\n0.0019\n1.6094\n0.0030\n\n\n5\nexamination\n6\n0.0019\n1.6094\n0.0030\n\n\n5\nlocalities\n6\n0.0019\n1.6094\n0.0030\n\n\n5\ntrade\n6\n0.0019\n1.6094\n0.0030\n\n\n5\nparties\n10\n0.0031\n0.9163\n0.0029\n\n\n\n\n\n\n\n\nBy identifying words that are of particular importance in each of the chapters, TF-IDF analysis offers a lens through which each chapter’s unique thematic focus becomes more apparent, sharpening our understanding of Mill’s arguments and their progression. By highlighting the most distinct terms, TF-IDF complements our earlier co-occurrence analyses, allowing us to isolate chapter-specific priorities and showing how Mill develops his broader principles of liberty and governance across the text."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-1-the-foundations-of-liberty",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-1-the-foundations-of-liberty",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 1: The Foundations of Liberty",
-    "text": "Chapter 1: The Foundations of Liberty\nTF-IDF reveals the chapter’s emphasis on external authority and limitations on governance. The focus on terms like “external,” “mandates,” “rulers,” and “limitation” underscores Mill’s effort to historically and philosophically ground his argument for limiting societal and governmental interference. At the same time, terms like “independence” and “rightfully” highlight the chapter’s normative goals, advocating for autonomy and the ethical justification of interventions. Together, these terms demonstrate how Mill frames his argument for liberty, balancing historical context with philosophical rigor."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-2-the-importance-of-free-expression",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-2-the-importance-of-free-expression",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 2: The Importance of Free Expression",
-    "text": "Chapter 2: The Importance of Free Expression\nThe TF-IDF terms for Chapter 2 emphasize Mill’s core argument about the value of free speech and open debate in the search for truth. Terms like “doctrines,” “false,” and “truth” reflect the chapter’s focus on the intellectual marketplace, where ideas compete and evolve. “Infallibility” and “error” underscore Mill’s critique of dogmatism and his belief in the fallibility of human judgment, reinforcing the need for intellectual humility and openness. Together, these terms highlight Mill’s defense of dissent and his insistence that progress depends on the continual testing and refinement of ideas through dialogue and disagreement."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-3-individuality-and-progress",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-3-individuality-and-progress",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 3: Individuality and Progress",
-    "text": "Chapter 3: Individuality and Progress\nThe TF-IDF terms for Chapter 3 align with Mill’s celebration of individuality and critique of societal conformity. Terms like “originality,” “genius,” and “impulses” emphasize the vitality and creativity that come from embracing individuality, while “customs,” “conformity,” and “mediocrity” highlight the dangers of suppressing it. The chapter calls for a balance, where customs are respected but not blindly followed, and eccentricity is valued as a marker of a free and progressive society. This analysis underscores Mill’s belief that societal advancement depends on protecting spaces for individuality and creativity to thrive."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-4-limits-of-societal-authority",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-4-limits-of-societal-authority",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 4: Limits of Societal Authority",
-    "text": "Chapter 4: Limits of Societal Authority\nThe top TF-IDF terms for Chapter 4 align with Mill’s critique of societal overreach into individual liberties. Words like “punished,” “amusements,” and “distaste” reflect his focus on the boundaries of legitimate societal control, while terms like “fermented” and “pork” illustrate his use of specific examples to highlight cultural and moral biases. The analysis emphasizes Mill’s advocacy for individual freedom, arguing that society should only intervene when actions cause demonstrable harm to others, not merely when they offend prevailing norms or preferences."
-  },
-  {
-    "objectID": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-5-governance-and-responsibility",
-    "href": "posts/2024-11-the-shape-of-ideas-part-2/index.html#chapter-5-governance-and-responsibility",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 5: Governance and Responsibility",
-    "text": "Chapter 5: Governance and Responsibility\nThe TF-IDF analysis for Chapter 5 highlights its focus on governance, education, and societal obligations. Terms like “bureaucracy,” “central,” and “localities” reflect Mill’s emphasis on balancing centralized authority with local autonomy to foster individual and community development. Meanwhile, terms like “child,” “examination,” and “engagements” underscore the chapter’s concern with societal responsibilities in education and moral obligations. The interplay between these themes demonstrates Mill’s nuanced approach to ensuring liberty while maintaining social order and fostering collective progress."
+    "objectID": "posts/2025-03-15-local-augmentation/index.html#document-parsing",
+    "href": "posts/2025-03-15-local-augmentation/index.html#document-parsing",
+    "title": "Local Augmentation",
+    "section": "Document Parsing",
+    "text": "Document Parsing\nThe next big step is processing documents themselves:\n\nParsing meaning and structuring the content in ways that make it easy to query, summarize, or compare against annotations.\nI’m experimenting with storing these parsed chunks in a local database for further analysis.\nI even built a simple Discord bot that, in theory, can access this database to answer questions about the documents.\n\nWhat’s Missing? I still feel like I lack a standardized approach to analyzing and representing all this textual data. That’s the challenge: figuring out a consistent format, pipeline, or schema for local LLM usage that meshes well with more traditional text analysis (like LDA, TF-IDF, etc.).\nIn the near future, I plan to:\n\nRefine the pipeline for summarizing daily logs, so it’s fully automated.\nContinue testing different embeddings and ways of measuring text similarity or co-occurrence.\nImprove the annotation summary process, particularly how context is managed.\nDevelop a robust approach for integrating these structured logs and annotations into a database."
   },
   {
     "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html",
@@ -754,76 +247,6 @@
     "text": "What Does TF-IDF Measure?\n\nTerm Frequency (TF)\nTF is a straightforward measure of how often a word appears in a specific document, relative to the total number of words in that document. For example, if the word “liberty” appears 50 times in Chapter 1, and Chapter 1 contains 1,000 words, the term frequency for “liberty” in that chapter is 0.05 (5%).\n\n\nInverse Document Frequency (IDF)\nIDF measures how unique or rare a word is across the entire collection of documents (in this case, the chapters of On Liberty). Words that appear in many or all chapters (like “society” or “individual”) receive a low IDF score because they are not specific to any single chapter. Conversely, words that appear in only one or a few chapters receive a high IDF score, indicating that they are particularly characteristic of those sections.\n\n\nTF-IDF Score:\nThe final TF-IDF score is calculated by multiplying a word’s TF by its IDF. This score prioritizes words that are frequent in a specific document but relatively rare across the rest of the collection, helping us identify terms that best represent the unique focus of each chapter.\nWhy Is TF-IDF Useful? TF-IDF adds nuance to our analysis by addressing the shortcomings of simple frequency-based methods. While co-occurrence counts reveal relationships between common terms, they don’t differentiate between words that are central to a specific chapter and words that are common across the entire text. TF-IDF fills this gap, pinpointing the key terms that make each chapter distinct.\nFor example:\nIn Chapter 1, “tyranny” might have a high TF-IDF score because it appears frequently there but less so in subsequent chapters. This would suggest that the chapter has a particular focus on critiquing tyranny, even if “liberty” is more frequent across the entire text. In Chapter 3, terms like “individuality” or “custom” might stand out, reflecting its emphasis on personal autonomy and societal norms. By applying TF-IDF, we can uncover not just recurring themes but the specific terms and ideas that define each chapter, providing a sharper lens for understanding the structure and argument of On Liberty. This technique is particularly valuable for examining how Mill shifts his focus from general principles to more applied discussions, and for highlighting the unique vocabulary that drives his argument in each section.\nTF-IDF, therefore, is not just another measure of word frequency; it is a tool for weighting words by their contextual importance."
   },
   {
-    "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-1-2",
-    "href": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-1-2",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 1",
-    "text": "Chapter 1\n\n\n\n\nTop 10 TF-IDF Words by Chapter\n\n\nChapter\nWord\nn\ntf\nidf\nTF-IDF Score\n\n\n\n\n1\nexternal\n5\n0.0026\n1.6094\n0.0042\n\n\n1\nmandates\n3\n0.0016\n1.6094\n0.0025\n\n\n1\nruled\n3\n0.0016\n1.6094\n0.0025\n\n\n1\nrulers\n8\n0.0042\n0.5108\n0.0022\n\n\n1\nindependence\n4\n0.0021\n0.9163\n0.0019\n\n\n1\nlimitation\n4\n0.0021\n0.9163\n0.0019\n\n\n1\nrightfully\n4\n0.0021\n0.9163\n0.0019\n\n\n1\nanswerable\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nascendancy\n2\n0.0011\n1.6094\n0.0017\n\n\n1\ndislikings\n2\n0.0011\n1.6094\n0.0017\n\n\n1\ndisturbed\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nelective\n2\n0.0011\n1.6094\n0.0017\n\n\n1\ngreece\n2\n0.0011\n1.6094\n0.0017\n\n\n1\ninfringe\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nliking\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nlikings\n2\n0.0011\n1.6094\n0.0017\n\n\n1\noccupied\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nperceived\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nportions\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nruling\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nservility\n2\n0.0011\n1.6094\n0.0017\n\n\n1\ntyrannising\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nvultures\n2\n0.0011\n1.6094\n0.0017\n\n\n1\nwait\n2\n0.0011\n1.6094\n0.0017"
-  },
-  {
-    "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-2-2",
-    "href": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-2-2",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 2",
-    "text": "Chapter 2\n\n\n\n\nTop 10 TF-IDF Words by Chapter\n\n\nChapter\nWord\nn\ntf\nidf\nTF-IDF Score\n\n\n\n\n2\ndoctrines\n26\n0.0050\n0.9163\n0.0045\n\n\n2\nfalse\n13\n0.0025\n1.6094\n0.0040\n\n\n2\ntruth\n85\n0.0162\n0.2231\n0.0036\n\n\n2\ninfallibility\n11\n0.0021\n1.6094\n0.0034\n\n\n2\nerror\n16\n0.0031\n0.9163\n0.0028\n\n\n2\nethics\n8\n0.0015\n1.6094\n0.0025\n\n\n2\npersecution\n14\n0.0027\n0.9163\n0.0024\n\n\n2\nchristian\n25\n0.0048\n0.5108\n0.0024\n\n\n2\nassumption\n7\n0.0013\n1.6094\n0.0021\n\n\n2\nhearing\n7\n0.0013\n1.6094\n0.0021\n\n\n2\nrejected\n7\n0.0013\n1.6094\n0.0021"
-  },
-  {
-    "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-3-2",
-    "href": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-3-2",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 3",
-    "text": "Chapter 3\n\n\n\n\nTop 10 TF-IDF Words by Chapter\n\n\nChapter\nWord\nn\ntf\nidf\nTF-IDF Score\n\n\n\n\n3\noriginality\n10\n0.0040\n1.6094\n0.0064\n\n\n3\ngenius\n8\n0.0032\n1.6094\n0.0051\n\n\n3\nimpulses\n13\n0.0052\n0.9163\n0.0047\n\n\n3\ncustomary\n5\n0.0020\n1.6094\n0.0032\n\n\n3\nweak\n5\n0.0020\n1.6094\n0.0032\n\n\n3\ncustoms\n8\n0.0032\n0.9163\n0.0029\n\n\n3\nconformity\n4\n0.0016\n1.6094\n0.0026\n\n\n3\neccentricity\n4\n0.0016\n1.6094\n0.0026\n\n\n3\nmediocrity\n4\n0.0016\n1.6094\n0.0026\n\n\n3\nnoble\n4\n0.0016\n1.6094\n0.0026"
-  },
-  {
-    "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-4-2",
-    "href": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-4-2",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 4",
-    "text": "Chapter 4\n\n\n\n\nTop 10 TF-IDF Words by Chapter\n\n\nChapter\nWord\nn\ntf\nidf\nTF-IDF Score\n\n\n\n\n4\npunished\n5\n0.0019\n1.6094\n0.0031\n\n\n4\namusements\n4\n0.0015\n1.6094\n0.0025\n\n\n4\ndistaste\n4\n0.0015\n1.6094\n0.0025\n\n\n4\ngross\n4\n0.0015\n1.6094\n0.0025\n\n\n4\nalliance\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nbarbarism\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nbreaks\n3\n0.0011\n1.6094\n0.0018\n\n\n4\ndispleases\n3\n0.0011\n1.6094\n0.0018\n\n\n4\ndistinction\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nfermented\n3\n0.0011\n1.6094\n0.0018\n\n\n4\ninvades\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nmussulmans\n3\n0.0011\n1.6094\n0.0018\n\n\n4\npork\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nsunday\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nvicious\n3\n0.0011\n1.6094\n0.0018\n\n\n4\nworkmen\n3\n0.0011\n1.6094\n0.0018"
-  },
-  {
-    "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-5-2",
-    "href": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-5-2",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 5",
-    "text": "Chapter 5\n\n\n\n\nTop 10 TF-IDF Words by Chapter\n\n\nChapter\nWord\nn\ntf\nidf\nTF-IDF Score\n\n\n\n\n5\nbureaucracy\n11\n0.0035\n1.6094\n0.0056\n\n\n5\ncrime\n9\n0.0028\n1.6094\n0.0046\n\n\n5\ncentral\n8\n0.0025\n1.6094\n0.0040\n\n\n5\nlocal\n8\n0.0025\n1.6094\n0.0040\n\n\n5\nchild\n7\n0.0022\n1.6094\n0.0035\n\n\n5\nengagements\n6\n0.0019\n1.6094\n0.0030\n\n\n5\nexamination\n6\n0.0019\n1.6094\n0.0030\n\n\n5\nlocalities\n6\n0.0019\n1.6094\n0.0030\n\n\n5\ntrade\n6\n0.0019\n1.6094\n0.0030\n\n\n5\nparties\n10\n0.0031\n0.9163\n0.0029\n\n\n\n\n\n\n\n\n:::\nBy identifying words that are of particular importance in each of the chapters, TF-IDF analysis offers a lens through which each chapter’s unique thematic focus becomes more apparent, sharpening our understanding of Mill’s arguments and their progression. By highlighting the most distinct terms, TF-IDF complements our earlier co-occurrence analyses, allowing us to isolate chapter-specific priorities and showing how Mill develops his broader principles of liberty and governance across the text."
-  },
-  {
-    "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-1-the-foundations-of-liberty",
-    "href": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-1-the-foundations-of-liberty",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 1: The Foundations of Liberty",
-    "text": "Chapter 1: The Foundations of Liberty\nTF-IDF reveals the chapter’s emphasis on external authority and limitations on governance. The focus on terms like “external,” “mandates,” “rulers,” and “limitation” underscores Mill’s effort to historically and philosophically ground his argument for limiting societal and governmental interference. At the same time, terms like “independence” and “rightfully” highlight the chapter’s normative goals, advocating for autonomy and the ethical justification of interventions. Together, these terms demonstrate how Mill frames his argument for liberty, balancing historical context with philosophical rigor."
-  },
-  {
-    "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-2-the-importance-of-free-expression",
-    "href": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-2-the-importance-of-free-expression",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 2: The Importance of Free Expression",
-    "text": "Chapter 2: The Importance of Free Expression\nThe TF-IDF terms for Chapter 2 emphasize Mill’s core argument about the value of free speech and open debate in the search for truth. Terms like “doctrines,” “false,” and “truth” reflect the chapter’s focus on the intellectual marketplace, where ideas compete and evolve. “Infallibility” and “error” underscore Mill’s critique of dogmatism and his belief in the fallibility of human judgment, reinforcing the need for intellectual humility and openness. Together, these terms highlight Mill’s defense of dissent and his insistence that progress depends on the continual testing and refinement of ideas through dialogue and disagreement."
-  },
-  {
-    "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-3-individuality-and-progress",
-    "href": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-3-individuality-and-progress",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 3: Individuality and Progress",
-    "text": "Chapter 3: Individuality and Progress\nThe TF-IDF terms for Chapter 3 align with Mill’s celebration of individuality and critique of societal conformity. Terms like “originality,” “genius,” and “impulses” emphasize the vitality and creativity that come from embracing individuality, while “customs,” “conformity,” and “mediocrity” highlight the dangers of suppressing it. The chapter calls for a balance, where customs are respected but not blindly followed, and eccentricity is valued as a marker of a free and progressive society. This analysis underscores Mill’s belief that societal advancement depends on protecting spaces for individuality and creativity to thrive."
-  },
-  {
-    "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-4-limits-of-societal-authority",
-    "href": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-4-limits-of-societal-authority",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 4: Limits of Societal Authority",
-    "text": "Chapter 4: Limits of Societal Authority\nThe top TF-IDF terms for Chapter 4 align with Mill’s critique of societal overreach into individual liberties. Words like “punished,” “amusements,” and “distaste” reflect his focus on the boundaries of legitimate societal control, while terms like “fermented” and “pork” illustrate his use of specific examples to highlight cultural and moral biases. The analysis emphasizes Mill’s advocacy for individual freedom, arguing that society should only intervene when actions cause demonstrable harm to others, not merely when they offend prevailing norms or preferences."
-  },
-  {
-    "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-5-governance-and-responsibility",
-    "href": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-5-governance-and-responsibility",
-    "title": "The Shape of Ideas",
-    "section": "Chapter 5: Governance and Responsibility",
-    "text": "Chapter 5: Governance and Responsibility\nThe TF-IDF analysis for Chapter 5 highlights its focus on governance, education, and societal obligations. Terms like “bureaucracy,” “central,” and “localities” reflect Mill’s emphasis on balancing centralized authority with local autonomy to foster individual and community development. Meanwhile, terms like “child,” “examination,” and “engagements” underscore the chapter’s concern with societal responsibilities in education and moral obligations. The interplay between these themes demonstrates Mill’s nuanced approach to ensuring liberty while maintaining social order and fostering collective progress."
-  },
-  {
     "objectID": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-1-introductory-1",
     "href": "posts/2024-11-24-the-shape-of-ideas-part-2/index.html#chapter-1-introductory-1",
     "title": "The Shape of Ideas",
@@ -857,111 +280,6 @@
     "title": "The Shape of Ideas",
     "section": "Chapter 5: Applications",
     "text": "Chapter 5: Applications\nThe TF-IDF analysis for Chapter 5 highlights its focus on governance, education, and societal obligations. Terms like “bureaucracy,” “central,” and “localities” reflect Mill’s emphasis on balancing centralized authority with local autonomy to foster individual and community development. Meanwhile, terms like “child,” “examination,” and “engagements” underscore the chapter’s concern with societal responsibilities in education and moral obligations. The interplay between these themes demonstrates Mill’s nuanced approach to ensuring liberty while maintaining social order and fostering collective progress."
-  },
-  {
-    "objectID": "posts/2025-03-15-local-augmentation/index.html",
-    "href": "posts/2025-03-15-local-augmentation/index.html",
-    "title": "Local Augmentation",
-    "section": "",
-    "text": "I’ve been using local LLMs for a while now, in a couple of different ways. Part of this usage is straightforward interaction: pushing their limits, seeing how far I can go, and also exploring aspects of natural language processing (NLP).\nIf I’m going to keep experimenting, I want to objectify and measure the text outputs I’m getting. That’s part of the motivation behind some of the work I’ve done previously, where I’m playing with different ways of extracting and quantifying meaning in text. That’s just one use-case though, falling more in the bucket of ‘traditional’ natural language processing. I didn’t need LLM’s to do most of that previously, though it’s certainly helped to learn about them. However, I have noticed that the remainder of my LLM based activities include production of structured output from unstructured data (read, constraining outputs to json), as well as transforming or reconfiguring text in some way (for example, summarising)."
-  },
-  {
-    "objectID": "posts/2025-03-15-local-augmentation/index.html#text-analytics-pipelines",
-    "href": "posts/2025-03-15-local-augmentation/index.html#text-analytics-pipelines",
-    "title": "Local Augmentation",
-    "section": "Text Analytics Pipelines",
-    "text": "Text Analytics Pipelines\nOne recent application has been to incorporate LLMs into an analytics pipeline:\n\nSummarizing text that has already been partitioned according to certain rules or categories.\nProviding an immediate thematic overview by grouping text into already-existing categories. So far, this is mostly text analysis–not as heavy on LLM usage as I initially thought. I’ve still relied on topic modeling with TF-IDF, n-gram counts, word frequency, and co-occurrence to see how words or ideas cluster together.\n\nHowever, one area I want to explore more is word co-occurrence combined with word embeddings. The idea is to generate a series of “coordinates” (e.g., sentence or paragraph embeddings) and compare similarities across time to map how ideas form and develop. That’s something I’ll be dabbling with soon."
-  },
-  {
-    "objectID": "posts/2025-03-15-local-augmentation/index.html#daily-audio-logs",
-    "href": "posts/2025-03-15-local-augmentation/index.html#daily-audio-logs",
-    "title": "Local Augmentation",
-    "section": "Daily Audio Logs",
-    "text": "Daily Audio Logs\nDaily logs and check-ins were one of my earliest experiments:\n\nI started with a custom GUI chat to record day-to-day happenings.\nThis quickly became unwieldy, so I switched to simply recording audio files.\nNow, my focus is on the analysis and extraction of structured information from those recordings.\n\nThe workflow (in principle):\n\nTranscribe the audio using a speech-to-text tool.\nFeed that text to an LLM with a specific prompt that instructs it to return a JSON object containing dates, events, “remind me” items, or anything else worth extracting.\nStore that JSON in a database for easy retrieval and queries.\n\nThe biggest challenge now is deciding how best to store the data. I’m leaning toward a local PostgreSQL server, but that’s a topic for an entirely separate post."
-  },
-  {
-    "objectID": "posts/2025-03-15-local-augmentation/index.html#document-annotations",
-    "href": "posts/2025-03-15-local-augmentation/index.html#document-annotations",
-    "title": "Local Augmentation",
-    "section": "Document Annotations",
-    "text": "Document Annotations\nAnother area where LLMs have helped is processing my document annotations:\nI’ve been making a lot more highlights and notes—on my computer and my e-book reader. These have always felt ephemeral and scattered across different filesystems. Now, when I finish reading, I extract the annotations and summarize them using an LLM. I’m still experimenting with context windows and how prompts should incorporate page references, but even a basic summary of my notes is valuable. It lets me quickly revisit what I’ve read. And by embedding these summaries (or the text itself), I can later query them in a more dynamic way."
-  },
-  {
-    "objectID": "posts/2025-03-15-local-augmentation/index.html#document-parsing",
-    "href": "posts/2025-03-15-local-augmentation/index.html#document-parsing",
-    "title": "Local Augmentation",
-    "section": "Document Parsing",
-    "text": "Document Parsing\nThe next big step is processing documents themselves:\n\nParsing meaning and structuring the content in ways that make it easy to query, summarize, or compare against annotations.\nI’m experimenting with storing these parsed chunks in a local database for further analysis.\nI even built a simple Discord bot that, in theory, can access this database to answer questions about the documents.\n\nWhat’s Missing? I still feel like I lack a standardized approach to analyzing and representing all this textual data. That’s the challenge: figuring out a consistent format, pipeline, or schema for local LLM usage that meshes well with more traditional text analysis (like LDA, TF-IDF, etc.).\nIn the near future, I plan to:\n\nRefine the pipeline for summarizing daily logs, so it’s fully automated.\nContinue testing different embeddings and ways of measuring text similarity or co-occurrence.\nImprove the annotation summary process, particularly how context is managed.\nDevelop a robust approach for integrating these structured logs and annotations into a database."
-  },
-  {
-    "objectID": "tools/epistemic-interface/test.html#scripts",
-    "href": "tools/epistemic-interface/test.html#scripts",
-    "title": "Building an Epistemic Interface",
-    "section": "Scripts",
-    "text": "Scripts\n\nrecord_audio.py\n\nWhen run, checks for the existence of a state file which, if non-existent, creates, and then begins recording. If state indicates recording, then recording is stopped and the state file changed. Saves recording as date-time (recording_%Y-%m-%d_%H-%M-%S.wav)\n\n\n\ntranscriber.py\n\nChecks an index file transcription_index.txt against available files. Transcribes using whisper, saves as txt file in the same folder and adds names to the index. Whisper model size can be changed with speed/ quality tradeoffs. Currently specified as latest and largest - intended function is a scheduled overnight job so not worried about how long it will take. May take a while if a batch have been added in bulk.\n\n\n\nAudio Log Processor.py\nThe audio_log_processor.py script automates the process of transcribing audio files, generating embeddings from the transcriptions, and storing the results both locally and in a Supabase database. This is achieved through the following steps:\n1. Environment Setup:\nThe script initializes necessary configurations by loading environment variables for secure access to Supabase, avoiding any hardcoded credentials.\n2. Model Initialization:\nIt checks for a CUDA-enabled GPU to take advantage of hardware acceleration and loads the Whisper model, which is utilized for transcription tasks.\n3. Audio Transcription:\nThe script processes audio files found in a specified directory, transcribing them into text. It supports common audio formats such as .wav, .mp3, and .m4a. It tracks which files have already been transcribed using an index file (transcription_index.txt), ensuring that each file is only processed once.\n4. Text Embedding:\nFor each transcribed audio file, the script generates embeddings using LM Studio’s embedding model. These embeddings represent the transcriptions in a numerical form that captures the semantic content, useful for machine learning and data retrieval tasks.\n5. Local Storage:\nMetadata about each transcription, including the file name and the transcription text, is stored in a CSV file (audio_transcriptions.csv). This step facilitates easy access to transcription records in a tabular format.\n6. Database Integration:\nThe script inserts each transcription, along with its embedding and relevant metadata, into a Supabase database table called 'log-entries'. This enables efficient storage and retrieval of the audio data for various applications, such as content analysis and data mining.\n7. Index Maintenance:\nEach transcribed file is added to an index to prevent repetitive processing in future runs, promoting efficient resource utilization and streamlined operation.\n\n\nPDF_processor.py\nThe script processes a document specified by the user, converting it into a markdown format, extracting text content from this format, embedding the text using a language model, and then storing the processed data in a Supabase database. Here’s how it achieves this:\n1. Document Conversion:\nThe script begins by loading a document from a specified file path or URL. Using the DocumentConverter, it converts the document into a markdown format. This step is essential for standardizing the document’s formatting, making it easier to parse and analyze the text.\n2. Markdown Extraction:\nThe converted document’s content is exported to markdown and printed to the console for preview. The markdown content is then used to create a Document object.\n3. Node Parsing:\nA node parser, specifically a MarkdownNodeParser, is initialized to extract discrete text segments or “nodes” from the markdown content. These nodes represent chunks of text parsed from the document.\n4. Text Embedding:\nFor each text node, the script uses the LM Studio’s embedding model, nomic-embed-text-v1.5, to generate embeddings. Embeddings are numerical representations of the text that capture semantic meaning, useful in various machine learning applications like similarity searches.\n5. Data Storage:\nThe script prepares a list of these text nodes, including their embeddings and metadata, and saves this list to a JSON file named embedded_nodes.json.\nIt further inserts each node along with its embedding and other relevant metadata into a Supabase database. Each entry in the database corresponds to a node from the document, allowing for robust storage and retrieval capabilities for future applications or analyses."
-  },
-  {
-    "objectID": "tools/epistemic-interface/test.html#footnotes",
-    "href": "tools/epistemic-interface/test.html#footnotes",
-    "title": "Building an Epistemic Interface",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nAndy, C., & David, C. (1998). The extended mind. Analysis, 58(1), 7-19.↩︎"
-  },
-  {
-    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html",
-    "href": "posts/2025-09-22-what-a-piece-of-work/index.html",
-    "title": "What a Piece of Work",
-    "section": "",
-    "text": "I spent the last week of holiday time plowing through a scholastic backlog which included, among other things, a biography of Claude Shannon1. The book, a celebration of play, curiosity, and intuition, also surfaced threads of thought that feel strikingly relevant to our present moment—when we find ourselves questioning our place in the world amid the tools we’ve built."
-  },
-  {
-    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html#footnotes",
-    "href": "posts/2025-09-22-what-a-piece-of-work/index.html#footnotes",
-    "title": "What a Piece of Work",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nJimmy Soni & Rob Goodman (2017). A Mind at Play: How Claude Shannon Invented the Information Age. Simon & Schuster.↩︎\nClaude E. Shannon (1948). A Mathematical Theory of Communication. Bell System Technical Journal, 27(3), 379–423; 27(4), 623–656.↩︎\nWilliam Shakespeare (ca. 1600–1601). Hamlet, Prince of Denmark, Act II, Scene II.↩︎"
-  },
-  {
-    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html#a-scholarly-backlog",
-    "href": "posts/2025-09-22-what-a-piece-of-work/index.html#a-scholarly-backlog",
-    "title": "What a Piece of Work",
-    "section": "A Scholarly Backlog",
-    "text": "A Scholarly Backlog\nI spent the last week of holiday time plowing through a scholastic backlog which included, among other things, a biography of Claude Shannon1. The book, a celebration of play, curiosity, and intuition, also surfaced threads of thought that feel strikingly relevant to our present moment—when we find ourselves questioning our place in the world amid the tools we’ve built."
-  },
-  {
-    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html#shannons-playful-machines",
-    "href": "posts/2025-09-22-what-a-piece-of-work/index.html#shannons-playful-machines",
-    "title": "What a Piece of Work",
-    "section": "Shannon’s Playful Machines",
-    "text": "Shannon’s Playful Machines\nShannon’s career is often distilled to a few seismic contributions. As a young researcher, he showed how symbolic logic could be hardwired into electronic circuits—a discovery that laid the groundwork for digital computing. Later, his Mathematical Theory of Communication defined the principles of information itself, inaugurating the Information Age. Yet Shannon was never just a theoretician. His genius was inseparable from his playfulness: he built mechanical toys, juggled while cycling through Bell Labs’ corridors, and tinkered with contraptions that blurred the line between science and amusement.\nAmong these experiments were forays into what we would come to call artificial intelligence—a chess-playing machine, a maze-solving mouse, early attempts at “thinking devices.” But what struck me most were not the gadgets themselves, but Shannon’s reflections on their implications. “I’m a machine and you’re a machine, and we both think don’t we?” He once remarked with characteristic levity. Like much of his work it presaged futures we are only now beginning to grapple with. Beneath the playfulness, it gestures toward a tension that has only grown sharper: if machines can think, then what remains of us?\nThe idea that our worth is somehow tied up in our ability to think — and indeed in our rationality more broadly — is, in some ways, the original sin that has led to the psychodrama now playing out before us. If we define our humanity by our rationality, what else could we have expected?\nSomewhat uncomfortably, I find myself drawn to the conclusion that the primacy of Enlightenment values has brought us here, laying the groundwork for the anxiety that defines our present moment. Yet this fear is not new, nor unique to our age of algorithms and silicon. Long before the Enlightenment, Shakespeare gave it voice in Hamlet."
-  },
-  {
-    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html#hamlets-quintessence-of-dust",
-    "href": "posts/2025-09-22-what-a-piece-of-work/index.html#hamlets-quintessence-of-dust",
-    "title": "What a Piece of Work",
-    "section": "Hamlet’s Quintessence of Dust",
-    "text": "Hamlet’s Quintessence of Dust\n\n“What a piece of work is a man! how noble in reason! how infinite in faculties! in form and moving how express and admirable! in action how like an angel! in apprehension how like a god! the beauty of the world! the paragon of animals”3\n\nHere Hamlet, burdened with grief over his father’s death and disgusted by his mother’s hasty remarriage, exalts humanity as the crowning work of nature — rational, capable of understanding, nearly divine. And yet, almost in the same breath, he collapses this grandeur:\n\n“And yet, to me, what is this quintessence of dust?”\n\nThe very faculties that distinguish us — reason, action, apprehension — cannot overcome the futility he feels. It is an ambivalence that resonates with our present moment: the suspicion that the very qualities we exalt as our essence may also be the source of our fragility.\nWriting at the turn of the seventeenth century, Shakespeare stood at the cusp of the Renaissance and the Enlightenment. Renaissance humanism had elevated man as the paragon of animals, noble in reason, infinite in faculties, almost divine in his powers of apprehension. To Shakespeare’s audience, Hamlet’s hymn to humanity would have echoed this vision. And yet Shakespeare twists it: exalting man only to declare him dust. Hamlet’s despair is personal, but the gesture is broader — a reminder that if reason is our crown, it is also our burden, and perhaps never sufficient to secure our meaning."
-  },
-  {
-    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html#dust-to-silicon",
-    "href": "posts/2025-09-22-what-a-piece-of-work/index.html#dust-to-silicon",
-    "title": "What a Piece of Work",
-    "section": "Dust to Silicon",
-    "text": "Dust to Silicon\nAnd here we find an essential truth: humanity has always redefined itself, inventing new sources of meaning, elevating new values, crowning new heroes, and conjuring new demons. Each revolution has carried within it the seeds of its undoing. The Renaissance exalted man as the paragon of animals, only for Shakespeare to show how quickly grandeur collapses into dust. The Enlightenment enthroned reason as our crown, only for Shannon’s playful machines — and today’s silicon minds — to expose how easily reason can be replicated. Every age makes its wager, and every wager sets the stage for its own unraveling.\nFrom Hamlet’s “quintessence of dust” to Shannon’s playful “I’m a machine, you’re a machine,” the material has shifted — dust to silicon, thought to circuitry — but the tension endures. Across centuries we return to the same ambivalence: reason exalted, yet always shadowed by futility. We remain caught not in the question of whether we are machines, but in deciding what kind we will choose to be."
-  },
-  {
-    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html#shannon-and-the-playful-machines",
-    "href": "posts/2025-09-22-what-a-piece-of-work/index.html#shannon-and-the-playful-machines",
-    "title": "What a Piece of Work",
-    "section": "Shannon and the Playful Machines",
-    "text": "Shannon and the Playful Machines\nShannon’s career is often distilled to a few seismic contributions. As a young researcher, he showed how symbolic logic could be hardwired into electronic circuits—a discovery that laid the groundwork for digital computing. Later, his Mathematical Theory of Communication2 defined the principles of information itself, inaugurating the Information Age. Yet Shannon was never just a theoretician. His genius was inseparable from his playfulness: he built mechanical toys, juggled while cycling through Bell Labs’ corridors, and tinkered with contraptions that blurred the line between science and amusement.\nAmong these experiments were forays into what we would come to call artificial intelligence—a chess-playing machine, a maze-solving mouse, early attempts at “thinking devices”. But what struck me most were not the gadgets themselves, but Shannon’s reflections on their implications. “I’m a machine and you’re a machine, and we both think don’t we?” He once remarked with characteristic levity. Like much of his work it presaged futures we are only now beginning to grapple with. Beneath the playfulness, it gestures toward a tension that has only grown sharper: if machines can think, then what remains of us?\nThe idea that our worth is somehow tied up in our ability to think — and indeed in our rationality more broadly — is, in some ways, the original sin that has led to the psychodrama now playing out before us. If we define our humanity by our rationality, what else could we have expected?\nSomewhat uncomfortably, I find myself drawn to the conclusion that the primacy of Enlightenment values has brought us here, laying the groundwork for the anxiety that defines our present moment. Yet this fear is not new, nor unique to our age of algorithms and silicon. Long before the Enlightenment, Shakespeare gave it voice in Hamlet."
-  },
-  {
-    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html#what-a-kind-of-machine",
-    "href": "posts/2025-09-22-what-a-piece-of-work/index.html#what-a-kind-of-machine",
-    "title": "What a Piece of Work",
-    "section": "What a Kind of Machine?",
-    "text": "What a Kind of Machine?\nAnd here we find an essential truth: humanity has always redefined itself, inventing new sources of meaning, elevating new values, crowning new heroes, and conjuring new demons. Each revolution has carried within it the seeds of its undoing. The Renaissance exalted man as the paragon of animals, only for Shakespeare to show how quickly grandeur collapses into dust. The Enlightenment enthroned reason as our crown, only for Shannon’s playful machines — and today’s silicon minds — to expose how easily reason can be replicated. Every age makes its wager, and every wager sets the stage for its own unraveling.\nFrom Hamlet’s “quintessence of dust” to Shannon’s playful “I’m a machine, you’re a machine,” the material has shifted — dust to silicon, thought to circuitry — but the tension endures. Across centuries we return to the same ambivalence: reason exalted, yet always shadowed by futility. We remain caught not in the question of whether we are machines, but in deciding what kind we will choose to be."
   },
   {
     "objectID": "posts/2025-09-28-human-or-dancer/index.html",
@@ -1013,18 +331,126 @@
     "text": "Footnotes\n\n\nMidson, S. A. (2017). Cyborg Theology: Humans, Technology and God. Bloomsbury Publishing.↩︎\nHaraway, D. J. (1985/2016). A Cyborg Manifesto, in Manifestly Haraway. University of Minnesota Press.↩︎\nHefner, P. (1993). The Human Factor: Evolution, Culture, and Religion. Fortress Press.↩︎\nClark, A. (2003). Natural-Born Cyborgs: Minds, Technologies, and the Future of Human Intelligence. Oxford University Press.↩︎\nBrandon Flowers interview, Rolling Stone, 2008. Link↩︎\nLater I discovered that Human was released on September 22nd, 2008 — the same date I happened to be flying home and finishing Cyborg Theology. A coincidence, but one that seemed to echo Midson’s point: meaning often emerges less from fixed essences than from the choreography of connections we notice along the way.↩︎"
   },
   {
-    "objectID": "posts/2025-12-20/index.html",
-    "href": "posts/2025-12-20/index.html",
-    "title": "System 0 and the Grey Space",
+    "objectID": "posts/2024-09-06-measuring-meaning/index.html",
+    "href": "posts/2024-09-06-measuring-meaning/index.html",
+    "title": "Measuring Meaning",
     "section": "",
-    "text": "In 1996, discussing the significance of the internet, the late David Bowie said:\nIt’s difficult to see that interview and not think the same of today’s technological revolution: Large Language Models. Through their proficiency at representing, producing, and using language—as well as seemingly replicating some human capabilities with regard to reasoning and tool use—they have provoked such existential dread as to be compared to creatures of Lovecraftian horror, an honour reserved for the most inconceivable, madness-inducing, and nihilistic of concepts.2\nWhether or not our current iterations of AI are truly Cthulhu-esque horrors beyond our comprehension, what we are witnessing has profound psychological consequences—implications for how we understand cognition itself."
+    "text": "One of the key innovations that has contributed to the development of LLMs is the ability to convert words into embedded vectors, or vectors of word embeddings. Word embeddings offer a way of quantifying words while retaining some of their meaning. Prior to this development, computational text analysis was particularly challenging. This is because analysing textual information requires that we first quantify it in some way; convert some dimensions of the text’s characteristics, features, and hopefully meaning, into numerical information. Earlier approaches were as simple as counting word frequencies. From there, the unit of analysis changed, moving from individual words to combinations of 2 or more (n-grams). Generating word embeddings, the next step beyond this, involves specifying word tokens, and describing them in terms of their relationship with others."
   },
   {
-    "objectID": "posts/2025-12-20/index.html#footnotes",
-    "href": "posts/2025-12-20/index.html#footnotes",
-    "title": "System 0 and the Grey Space",
+    "objectID": "posts/2024-09-06-measuring-meaning/index.html#footnotes",
+    "href": "posts/2024-09-06-measuring-meaning/index.html#footnotes",
+    "title": "Measuring Meaning",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nDavid Bowie on the Internet (1999)↩︎\nShoggoth with Smiley Face meme↩︎\nChiriatti, M., Ganapini, M., Panai, E., Ubiali, M., & Riva, G. (2024). The case for human–AI interaction as system 0 thinking. Nature Human Behaviour, 8(10), 1829–1830. https://doi.org/10.1038/s41562-024-01995-5↩︎\nKahneman, D. (2011). Thinking, Fast and Slow. Farrar, Straus and Giroux.↩︎"
+    "text": "Footnotes\n\n\nYou may also have heard of N-grams due to their association with one Robert L. Mercer, famous for associations with Cambridge Analytica, Brexit campaign, Breitbart News, and for his stint at elite Hedge Fund Renaissance Technologies. Who says NLP doesn’t pay?↩︎\n“Attention Is All You Need” - Link↩︎"
+  },
+  {
+    "objectID": "posts/2023-06-06-seci-knowledge-creation/index.html",
+    "href": "posts/2023-06-06-seci-knowledge-creation/index.html",
+    "title": "The SECI model & knowledge creation",
+    "section": "",
+    "text": "Knowledge, in all its forms, is fundamental to our understanding of the world around us, and is key to navigating the uncertainties of life. But knowledge, like the world it is supposed to reflect, is not a static entity. As Peter Drucker puts it, “Knowledge is different from all other resources. It makes itself constantly obsolete, so that today’s advanced knowledge is tomorrow’s ignorance. And the knowledge that matters is subject to rapid and abrupt shifts.” As knowledge changes so must we, a fact which underscores the necessity of continuous learning and innovation."
+  },
+  {
+    "objectID": "posts/2023-06-06-seci-knowledge-creation/index.html#socialisation",
+    "href": "posts/2023-06-06-seci-knowledge-creation/index.html#socialisation",
+    "title": "The SECI model & knowledge creation",
+    "section": "Socialisation",
+    "text": "Socialisation\nSocialisation involves the transmission of tacit knowledge between individuals through shared experiences, such as an apprenticeship or immersion in a foreign culture. Essentially, it is the process of learning by observation, imitation, and practice, thus creating the raw material for the production of new knowledge."
+  },
+  {
+    "objectID": "posts/2023-06-06-seci-knowledge-creation/index.html#externalisation",
+    "href": "posts/2023-06-06-seci-knowledge-creation/index.html#externalisation",
+    "title": "The SECI model & knowledge creation",
+    "section": "Externalisation",
+    "text": "Externalisation\nExternalisation is the subsequent step, which involves converting tacit knowledge into explicit forms. Knowledge is articulated, crystallised, and thereby made shareable through various means like metaphors, analogies, concepts, or documents. This step paves the way for the creation of new, explicit knowledge that can be utilised by others."
+  },
+  {
+    "objectID": "posts/2023-06-06-seci-knowledge-creation/index.html#combination",
+    "href": "posts/2023-06-06-seci-knowledge-creation/index.html#combination",
+    "title": "The SECI model & knowledge creation",
+    "section": "Combination",
+    "text": "Combination\nCombination concerns itself with the systematisation and integration of explicit knowledge. Various types of explicit knowledge - data, report insights, document details - are collated, often assisted by computerised networks or databases. This process can involve categorising or reclassifying explicit knowledge into new clusters, which are then shared within the organisation, enhancing collective understanding and knowledge."
+  },
+  {
+    "objectID": "posts/2023-06-06-seci-knowledge-creation/index.html#internalisation",
+    "href": "posts/2023-06-06-seci-knowledge-creation/index.html#internalisation",
+    "title": "The SECI model & knowledge creation",
+    "section": "Internalisation",
+    "text": "Internalisation\nLastly, internalisation is the process by which explicit knowledge is absorbed and embodied by individuals, reverting back into tacit knowledge. This often occurs through ‘learning-by-doing’, or when individuals reflect on and practice newly acquired knowledge. Internalisation cultivates an individual’s proficiency and capacity for innovation. The internalised tacit knowledge, once shared, contributes to the organisational knowledge pool. As individuals connect, recognise patterns, and synthesise fields, ideas, and concepts, a new cycle of the SECI model begins, fostering continuous knowledge creation and learning.\n\nKnowledge propels us forward, obsoleting itself as it transforms our understanding of the world around us. The SECI model provides a stable framework for orienting ourselves, encouraging continuous learning and innovation while accounting for change and disruption. Navigating the uncertainties of our world, the continuous conversion and circulation of knowledge - from tacit to explicit, individual to collective, and back again - empowers us to adapt, grow, and innovate. It also forces us to come to acknowledge the multifaceted process that is learning. The purpose of this post and those that follow is to serve as an example of this knowledge creation process, opening the floor for further contemplation, critique, and collaboration, aiming to cultivate learning, share understanding, and maybe even create something new."
+  },
+  {
+    "objectID": "posts/2024-11-02-the-shape-of-ideas-part-1/index.html",
+    "href": "posts/2024-11-02-the-shape-of-ideas-part-1/index.html",
+    "title": "The Shape of Ideas",
+    "section": "",
+    "text": "I’ve been fascinated for a while now by the prospect that knowledge, concepts, and ideas might be represented as geometric forms. Put simply, I’ve felt drawn to the question, “What is the shape of an idea?” This might sound like an ambitious question to answer—and it’s fair to say that I’m not quite there yet. Still, it’s fertile ground for exploration. After all, we’re living in an age characterized by the proliferation of analytical techniques suited for just this kind of inquiry.\nThese methods are, admittedly, quite specialized, rooted in fields like quantitative linguistics and computer science. But thanks to these very tools, we now have accessible resources—like chatbots, text analysis libraries, and visualization software—that help us learn, experiment, and build on our understanding. And what is it that we should be doing with these tools, if not not satisfying our curiosity by answering ambitious questions?\nWe may not yet be able to literally “see” an idea’s shape, but we can get closer to it by uncovering patterns and connections in language that hint at the structure of thought itself. Starting with a straightforward approach like Term Frequency (TF) analysis, we can identify the most frequently occurring words and concepts in a text. This might seem simple, but it lays a foundation, showing us the key ideas that will pave the way for further exploration. From there, we can take it a step further, examining co-occurrences and visualising the relationships between words, slowly beginning to sketch the contours of an idea’s “shape” in language.\n\nThe Text\nHere, I start with the text On Liberty by John Stuart Mill. A seminal work in political philosophy, On Liberty provides a framework for exploring the balance between state authority and individual freedoms. Mill argues for the importance of personal autonomy, emphasizing that individuals should be free to pursue their own paths, provided they do not harm others in the process. His work highlights the need for limits on societal and governmental control, advocating for the protection of individual rights as essential to a vibrant, progressive society.\nTo begin with, we need to load in the text.\n\n\n\nNext, we need to break this text down into individual words, a process known as tokenization. We’ll also remove common words that don’t add much meaning, like “and” or “are.” After tokenizing the text words, and removing stopwords, we calculate Term Frequency by counting the occurrence of each word. See below, where the word frequencies have been calculated and then sorted, to show the top 10 words and their frequencies.\n\n\n\n\nTop 10 Most Frequent Words\n\n\nWord\nFrequency\n\n\n\n\nopinion\n153\n\n\nsociety\n115\n\n\nhuman\n106\n\n\nopinions\n104\n\n\npeople\n97\n\n\ntruth\n96\n\n\npersons\n93\n\n\nliberty\n91\n\n\nconduct\n88\n\n\nindividual\n88\n\n\n\n\n\n\n\n\nAlright, now we have a list of words and their frequencies. While these frequencies give us a sense of the text’s main content, they don’t really illustrate the relationships between concepts or the progression of ideas throughout the work. Some terms may need cleaning up (for instance, “opinion” vs. “opinions” or “persons” vs. “people”), but even that requires judgment about whether these variations carry different meanings or appear in distinct contexts. For now, we’ll work with the terms as they are and focus on visualizing the relationships between them.\n\n\nCo-occurrence analysis\nTo visualize the relationships between our top 10 most frequent words, we’ll examine how they occur together within the text. This approach—called a co-occurrence analysis—will help reveal patterns and associations between terms.\nFirst, we define a window of co-occurrence—in this case, 1—which essentially means we’re looking at pairs of consecutive words. Whenever two of these words appear side-by-side in the text, we count that as a co-occurrence (don’t forget, we’ve removed stopwords, so these words will co-occur more than you may think).\nNote that this window choice of 1 could be whatever we want it to be. However, by keeping the window small for now we limit our focus to direct, immediate relationships rather than looser connections that might dilute the strength of association.\nBelow, we can see that of our top 10 most frequently occurring words, the 2 that appear together the most are opinion and truth, followed by society and individual. Immediately, this makes intuitive sense, afterall On Liberty is an exploration of the relationship between society and individuals, and explores how this is in part due to the nature of/ how they interact with truth and opinion\nBelow, we can see that among our top 10 most frequently occurring words, the pair that appears together most often is opinion and truth, followed by society and individual. This immediately aligns with the themes of On Liberty, which we already know to be an exploration of the relationship between society and individuals, and how these interactions are shaped by concepts of truth and opinion.\n\n\n\n\nTop 10 Word Co-Occurrences\n\n\nWord 1\nWord 2\nFrequency\n\n\n\n\nopinion\ntruth\n29\n\n\nsociety\nindividual\n26\n\n\nopinions\nopinion\n23\n\n\ntruth\nopinion\n21\n\n\ntruth\nopinions\n20\n\n\nindividual\nsociety\n17\n\n\nopinions\ntruth\n17\n\n\nconduct\nsociety\n16\n\n\nhuman\npersons\n16\n\n\nindividual\nliberty\n15\n\n\n\n\n\n\n\n\nSo that’s quite satisfying, at least we know that a simple count of word frequencies and co-occurrences can get us some pretty representative information. This isn’t quite yet the shape of an idea though, we need a few more steps to visualise these relationships. The next step is to create a co-occurrence matrix.\n\n\nCo-occurrence network graph\nA co-occurrence matrix is a table that shows how often each word appears alongside every other word within a specified window of text. In this matrix, rows and columns represent words, and each cell contains the co-occurrence count for that word pair. For instance, if liberty and individual appear near each other 15 times, the matrix will show this count in the corresponding cell. This matrix provides a comprehensive view of all pairwise word relationships in the text, quantifying the connections between each word.\nOnce we have this co-occurrence matrix, we can take it a step further by translating it into a network graph. In the network graph, each word is represented as a node and the connections between them—based on their co-occurrence counts—are shown as edges. The weight of each edge (i.e., the thickness of the line connecting two words) reflects the frequency of co-occurrence.\n\n\n\n\n\n\n\n\n\nNow we have a visual representation of the relationships between the top 10 words in John Stuart Mill’s On Liberty. Technically speaking, this is a relatively simple achievement, but it’s been a valuable exercise in setting up foundational concepts we’ll revisit later. Word frequency alone is a fairly basic approach, but it serves as a stepping stone toward more sophisticated methods like TF-IDF. Eventually, we’ll be extracting topics statistically, representing words as embeddings and performing more complex analyses, but for now, this is a useful start.\n\n\n\n\nOn Liberty has become, partly by chance and partly by choice, my go-to text for exploring text analysis projects. Even with these basic techniques, the key themes of the text are already beginning to emerge. The tension between society and the individual appears, in part, as a struggle over truth and opinion. While this may not be exactly what I meant by identifying the “shape of an idea,” it’s quite fitting and tells us something valuable about the shape of ideas—that they’re molded by the individuals who hold them and the world they inhabit."
+  },
+  {
+    "objectID": "subjects.html",
+    "href": "subjects.html",
+    "title": "Subjects",
+    "section": "",
+    "text": "Here are the available courses:\n\nQuantification of Meaning",
+    "crumbs": [
+      "Subjects"
+    ]
+  },
+  {
+    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html",
+    "href": "posts/2025-09-22-what-a-piece-of-work/index.html",
+    "title": "What a Piece of Work",
+    "section": "",
+    "text": "I spent the last week of holiday time plowing through a scholastic backlog which included, among other things, a biography of Claude Shannon1. The book, a celebration of play, curiosity, and intuition, also surfaced threads of thought that feel strikingly relevant to our present moment—when we find ourselves questioning our place in the world amid the tools we’ve built."
+  },
+  {
+    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html#shannon-and-the-playful-machines",
+    "href": "posts/2025-09-22-what-a-piece-of-work/index.html#shannon-and-the-playful-machines",
+    "title": "What a Piece of Work",
+    "section": "Shannon and the Playful Machines",
+    "text": "Shannon and the Playful Machines\nShannon’s career is often distilled to a few seismic contributions. As a young researcher, he showed how symbolic logic could be hardwired into electronic circuits—a discovery that laid the groundwork for digital computing. Later, his Mathematical Theory of Communication2 defined the principles of information itself, inaugurating the Information Age. Yet Shannon was never just a theoretician. His genius was inseparable from his playfulness: he built mechanical toys, juggled while cycling through Bell Labs’ corridors, and tinkered with contraptions that blurred the line between science and amusement.\nAmong these experiments were forays into what we would come to call artificial intelligence—a chess-playing machine, a maze-solving mouse, early attempts at “thinking devices”. But what struck me most were not the gadgets themselves, but Shannon’s reflections on their implications. “I’m a machine and you’re a machine, and we both think don’t we?” He once remarked with characteristic levity. Like much of his work it presaged futures we are only now beginning to grapple with. Beneath the playfulness, it gestures toward a tension that has only grown sharper: if machines can think, then what remains of us?\nThe idea that our worth is somehow tied up in our ability to think — and indeed in our rationality more broadly — is, in some ways, the original sin that has led to the psychodrama now playing out before us. If we define our humanity by our rationality, what else could we have expected?\nSomewhat uncomfortably, I find myself drawn to the conclusion that the primacy of Enlightenment values has brought us here, laying the groundwork for the anxiety that defines our present moment. Yet this fear is not new, nor unique to our age of algorithms and silicon. Long before the Enlightenment, Shakespeare gave it voice in Hamlet."
+  },
+  {
+    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html#hamlets-quintessence-of-dust",
+    "href": "posts/2025-09-22-what-a-piece-of-work/index.html#hamlets-quintessence-of-dust",
+    "title": "What a Piece of Work",
+    "section": "Hamlet’s Quintessence of Dust",
+    "text": "Hamlet’s Quintessence of Dust\n\n“What a piece of work is a man! how noble in reason! how infinite in faculties! in form and moving how express and admirable! in action how like an angel! in apprehension how like a god! the beauty of the world! the paragon of animals”3\n\nHere Hamlet, burdened with grief over his father’s death and disgusted by his mother’s hasty remarriage, exalts humanity as the crowning work of nature — rational, capable of understanding, nearly divine. And yet, almost in the same breath, he collapses this grandeur:\n\n“And yet, to me, what is this quintessence of dust?”\n\nThe very faculties that distinguish us — reason, action, apprehension — cannot overcome the futility he feels. It is an ambivalence that resonates with our present moment: the suspicion that the very qualities we exalt as our essence may also be the source of our fragility.\nWriting at the turn of the seventeenth century, Shakespeare stood at the cusp of the Renaissance and the Enlightenment. Renaissance humanism had elevated man as the paragon of animals, noble in reason, infinite in faculties, almost divine in his powers of apprehension. To Shakespeare’s audience, Hamlet’s hymn to humanity would have echoed this vision. And yet Shakespeare twists it: exalting man only to declare him dust. Hamlet’s despair is personal, but the gesture is broader — a reminder that if reason is our crown, it is also our burden, and perhaps never sufficient to secure our meaning."
+  },
+  {
+    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html#what-a-kind-of-machine",
+    "href": "posts/2025-09-22-what-a-piece-of-work/index.html#what-a-kind-of-machine",
+    "title": "What a Piece of Work",
+    "section": "What a Kind of Machine?",
+    "text": "What a Kind of Machine?\nAnd here we find an essential truth: humanity has always redefined itself, inventing new sources of meaning, elevating new values, crowning new heroes, and conjuring new demons. Each revolution has carried within it the seeds of its undoing. The Renaissance exalted man as the paragon of animals, only for Shakespeare to show how quickly grandeur collapses into dust. The Enlightenment enthroned reason as our crown, only for Shannon’s playful machines — and today’s silicon minds — to expose how easily reason can be replicated. Every age makes its wager, and every wager sets the stage for its own unraveling.\nFrom Hamlet’s “quintessence of dust” to Shannon’s playful “I’m a machine, you’re a machine,” the material has shifted — dust to silicon, thought to circuitry — but the tension endures. Across centuries we return to the same ambivalence: reason exalted, yet always shadowed by futility. We remain caught not in the question of whether we are machines, but in deciding what kind we will choose to be."
+  },
+  {
+    "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html#footnotes",
+    "href": "posts/2025-09-22-what-a-piece-of-work/index.html#footnotes",
+    "title": "What a Piece of Work",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nJimmy Soni & Rob Goodman (2017). A Mind at Play: How Claude Shannon Invented the Information Age. Simon & Schuster.↩︎\nClaude E. Shannon (1948). A Mathematical Theory of Communication. Bell System Technical Journal, 27(3), 379–423; 27(4), 623–656.↩︎\nWilliam Shakespeare (ca. 1600–1601). Hamlet, Prince of Denmark, Act II, Scene II.↩︎"
+  },
+  {
+    "objectID": "posts/2024-05-22-cultivating-habits-ai/index.html",
+    "href": "posts/2024-05-22-cultivating-habits-ai/index.html",
+    "title": "Cultivating Journalling Habits with AI",
+    "section": "",
+    "text": "Journalling has never been a consistent habit for me. Despite starting numerous times with a new notebook and the best of intentions, my efforts tended to quickly devolve into scribbled reminders and half-hearted notes. Over time, I’d inevitably abandon the effort, only to pick it up again months later. This cycle of inconsistent documentation often felt artificial—writing felt meaningful when there was something significant to note, less so when it merely served as a reminder of daily routines.\nLike so many others, I’ve recently fallen down the rabbit hole of Large Language Models (LLMs)—statistical models that combine contemporary machine learning with vast amounts of data to mimic and understand human language. The advent of LLMs however, presented an opportunity to create a slightly stickier solution. Rather than focusing on the specific outputs of these models, I found the concept of a conversational debrief with an AI to be a more interactive and engaging way to journal daily events.\nTo leverage this, I built a graphical user interface (GUI) that interfaced with a local LLM, enabling me to have daily debriefs in text or audio through a back-and-forth conversation. This project provided an excuse to work on my Python skills, while also introducing me to more complex concepts like retrieval-augmented generation (RAG). However, the challenge of maintaining and updating a local AI assistant soon became apparent—especially as many features I sought were readily available through existing platforms.\nThis realization prompted a shift in my approach. Instead of engineering a specific way of interacting with the LLM, I needed to embrace flexibility in how I recorded and kept notes—be it a voice note or a quick text entry. I learned that the consistency of documentation wasn’t bound by the interface I used but by how regularly I could capture, record, and organize my thoughts using the tools at my disposal; a process which itself made the value of consistency harder to ignore.\nThis new strategy has proven quite fruitful. It allows me to write notes across various modalities and devices while focusing more on utilizing LLMs to search over and analyze this content. Previously it wasn’t clear who I was writing for or why. Now I find myself motivated by the mere fact that the data exists, and provides an opportunity for me to learn and analyse later. The journey taught me that sometimes, understanding what we truly need comes from trying the hard way first."
+  },
+  {
+    "objectID": "posts/2024-09-06-beyond-responding/index.html",
+    "href": "posts/2024-09-06-beyond-responding/index.html",
+    "title": "Beyond Responding",
+    "section": "",
+    "text": "The field of psychometric assessment - if not measurement world in general - is focused on demonstrating the validity of measures. What is the evidence this value means what it represents? Do these numbers actually represent reality?\nIn psychometrics in particuar we ask:\nThe key concern here is evidence—observations that can support these claims. Think of them as theoretical tent pegs: “People who did this were also more likely to do that” and so on. Note that some people think this is not entirely justified as an endeavour1."
+  },
+  {
+    "objectID": "posts/2024-09-06-beyond-responding/index.html#footnotes",
+    "href": "posts/2024-09-06-beyond-responding/index.html#footnotes",
+    "title": "Beyond Responding",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSydney University professor Joel Michell has a fair bit to say on the extent to which psychological constructs can be quantified in a way that is mathematically relevant and justifiable.↩︎"
   },
   {
     "objectID": "posts/2025-09-26-building-cognitive-scaffolds/index.html#from-matching-to-complexity",
@@ -1074,5 +500,106 @@
     "title": "System 0 and the Grey Space",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nDavid Bowie on the Internet (1999)↩︎\nShoggoth with Smiley Face meme↩︎\nChiriatti, M., Ganapini, M., Panai, E., Ubiali, M., & Riva, G. (2024). The case for human–AI interaction as system 0 thinking. Nature Human Behaviour, 8(10), 1829–1830. https://doi.org/10.1038/s41562-024-01995-5↩︎\nKahneman, D. (2011). Thinking, Fast and Slow. Farrar, Straus and Giroux.↩︎"
+  },
+  {
+    "objectID": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html",
+    "href": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html",
+    "title": "Embedded vectors as linguistic objects",
+    "section": "",
+    "text": "Recently, researchers have begun to explore the possibility that values derived from word embeddings may carry meaning we can apply to the words themselves."
+  },
+  {
+    "objectID": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html#cosine-similarity",
+    "href": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html#cosine-similarity",
+    "title": "Embedded vectors as linguistic objects",
+    "section": "Cosine similarity",
+    "text": "Cosine similarity\nAnyway, the metric we’re talking about, cosine similarity, is a metric used to quantify how similar two vectors are by calculating the cosine of the angle between them. In the context of word embeddings if two items have a high cosine similarity, it means they are closer to each other in semantic space. We can also use this data to perform clustering analyses and dimension reduction, in an attempt to tease out the relationship between category and cluster."
+  },
+  {
+    "objectID": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html#footnotes",
+    "href": "posts/2024-09-07-embedded-vectors-linguistic-objects/index.html#footnotes",
+    "title": "Embedded vectors as linguistic objects",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHernandez and Nie (2022) investigated the relationship between item embeddings and item-level intercorrelations. In their study, they trained a model to take pairs of items as input and predict the empirical correlation between them. This suggested that items with high semantic similarity also showed similar response patterns, opening new avenues for understanding how language influences response behavior.↩︎\nRelatedly Wulff and Mata (2023) follow up studies revealed that the the average cosine similarity between item embeddings could predict internal consistency reliability—a key psychometric metric, and items on different scales had lower similarities than items on the same scales↩︎\nAlso cosine similarity might not be similarity.↩︎"
+  },
+  {
+    "objectID": "subjects/quantification-of-meaning/quantification-of-meaning.html",
+    "href": "subjects/quantification-of-meaning/quantification-of-meaning.html",
+    "title": "Quantification of Meaning: From Semiotics to NLP",
+    "section": "",
+    "text": "Welcome to the Quantification of Meaning! Here you’ll find all the relevant materials."
+  },
+  {
+    "objectID": "subjects/quantification-of-meaning/quantification-of-meaning.html#slides",
+    "href": "subjects/quantification-of-meaning/quantification-of-meaning.html#slides",
+    "title": "Quantification of Meaning: From Semiotics to NLP",
+    "section": "Slides",
+    "text": "Slides\n\nIntroduction to Semiotics\nSigns and Systems of Meaning\nSemiotic Analysis Techniques"
+  },
+  {
+    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#learning-objectives",
+    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#learning-objectives",
+    "title": "Semiotic Analysis Techniques",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nLearn practical techniques for semiotic analysis in text, visual media, and advertising.\nUnderstand qualitative coding and thematic analysis as methods for studying signs and symbols.\nApply semiotic analysis techniques to real-world examples."
+  },
+  {
+    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#semiotic-analysis-introduction",
+    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#semiotic-analysis-introduction",
+    "title": "Semiotic Analysis Techniques",
+    "section": "Semiotic Analysis: Introduction",
+    "text": "Semiotic Analysis: Introduction\nWhat is Semiotic Analysis?\n\nDefinition: Semiotic analysis is a method used to interpret signs and symbols in texts, images, and media. It focuses on uncovering the underlying meaning of signs and their cultural or social significance.\nApplication: This method is widely used in media studies, cultural studies, and advertising analysis to reveal hidden ideologies or myths behind visual and textual content."
+  },
+  {
+    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#practical-techniques-analyzing-text-visual-media-and-advertising",
+    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#practical-techniques-analyzing-text-visual-media-and-advertising",
+    "title": "Semiotic Analysis Techniques",
+    "section": "Practical Techniques: Analyzing Text, Visual Media, and Advertising",
+    "text": "Practical Techniques: Analyzing Text, Visual Media, and Advertising\nAnalyzing Text\n\nObjective: Uncover the underlying meaning in written language.\nSteps:\n\nIdentify Signs: Look for words, phrases, metaphors, or symbols that function as signs.\nSignifier and Signified: Analyze the relationship between the literal (signifier) and the conceptual (signified).\nContext: Consider the cultural or social context in which the text appears.\n\nExample: A news headline might use certain words or metaphors to influence the reader’s perception of an event."
+  },
+  {
+    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#methods-qualitative-coding-and-thematic-analysis",
+    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#methods-qualitative-coding-and-thematic-analysis",
+    "title": "Semiotic Analysis Techniques",
+    "section": "Methods: Qualitative Coding and Thematic Analysis",
+    "text": "Methods: Qualitative Coding and Thematic Analysis\nQualitative Coding\n\nDefinition: Qualitative coding is the process of categorizing and labeling text, images, or media based on recurring signs or themes.\nSteps:\n\nOpen Coding: Start by identifying all potential signs and symbols.\nAxial Coding: Group related signs into categories or themes.\nSelective Coding: Focus on the most significant or frequent categories to build a coherent narrative.\n\nExample: In analyzing a set of advertisements, you might label signs of luxury, freedom, or eco-friendliness."
+  },
+  {
+    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#practical-activity-applying-semiotic-analysis-techniques",
+    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#practical-activity-applying-semiotic-analysis-techniques",
+    "title": "Semiotic Analysis Techniques",
+    "section": "Practical Activity: Applying Semiotic Analysis Techniques",
+    "text": "Practical Activity: Applying Semiotic Analysis Techniques\nGroup Activity\n\nObjective: Use semiotic analysis to analyze a text, visual media, or advertisement.\nInstructions:\n\nChoose an advertisement or a short text (e.g., magazine ad, social media post).\nUse qualitative coding to identify key signs.\nApply thematic analysis to uncover underlying myths or ideologies.\n\nDiscussion Questions:\n\nWhat signs or symbols did you identify?\nHow do these signs contribute to the overall meaning?\nWhat themes or cultural ideologies did you discover?"
+  },
+  {
+    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#case-study-semiotic-analysis-of-an-advertisement",
+    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#case-study-semiotic-analysis-of-an-advertisement",
+    "title": "Semiotic Analysis Techniques",
+    "section": "Case Study: Semiotic Analysis of an Advertisement",
+    "text": "Case Study: Semiotic Analysis of an Advertisement\nExample: Perfume Ad\n\nDenotation: A woman standing on a beach with a sunset in the background.\nConnotation: The imagery connotes freedom, beauty, and serenity.\nMyth: The ad promotes the idea that buying this perfume will grant the consumer a sense of elegance and emotional freedom."
+  },
+  {
+    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#discussion-exploring-semiotic-techniques",
+    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#discussion-exploring-semiotic-techniques",
+    "title": "Semiotic Analysis Techniques",
+    "section": "Discussion: Exploring Semiotic Techniques",
+    "text": "Discussion: Exploring Semiotic Techniques\nKey Questions\n\nHow does qualitative coding help us uncover hidden meanings in media?\nWhat are the strengths and limitations of thematic analysis in understanding semiotic systems?\nIn what ways does semiotic analysis reveal the cultural or ideological underpinnings of everyday objects?"
+  },
+  {
+    "objectID": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#reflection-assignment",
+    "href": "subjects/quantification-of-meaning/semiotic-analysis-techniques.html#reflection-assignment",
+    "title": "Semiotic Analysis Techniques",
+    "section": "Reflection Assignment",
+    "text": "Reflection Assignment\n\nTask: Conduct a semiotic analysis of an advertisement or media text.\nFocus:\n\nIdentify key signs and symbols (use qualitative coding).\nPerform a thematic analysis to uncover underlying ideologies or myths.\n\nExample: Analyze a fast-food ad for its use of cultural symbols (e.g., convenience, family, or happiness) and discuss the broader themes and ideologies it promotes."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Posts",
+    "section": "",
+    "text": "System 0 and the Grey Space\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nTechnology\n\n\n\nOn AI, cognition, and the meaning-making gap.\n\n\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHuman or Dancer?\n\n\n\n\n\n\ntheology\n\n\ntechnology\n\n\nculture\n\n\n\nReflecting on Midson’s Cyborg Theology, Haraway’s cyborg provocation, and why The Killers might have more to do with theology than we think.\n\n\n\n\n\nSep 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding Cognitive Scaffolds: Instruction Verbs and Language Proficiency\n\n\n\n\n\n\nLearning Science\n\n\nLanguage\n\n\nCognitive Psychology\n\n\n\nInstruction verbs as cognitive building blocks, linked to CEFR levels, with insights from skill acquisition, levels of processing, and cognitive load.\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWhat a Piece of Work\n\n\n\n\n\n\nAI & Society\n\n\nHistory of Ideas\n\n\nLiterature & Ideas\n\n\n\nFrom Shannon’s playful machines to Hamlet’s ambivalence, a reflection on reason, fragility, and what defines us.\n\n\n\n\n\nSep 22, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLocal Augmentation\n\n\n\n\n\n\nKnowledge management\n\n\nCognitive augmentation\n\n\n\nPutting things together\n\n\n\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe Shape of Ideas\n\n\n\n\n\n\nThematic analysis\n\n\nTextual visualisation\n\n\n\nPart 2 - Focused Frequencies\n\n\n\n\n\nNov 24, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe Shape of Ideas\n\n\n\n\n\n\nThematic analysis\n\n\nTextual visualisation\n\n\n\nPart 1 - Frequencies\n\n\n\n\n\nNov 2, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMeasuring Meaning\n\n\n\n\n\n\nSemantic quantification\n\n\n\nTurning words into numbers\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBeyond Responding\n\n\n\n\n\n\nPsychometric validation\n\n\n\nUsing behaviours as meaning\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded vectors as linguistic objects\n\n\n\n\n\n\nSemantic quantification\n\n\nSemantic and Conceptual clustering\n\n\n\nFinding new structures of meaning\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nCultivating Journalling Habits with AI\n\n\n\n\n\n\nLarge Language Models\n\n\nKnowledge management\n\n\n\nLearning by doing it the hard way\n\n\n\n\n\nMay 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe SECI model & knowledge creation\n\n\n\n\n\n\nKnowledge\n\n\nLearning\n\n\n\nAs knowledge changes, so must we. \n\n\n\n\n\nJun 6, 2023\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Posts"
+    ]
   }
 ]
