@@ -1,0 +1,96 @@
+---
+title: "Bloom's Taxonomy as Vocabulary for System 0"
+description: "Using educational frameworks to develop a language for human-AI cognitive distribution"
+date: 2026-01-09
+categories: [AI, Cognition, Education]
+tags: [system-0, blooms-taxonomy, cognitive-augmentation, educational-psychology, distributed-cognition]
+canonical-url: https://www.lumosinsight.co.uk/posts/2026-01-09-blooms-taxonomy-as-vocabulary-for-system-0/
+cover-image: header.png
+cover-image-alt: "Abstract art deco composition showing layered cognitive systems and information flow"
+
+open-graph:
+  title: "Bloom's Taxonomy as Vocabulary for System 0"
+  description: "Using educational frameworks to develop a language for human-AI cognitive distribution"
+  image: https://www.lumosinsight.co.uk/posts/2026-01-09-blooms-taxonomy-as-vocabulary-for-system-0/header.png
+  image-alt: "Abstract art deco composition showing concentric layers representing cognitive systems"
+  site-url: https://www.lumosinsight.co.uk/posts/2026-01-09-blooms-taxonomy-as-vocabulary-for-system-0/
+
+twitter-card:
+  card: "summary_large_image"
+  title: "Bloom's Taxonomy as Vocabulary for System 0"
+  description: "Using educational frameworks to develop a language for human-AI cognitive distribution"
+  image: https://www.lumosinsight.co.uk/posts/2026-01-09-blooms-taxonomy-as-vocabulary-for-system-0/header.png
+  image-alt: "Abstract art deco composition showing layered cognitive systems"
+
+format:
+  html:
+    include-after-body: "../../giscus.html"
+
+editor: visual
+
+execute:
+  echo: false
+  warning: false
+  message: false
+
+toc: true
+toc-depth: 2
+---
+
+![](header.png){fig-align="center" width="100%"}
+
+
+In a recent post, I explored the idea of System 0—on-demand inferential processing characterized as a new layer in the cognitive stack. A preprocessing layer that shapes information before it reaches our intuitive or analytical thinking[^1].
+
+[^1]: Chiriatti, M., Ganapini, M., Panai, E., Ubiali, M., & Riva, G. (2024). The case for human–AI interaction as system 0 thinking. *Nature Human Behaviour*, 8(10), 1829–1830. https://doi.org/10.1038/s41562-024-01995-5
+
+The intellectual case is straightforward: certain types of information processing can be outsourced, freeing us from cognitive drudgery. But there's also no shortage of hand-wringing about potential negative effects, with growing research investigating whether over-reliance on AI preprocessing may atrophy our cognitive capacities[^2]. A Faustian bargain indeed.
+
+[^2]: See for example Gerlich, M. (2025). AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking. *Societies*, 15(1). https://doi.org/10.3390/soc15010006
+
+But understanding System 0 intellectually—as an option or capability—is one thing. Internalizing it—developing an updated theory of mind for distributed cognition—is another. What language do we use to describe how we interact with this cognitive layer? How do we intuit the machinations of outsourced inference? How do we develop frameworks for understanding systems that embody aspects of our own cognition?
+
+# Bloom's taxonomy as vocabulary
+
+One approach to building a language for describing our interactions with System 0 can be found in Bloom's taxonomy[^3]. Originally created to categorize educational behaviors and measure learning progress, it also provides a scaffold for guiding instruction—informing how and when to introduce different types of information. Broadly, it's a tiered approach to describing how we interact with information, organizing qualitatively different cognitive actions of increasing complexity.
+
+[^3]: Bloom, B. S., Engelhart, M. D., Furst, E. J., Hill, W. H., & Krathwohl, D. R. (1956). *Taxonomy of educational objectives: The classification of educational goals. Handbook I: Cognitive domain*. David McKay Company.
+
+Bloom's taxonomy organized cognitive work into six levels:
+
+**Remember** - Recall facts and basic concepts\
+**Understand** - Explain ideas or concepts\
+**Apply** - Use information in new situations\
+**Analyze** - Draw connections among ideas\
+**Evaluate** - Justify a position or decision\
+**Create** - Produce new or original work
+
+This hierarchy—often visualized as a pyramid—was designed to show how students progress from simple recall to complex creation. But looked at differently, these six verbs constitute a **vocabulary of cognitive actions**. Not a ladder to climb, but a repertoire to draw from.
+
+And if these are cognitive actions—skills we can perform—then they're also actions we can **delegate, augment, or distribute** across human-AI systems. When I ask an LLM to "analyze this data" or "create a summary," I'm not just prompting a tool. I'm outsourcing specific cognitive actions from Bloom's repertoire to System 0.
+
+What makes this taxonomy particularly useful for understanding System 0 is that it describes our relationship to information and knowledge—independent of who or what performs the cognitive work. The verbs remain stable whether the analysis is done by human cognition, AI preprocessing, or some hybrid collaboration between the two.
+
+# The modular approach
+
+Bloom's taxonomy, however, has its limitations. Marzano and Kendall (2007)[^4] argued that Bloom conflated distinct cognitive systems, proposing instead a three-system model:
+
+[^4]: Marzano, R. J., & Kendall, J. S. (2006). *The new taxonomy of educational objectives* (2nd ed.). Corwin Press.
+
+1.  **The Self-System** - Beliefs, goals, motivation
+2.  **The Metacognitive System** - Monitoring, planning, regulating
+3.  **The Cognitive System** - The actual processing (retrieval, comprehension, analysis)
+
+This separation proves crucial for understanding System 0. As Chiriatti et al. describe it, System 0 operates at the level of Marzano's **cognitive system**—preprocessing and shaping information without imposing meaning. It's incapable of meaning-making on its own. Marzano's framework preserves Bloom's vocabulary while clarifying its scope: those six verbs (remember, understand, analyze, etc.) describe operations at the cognitive level, not the self or metacognitive systems.
+
+Meaning emerges from the interaction between this enhanced cognitive layer and the human **self-system** and **metacognitive system**. System 0 can analyze, retrieve, and comprehend. But it cannot care, cannot set goals, cannot evaluate whether the work serves purposes that matter. Those remain human prerogatives.
+
+# What This Means
+
+If Bloom's taxonomy gives us a language for cognitive actions, and Marzano's framework shows us where meaning-making sits (in the self and metacognitive systems, not the cognitive layer), then we can start to ask more precise questions about the nature of human-AI interactions. What are we offloading? How do we stay engaged? What varies between individuals? How do we design for healthy distributed cognition?
+
+These aren't just theoretical questions. They're practical ones for anyone designing interfaces for human-AI collaboration. The vocabulary matters. The system architecture matters. And understanding that System 0 enhances the cognitive layer while leaving meaning-making to us—that matters most of all.
+
+This vocabulary also helps us steer away from the "darker possibilities" of cognitive atrophy, towards more ergonomic and thoughtful uses. By describing our interactions with System 0 in greater detail—specifying which cognitive actions we're delegating and which we're keeping—we can be more deliberate about the ergonomics of distributed cognition. We can design for augmentation rather than replacement, for collaboration rather than abdication.
+
+Let's be honest. The question isn't whether to use System 0. It's already here. The question is whether we develop the language and frameworks to use it thoughtfully—to understand what we're outsourcing, what we're keeping, and why that distinction matters.
