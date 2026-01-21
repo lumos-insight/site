@@ -48,7 +48,7 @@ After leaving, we walked past Somerset House, which was advertising the opening 
 
 [^2]: https://www.somersethouse.org.uk/press/wayne-mcgregor-infinite-bodies-new-installation-on-the-other-earth-further-exhibition-details
 
-It proved the perfect foil to what came before. Where Ikeda's work visualizes data through abstraction—mapping information onto new planes, stripping away the human—McGregor's work does something quite different. British choreographer Wayne McGregor CBE, Resident Choreographer of The Royal Ballet and Artistic Director of Studio Wayne McGregor, is frequently described as a polymath. His collaborations span Radiohead, The Chemical Brothers, Jon Hopkins, and Max Richter, among many others. But what came across most strongly at the exhibition was his decidedly contemporary fixation on cognitive science—the relationship between body, time, and space. As he describes it, choreography is "a recursive conversation with our body's physical, emotional, and cognitive intelligence."
+It proved the perfect foil to what came before. Where Ikeda's work visualizes data through abstraction—mapping information onto new planes, stripping away the human—McGregor's work does something quite different. British choreographer Wayne McGregor CBE, Resident Choreographer of The Royal Ballet and Artistic Director of Studio Wayne McGregor, is frequently described as a polymath. His collaborations span Radiohead, The Chemical Brothers, Jon Hopkins, and Max Richter, among many others. But what came across most strongly at the exhibition was his decidedly contemporary fixation on cognitive science—the relationship between body, time, and space. As he describes it, choreography is *"a recursive conversation with our body's physical, emotional, and cognitive intelligence."*
 
 Where Ikeda is algorithmic, McGregor is embodied. Where Ikeda abstracts, McGregor inhabits.
 
@@ -80,7 +80,7 @@ Despite—or perhaps because of—the myriad ways we can characterise embodiment
 
 His method seems to begin from skepticism, grasping for implausible concreteness, interpreting ideas through layers of iteration and experimentation. He seeks to connect disparate islands of research and speciality—always questioning, always asking "what if?"
 
-It's a reminder that reasoning, finding answers, is itself a process. As the old line goes: "How do I know what I think until I see what I say?" For McGregor, the body is how we see what we think.
+It's a reminder that reasoning, finding answers, is itself a process. As the old line goes: *"How do I know what I think until I see what I say?"* For McGregor, the body is how we see what we think.
 
 # Intelligence and substrate
 
@@ -96,7 +96,7 @@ The substrate shapes what kind of intelligence is possible.
 
 Karpathy also highlights the role of adaptability. Intelligence, he argues, emerges when environments are unpredictable—when evolution can't bake solutions into the weights. *"You want these environments that change really rapidly, where you can’t foresee what will work well. You create intelligence to figure it out at test time."* Most animals are pre-baked. Humans have to figure it out after they're born.
 
-And then there's culture—the scaffold that took us from modern cognitive architecture (perhaps 60,000 years ago) to agricultural revolution (10,000 years ago) to modernity. Intelligence alone wasn't enough; we needed a way to accumulate knowledge across generations. LLMs, Karpathy observes, don't yet have an equivalent. "Why can't an LLM write a book for other LLMs? Why can't other LLMs read this LLM's book and be inspired by it?" There's no culture yet—no accumulated, shared repertoire of knowledge built for and by the models themselves.
+And then there's culture—the scaffold that took us from modern cognitive architecture (perhaps 60,000 years ago) to agricultural revolution (10,000 years ago) to modernity. Intelligence alone wasn't enough; we needed a way to accumulate knowledge across generations. LLMs, Karpathy observes, don't yet have an equivalent. *"Why can't an LLM write a book for other LLMs? Why can't other LLMs read this LLM's book and be inspired by it?"* There's no culture yet—no accumulated, shared repertoire of knowledge built for and by the models themselves.
 
 What McGregor makes visceral through art, Karpathy articulates through evolutionary history: intelligence is not substrate-independent. The body matters. The environment matters. The niche matters. Different substrates don't just carry different intelligences—they produce them.
 
