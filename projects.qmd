@@ -1,0 +1,13 @@
+---
+title: "Projects"
+listing:
+  contents: projects
+  sort: false
+  type: grid
+  grid-columns: 2
+  image-height: 250px
+  fields: [image, title, description]
+  categories: false
+page-layout: full
+title-block-banner: false
+---

@@ -16,6 +16,8 @@ website:
         href: about.qmd
       - text: "Posts"
         href: posts.qmd
+      - text: "Projects"
+        href: projects.qmd
       - text: "Subjects"
         href: subjects.qmd
 

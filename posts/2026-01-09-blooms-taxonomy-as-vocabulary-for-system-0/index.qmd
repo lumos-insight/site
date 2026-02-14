@@ -39,7 +39,6 @@ toc-depth: 2
 
 ![](header.png){fig-align="center" width="100%"}
 
-
 In a recent post, I explored the idea of System 0—on-demand inferential processing characterized as a new layer in the cognitive stack. A preprocessing layer that shapes information before it reaches our intuitive or analytical thinking[^1].
 
 [^1]: Chiriatti, M., Ganapini, M., Panai, E., Ubiali, M., & Riva, G. (2024). The case for human–AI interaction as system 0 thinking. *Nature Human Behaviour*, 8(10), 1829–1830. https://doi.org/10.1038/s41562-024-01995-5

@@ -68,7 +68,7 @@ A recent [tweet](https://x.com/mer__edith/status/2018438544583196871?s=20) by Me
 > 
 > Outsource writing (and with it thinking) at your peril!
 
-She's right about the difficulty of writing, sitting with discomfort, etc. She's not wrong that the act of writing and doing so yourself is valuable. She's also not alone in expressing these concerns. A number of papers out there express similar concern about the loss of capacities like critical thinking, or proliferation of superficial learning. A recent paper published in [Nature Reviews Bioengineering](https://www.nature.com/articles/s44222-025-00323-4)talks specifically about the value of writing and what might be lost through overreliance on AI systems:
+She's right about the difficulty of writing, sitting with discomfort, etc. She's not wrong that the act of writing and doing so yourself is valuable. She's also not alone in expressing these concerns. A number of papers out there express similar concern about the loss of capacities like critical thinking, or proliferation of superficial learning. A recent paper published in [Nature Reviews Bioengineering](https://www.nature.com/articles/s44222-025-00323-4) talks specifically about the value of writing and what might be lost through overreliance on AI systems:
 
 > Writing compels us to think — not in the chaotic, non-linear way our minds typically wander, but in a structured, intentional manner. By writing it down, we can sort years of research, data and analysis into an actual story, thereby identifying our main message and the influence of our work. This is not merely a philosophical observation; it is backed by scientific evidence. 
 

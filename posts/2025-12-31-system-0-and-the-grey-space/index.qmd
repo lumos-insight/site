@@ -43,7 +43,11 @@ In 1996, discussing the significance of the internet, the late David Bowie said:
 
 > "I don't think we've even seen the tip of the iceberg...I think we're actually on the cusp of something exhilarating and terrifying. It's an alien life form, is there life on Mars? Yes, it's just landed here."[^1]
 
+[^1]: [David Bowie on the Internet (1999)](https://www.youtube.com/watch?v=FiK7s_0tGsg)
+
 It's difficult to see that interview and not think the same of today's technological revolution: Large Language Models. Through their proficiency at representing, producing, and using language—as well as seemingly replicating some human capabilities with regard to reasoning and tool use—they have provoked such existential dread as to be compared to creatures of Lovecraftian horror, an honour reserved for the most inconceivable, madness-inducing, and nihilistic of concepts.[^2]
+
+[^2]: [Shoggoth with Smiley Face meme](https://knowyourmeme.com/memes/shoggoth-with-smiley-face-artificial-intelligence)
 
 Whether or not our current iterations of AI are truly Cthulhu-esque horrors beyond our comprehension, what we are witnessing has profound psychological consequences—implications for how we understand cognition itself.
 
@@ -51,7 +55,11 @@ Whether or not our current iterations of AI are truly Cthulhu-esque horrors beyo
 
 These psychological shifts are becoming harder to ignore. In a recent publication in *Nature Human Behaviour* titled "The case for human–AI interaction as system 0 thinking," the authors propose an expanded model of human cognition that explicitly includes AI interaction as a new layer in the human cognitive stack.[^3] Entitled System 0, this layer sits alongside previously elaborated components in our reasoning: System 1 and System 2.[^4]
 
-Where System 1 has historically been used to describe cognitive processes that are fast and intuitive, and System 2 slow and analytical, Chiriatti et al. describe System 0 as a distinct psychological system that arises from interfacing with a "dynamic, multiartefact ecosystem." 
+[^3]: Chiriatti, M., Ganapini, M., Panai, E., Ubiali, M., & Riva, G. (2024). The case for human–AI interaction as system 0 thinking. *Nature Human Behaviour*, 8(10), 1829–1830. https://doi.org/10.1038/s41562-024-01995-5
+
+[^4]: Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux.
+
+Where System 1 has historically been used to describe cognitive processes that are fast and intuitive, and System 2 slow and analytical, Chiriatti et al. describe System 0 as a distinct psychological system that arises from interfacing with a "dynamic, multiartefact ecosystem."
 
 It is an "artificial, non-biological underlying layer of distributed intelligence that interacts with and augments both intuitive and analytical thinking processes."
 
@@ -75,16 +83,8 @@ Chiriatti et al. point directly to these issues: the risk that we begin adopting
 
 These aren't problems we can solve by rejecting System 0 or retreating from AI augmentation. The only way forward is through understanding—by grappling with the tentacles rather than fleeing from them. We must characterise not only how AI interacts with our existing cognitive systems, but how it reshapes broader systems of identity, meaning, and agency.
 
-This requires asking difficult questions: 
+This requires asking difficult questions:
 
-- How do we support human individuality and creativity, autonomy and capability, in a world increasingly mediated by a homogenous grey middle? 
+-   How do we support human individuality and creativity, autonomy and capability, in a world increasingly mediated by a homogenous grey middle?
 
-- How do we ensure that the grey space Bowie spoke of—that space where meaning is made—remains ours to fill?
-
-[^1]: [David Bowie on the Internet (1999)](https://www.youtube.com/watch?v=FiK7s_0tGsg)
-
-[^2]: [Shoggoth with Smiley Face meme](https://knowyourmeme.com/memes/shoggoth-with-smiley-face-artificial-intelligence)
-
-[^3]: Chiriatti, M., Ganapini, M., Panai, E., Ubiali, M., & Riva, G. (2024). The case for human–AI interaction as system 0 thinking. *Nature Human Behaviour*, 8(10), 1829–1830. https://doi.org/10.1038/s41562-024-01995-5
-
-[^4]: Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux.
+-   How do we ensure that the grey space Bowie spoke of—that space where meaning is made—remains ours to fill?

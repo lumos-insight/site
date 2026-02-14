@@ -1,5 +1,15 @@
 [
   {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Interface\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Lumos Insight",
@@ -657,5 +667,12 @@
     "crumbs": [
       "Posts"
     ]
+  },
+  {
+    "objectID": "projects/interface/index.html",
+    "href": "projects/interface/index.html",
+    "title": "Interface",
+    "section": "",
+    "text": "Interface is a prototype cognitive augmentation software. It has been designed in light of recent developments in cognitive ergonomic theories relating to the idea that our minds are extended into the world outside and embodied in a variety of substrates.\nIn addition, recently developed AI capabilities have been characterised as ‘system 0’, a distinct layer of the cognitive system which is tasked with performing inference - transforming, condensing, reformatting, linguistic content.\nGood cognitive design includes transparency, trust, clear and consistent inferential structures and knowledge flows. Good design supports, strengthens, and empowers.\nDesigned to encourage and enable privacy, self-sovereignty, options and comparability. An open system designed as the interface between your volition and your externalised cognitive structures.\nWe create our tools and our tools reshape us and the world around us.\n\nLink"
   }
 ]

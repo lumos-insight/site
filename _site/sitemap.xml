@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.lumosinsight.co.uk/projects.html</loc>
+    <lastmod>2026-02-13T23:32:09.045Z</lastmod>
+  </url>
+  <url>
     <loc>https://www.lumosinsight.co.uk/about.html</loc>
     <lastmod>2026-01-05T18:48:58.744Z</lastmod>
   </url>
@@ -18,11 +22,11 @@
   </url>
   <url>
     <loc>https://www.lumosinsight.co.uk/posts/2026-02-13-at-the-edge-of-capacity/index.html</loc>
-    <lastmod>2026-02-13T22:50:45.989Z</lastmod>
+    <lastmod>2026-02-13T23:30:37.359Z</lastmod>
   </url>
   <url>
     <loc>https://www.lumosinsight.co.uk/posts/2025-12-31-system-0-and-the-grey-space/index.html</loc>
-    <lastmod>2026-01-20T23:51:33.410Z</lastmod>
+    <lastmod>2026-02-13T23:30:36.520Z</lastmod>
   </url>
   <url>
     <loc>https://www.lumosinsight.co.uk/posts/2026-01-20-cognitive-bodies/index.html</loc>
@@ -91,5 +95,9 @@
   <url>
     <loc>https://www.lumosinsight.co.uk/posts.html</loc>
     <lastmod>2024-11-02T19:28:37.498Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.lumosinsight.co.uk/projects/interface/index.html</loc>
+    <lastmod>2026-02-14T00:00:35.376Z</lastmod>
   </url>
 </urlset>
