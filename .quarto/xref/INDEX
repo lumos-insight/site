@@ -172,5 +172,14 @@
   },
   "posts/2026-02-13-at-the-edge-of-capacity/index.qmd": {
     "index.html": "53bf7f50"
+  },
+  "projects/interface/index.qmd": {
+    "index.html": "2fd64072"
+  },
+  "projects.qmd": {
+    "projects.html": "a9a8ed3d"
+  },
+  "posts/2026-02-28-cognitive-sovereignty-from-switzerland/index.qmd": {
+    "index.html": "317df209"
   }
 }
