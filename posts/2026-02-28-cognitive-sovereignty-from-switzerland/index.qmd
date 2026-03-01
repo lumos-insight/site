@@ -80,6 +80,10 @@ The second is security. Heersmink highlights that as cognitive systems become mo
 
 The third is informational transparency — how well the content, internal structure, and generative processes of information are represented and comprehensible to the agent. This is distinct from procedural transparency (ease of action, seamless integration). Both matter, but they can work against each other. Effortless integration must not come at the cost of understanding. When the artefacts in question are outputs derived from one's own brain activity, processed through opaque inferential systems, the demand for informational transparency is not a nice-to-have. It is a design requirement.
 
+---
+
+# Don't Trust, Verify
+
 QVAC's focus on local and delegated inference, and the broader investment in peer-to-peer infrastructure, maps directly onto these dimensions. Local inference means you know where your data is. An open SDK means you can inspect the processes that transform it. A P2P architecture means no centralised point of compromise. What could be worse than outsourcing the processing of one's own brain waves and foregoing transparency over the nature of the transformation?
 
 Heersmink also highlights that the representational systems we use — the languages, structures, and processes we think through — transform what we are able to think. The architecture of inference is itself a constraint on thought. Controlling that architecture is, in a meaningful sense, controlling what you are able to think. This is what cognitive sovereignty means: not merely keeping your data private, but retaining legibility over the systems that shape your cognition.
