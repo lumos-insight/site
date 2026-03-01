@@ -40,6 +40,8 @@ toc-depth: 2
 
 ![](header.png){fig-align="center" width="100%"}
 
+# Neuroscience at a Bitcoin Conference
+
 Late last year I found myself in Lugano attending Plan B[^1], Switzerland's biggest bitcoin conference. It drew thousands — to hear about the future of distributed systems, digital infrastructure, financial autonomy, and above all privacy and preservation of digital liberties. I expected energy grid experts, macroeconomists, computer scientists, quantum cryptographers, as well as a few politicians. I did not expect to hear from neuroscientists building brain-computer interfaces.
 
 [^1]: https://planb.lugano.ch/
@@ -49,6 +51,8 @@ Blackrock Neurotech[^2] was founded in 2008 by Marcus Gerhardt and Dr Florian So
 [^2]: https://blackrockneurotech.com/
 
 ------------------------------------------------------------------------
+
+# Infrastructure for Inference
 
 In recent years, Tether has been expanding beyond their core stablecoin business, investing heavily into decentralised communications infrastructure. Notable investments include:
 
@@ -65,6 +69,8 @@ Among these ventures is QVAC[^3] which, just like the Blackrock Neurotech partne
 In this context, the Blackrock Neurotech partnership makes sense — and not just as a matter of privacy or civil liberties. It is an example of good cognitive systems design.
 
 ------------------------------------------------------------------------
+
+# Dimensions of Integration
 
 In a [previous post](https://www.lumosinsight.co.uk/posts/2026-02-13-at-the-edge-of-capacity/) I introduced Heersmink's cognitive ergonomics framework as an approach for responsible Human-AI interface design. Drawing on Extended Mind Theory (EMT), Heersmink builds on Clark and Chalmers' observation that extended cognitive processes — those offloaded onto tools, devices, environments — require trust, reliability, and accessibility in order to function as genuine parts of a cognitive system. His framework proposes a set of dimensions of integration: characteristics that describe how tightly an external artefact is woven into an agent's cognitive life.
 
