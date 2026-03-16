@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lumos Insight</title>
+<title>Lumos Insight -</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./images/logo.PNG" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,11 +43,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -67,116 +69,233 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Lumos Insight">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Lumos Insight -">
 <meta property="og:description" content="Exploring knowledge, measurement, behaviour, and technology">
 <meta property="og:site_name" content="Lumos Insight">
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lumos Insight</li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logo.PNG" alt="Lumos Insight" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Lumos Insight</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./posts.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./subjects.html"> 
+<span class="menu-text">Subjects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/logo.PNG" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
-      </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./posts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Posts</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Projects</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./subjects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Subjects</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link active" data-scroll-target="#methodology">Methodology</a></li>
-  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Lumos Insight</h1>
+
+
+
+<div style="text-align: center; margin-bottom: 3rem;">
+<p><img src="images/Insight_is_the_bridge_between_raw_information_and_true_a4d38235-4276-4c08-886f-4f8da6de800b.png" alt="Lumos Insight" style="width: 80%; border-radius: 2px;"></p>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div style="text-align: center;">
-<p><img src="images/Insight_is_the_bridge_between_raw_information_and_true_a4d38235-4276-4c08-886f-4f8da6de800b.png" alt="Insight_is_the_bridge_between_raw_information_and_true_understanding" width="80%"></p>
-</div>
-<p>We live in an age of information excess—a flood of data that often obscures as much as it reveals. New sources and structures of information creating noise and confusion, reducing our clarity of vision and preventing us from finding truth.</p>
-<p>Our goal in this information-rich world is true understanding, which connects disparate pieces and reveals relationships, enabling meaningful action. This understanding is deepened and enriched through social learning—an iterative, collaborative process where insights and interpretations are continuously refined and shared.</p>
-<p>Insight is where the transformation begins. It’s the bridge between raw information and true understanding, emerging as knowledge flows from one person to another, evolving through shared perspectives. As information flows from one perspective to another, it is transformed. Each layer of understanding builds upon the last, gaining depth and dimension through collective reflection and application.</p>
-<section id="methodology" class="level1">
-<h1>Methodology</h1>
-<p>At Lumos Insight, we generate insight through a structured, social learning approach. By fostering shared reflection and open exploration, we refine information into actionable understanding. Our approach is built on a cycle of learning, reflection, and application, creating a flow of insights that deepens with each pass. By sharing our learning publicly, we contribute to a broader knowledge ecosystem, allowing insights to evolve and improve as they’re applied in new contexts. This iterative knowledge spiral is at the heart of our work.</p>
+<p>This site documents ongoing research at the intersection of knowledge systems, measurement, and artificial intelligence — exploring how we extend, augment, and embody cognition through human-machine collaboration.</p>
+<p>The questions may have evolved from measuring human behaviour to measuring meaning itself, but the core challenge remains: how do we make the invisible visible, the tacit explicit, and the immeasurable measurable?</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Lumos Insight began with psychometric survey development — inferring meaning from human behaviour through validated measurement. This foundation in cognitive assessment design — operationalising constructs, validating instruments, measuring latent variables — now informs how I approach questions of semantic quantification and human-AI interaction.</p>
+<p>More recently, I’ve been exploring related questions:</p>
+<ul>
+<li>How do we quantify and represent meaning in language?</li>
+<li>How do knowledge and understanding emerge from human-AI collaboration?</li>
+<li>What changes in how we think when our cognitive partners are machines?</li>
+</ul>
+<p>Posts here trace a path from knowledge creation (SECI model, cognitive scaffolding) through semantic quantification (measuring meaning, embeddings as linguistic objects) to the lived experience of thinking with AI systems (journaling, local augmentation, System 0).</p>
+<p>Alongside this theoretical work, I’m experimenting with augmentation software — exploring the interface between human cognition and machine intelligence through hands-on development and testing. This work draws on principles from cognitive assessment design: how do we instrument thought, measure understanding, and validate that our tools actually augment rather than distort?</p>
 </section>
-<section id="background" class="level1">
-<h1>Background</h1>
-<p>Lumos Insight began with psychometric validation, a field focused on inferring meaning from human behavior. Psychometric validation allows us to interpret complex human responses as measurable insights, giving organizations a clearer view of the motivations, capabilities, and potential of real people. This foundation has equipped Lumos Insight to expand its focus, applying these same principles to draw meaningful insights from data more broadly.</p>
-<p>Whether we’re interpreting behavior or analyzing data trends, our work aims to help organizations cut through the noise, turning data into human-centered, actionable solutions. Let Lumos Insight guide you from information overload to clarity, understanding, and impact.</p>
+<section id="approach" class="level2">
+<h2 class="anchored" data-anchor-id="approach">Approach</h2>
+<p>This is research in motion, not marketing. Posts are snapshots of thinking in progress — experiments that failed, methods being refined, questions still open. Some build on previous work. Some contradict it. That’s the point.</p>
+<p>The underlying thread: understanding how humans and machines create, share, and augment knowledge. The method: treating learning as a lived process, documented in public.</p>
+<hr>
+<p class="section-label">
+◉ Recent Posts
+</p>
+<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-recent-posts-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-recent-posts'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Post
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Post</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="AI,Cognition,Privacy" data-listing-date-sort="1772236800000" data-listing-file-modified-sort="1772389055436" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1063" data-listing-title-sort="Cognitive Sovereignty and Integrated Inference" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">28 Feb 2026</span>
+</td>
+<td>
+<a href="./posts/2026-02-28-cognitive-sovereignty-from-switzerland/index.html" class="title listing-title">Cognitive Sovereignty and Integrated Inference</a>
+</td>
+</tr>
+<tr data-index="1" data-categories="AI,Cognition,Writing" data-listing-date-sort="1770940800000" data-listing-file-modified-sort="1772322643754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1594" data-listing-title-sort="At the Edge of Capacity" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">13 Feb 2026</span>
+</td>
+<td>
+<a href="./posts/2026-02-13-at-the-edge-of-capacity/index.html" class="title listing-title">At the Edge of Capacity</a>
+</td>
+</tr>
+<tr data-index="2" data-categories="AI,Cognition,Art" data-listing-date-sort="1768867200000" data-listing-file-modified-sort="1768953566131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1376" data-listing-title-sort="Cognitive Bodies" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">20 Jan 2026</span>
+</td>
+<td>
+<a href="./posts/2026-01-20-cognitive-bodies/index.html" class="title listing-title">Cognitive Bodies</a>
+</td>
+</tr>
+<tr data-index="3" data-categories="AI,Cognition,Education" data-listing-date-sort="1767916800000" data-listing-file-modified-sort="1769813699269" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="850" data-listing-title-sort="Bloom's Taxonomy as Vocabulary for System 0" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">9 Jan 2026</span>
+</td>
+<td>
+<a href="./posts/2026-01-09-blooms-taxonomy-as-vocabulary-for-system-0/index.html" class="title listing-title">Bloom’s Taxonomy as Vocabulary for System 0</a>
+</td>
+</tr>
+<tr data-index="4" data-categories="AI,Cognition,Technology" data-listing-date-sort="1767139200000" data-listing-file-modified-sort="1771025436520" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="754" data-listing-title-sort="System 0 and the Grey Space" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">31 Dec 2025</span>
+</td>
+<td>
+<a href="./posts/2025-12-31-system-0-and-the-grey-space/index.html" class="title listing-title">System 0 and the Grey Space</a>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
 
 
 </section>
