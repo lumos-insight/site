@@ -4,40 +4,28 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Interface\n\n\n\n\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Projects"
-    ]
+    "text": "Interface\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Lumos Insight",
     "section": "",
-    "text": "This site documents ongoing research at the intersection of knowledge systems, measurement, and artificial intelligence—exploring how we extend, augment, and embody cognition through human-machine collaboration.\nThe questions may have evolved from measuring human behavior to measuring meaning itself, but the core challenge remains: how do we make the invisible visible, the tacit explicit, and the immeasurable measurable?",
-    "crumbs": [
-      "About"
-    ]
+    "text": "This site documents ongoing research at the intersection of knowledge systems, measurement, and artificial intelligence—exploring how we extend, augment, and embody cognition through human-machine collaboration.\nThe questions may have evolved from measuring human behavior to measuring meaning itself, but the core challenge remains: how do we make the invisible visible, the tacit explicit, and the immeasurable measurable?"
   },
   {
     "objectID": "about.html#background",
     "href": "about.html#background",
     "title": "Lumos Insight",
     "section": "Background",
-    "text": "Background\nLumos Insight began with psychometric survey development—inferring meaning from human behavior through validated measurement. This foundation in cognitive assessment design—operationalizing constructs, validating instruments, measuring latent variables—now informs how I approach questions of semantic quantification and human-AI interaction.\nMore recently, I’ve been exploring related questions:\n\nHow do we quantify and represent meaning in language?\nHow do knowledge and understanding emerge from human-AI collaboration?\nWhat changes in how we think when our cognitive partners are machines?\n\nPosts here trace a path from knowledge creation (SECI model, cognitive scaffolding) through semantic quantification (measuring meaning, embeddings as linguistic objects) to the lived experience of thinking with AI systems (journaling, local augmentation, System 0).\nAlongside this theoretical work, I’m experimenting with augmentation software— exploring the interface between human cognition and machine intelligence through hands-on development and testing. This work draws on principles from cognitive assessment design: how do we instrument thought, measure understanding, and validate that our tools actually augment rather than distort?",
-    "crumbs": [
-      "About"
-    ]
+    "text": "Background\nLumos Insight began with psychometric survey development—inferring meaning from human behavior through validated measurement. This foundation in cognitive assessment design—operationalizing constructs, validating instruments, measuring latent variables—now informs how I approach questions of semantic quantification and human-AI interaction.\nMore recently, I’ve been exploring related questions:\n\nHow do we quantify and represent meaning in language?\nHow do knowledge and understanding emerge from human-AI collaboration?\nWhat changes in how we think when our cognitive partners are machines?\n\nPosts here trace a path from knowledge creation (SECI model, cognitive scaffolding) through semantic quantification (measuring meaning, embeddings as linguistic objects) to the lived experience of thinking with AI systems (journaling, local augmentation, System 0).\nAlongside this theoretical work, I’m experimenting with augmentation software— exploring the interface between human cognition and machine intelligence through hands-on development and testing. This work draws on principles from cognitive assessment design: how do we instrument thought, measure understanding, and validate that our tools actually augment rather than distort?"
   },
   {
     "objectID": "about.html#approach",
     "href": "about.html#approach",
     "title": "Lumos Insight",
     "section": "Approach",
-    "text": "Approach\nThis is research in motion, not marketing. Posts are snapshots of thinking in progress—experiments that failed, methods being refined, questions still open. Some build on previous work. Some contradict it. That’s the point.\nThe underlying thread: understanding how humans and machines create, share, and augment knowledge. The method: treating learning as a lived process, documented in public.\nIf this work intersects with yours, reach out:\n luke@lumosinsight.co.uk |  @LumosInsight |  LinkedIn |  Nostr\n\nPrevious work in psychometric consulting available on request.",
-    "crumbs": [
-      "About"
-    ]
+    "text": "Approach\nThis is research in motion, not marketing. Posts are snapshots of thinking in progress—experiments that failed, methods being refined, questions still open. Some build on previous work. Some contradict it. That’s the point.\nThe underlying thread: understanding how humans and machines create, share, and augment knowledge. The method: treating learning as a lived process, documented in public.\nIf this work intersects with yours, reach out:\n luke@lumosinsight.co.uk |  @LumosInsight |  LinkedIn |  Nostr\n\nPrevious work in psychometric consulting available on request."
   },
   {
     "objectID": "subjects/quantification-of-meaning/introduction-to-semiotics.html#learning-objectives",
@@ -163,7 +151,7 @@
     "href": "index.html",
     "title": "Lumos Insight",
     "section": "",
-    "text": "We live in an age of information excess—a flood of data that often obscures as much as it reveals. New sources and structures of information creating noise and confusion, reducing our clarity of vision and preventing us from finding truth.\nOur goal in this information-rich world is true understanding, which connects disparate pieces and reveals relationships, enabling meaningful action. This understanding is deepened and enriched through social learning—an iterative, collaborative process where insights and interpretations are continuously refined and shared.\nInsight is where the transformation begins. It’s the bridge between raw information and true understanding, emerging as knowledge flows from one person to another, evolving through shared perspectives. As information flows from one perspective to another, it is transformed. Each layer of understanding builds upon the last, gaining depth and dimension through collective reflection and application.\n\nMethodology\nAt Lumos Insight, we generate insight through a structured, social learning approach. By fostering shared reflection and open exploration, we refine information into actionable understanding. Our approach is built on a cycle of learning, reflection, and application, creating a flow of insights that deepens with each pass. By sharing our learning publicly, we contribute to a broader knowledge ecosystem, allowing insights to evolve and improve as they’re applied in new contexts. This iterative knowledge spiral is at the heart of our work.\n\n\nBackground\nLumos Insight began with psychometric validation, a field focused on inferring meaning from human behavior. Psychometric validation allows us to interpret complex human responses as measurable insights, giving organizations a clearer view of the motivations, capabilities, and potential of real people. This foundation has equipped Lumos Insight to expand its focus, applying these same principles to draw meaningful insights from data more broadly.\nWhether we’re interpreting behavior or analyzing data trends, our work aims to help organizations cut through the noise, turning data into human-centered, actionable solutions. Let Lumos Insight guide you from information overload to clarity, understanding, and impact."
+    "text": "This site documents ongoing research at the intersection of knowledge systems, measurement, and artificial intelligence — exploring how we extend, augment, and embody cognition through human-machine collaboration.\nThe questions may have evolved from measuring human behaviour to measuring meaning itself, but the core challenge remains: how do we make the invisible visible, the tacit explicit, and the immeasurable measurable?"
   },
   {
     "objectID": "posts/2026-02-13-at-the-edge-of-capacity/index.html",
@@ -387,10 +375,7 @@
     "href": "subjects.html",
     "title": "Subjects",
     "section": "",
-    "text": "Here are the available courses:\n\nQuantification of Meaning",
-    "crumbs": [
-      "Subjects"
-    ]
+    "text": "Here are the available courses:\n\nQuantification of Meaning"
   },
   {
     "objectID": "posts/2025-09-22-what-a-piece-of-work/index.html",
@@ -670,10 +655,7 @@
     "href": "posts.html",
     "title": "Posts",
     "section": "",
-    "text": "Cognitive Sovereignty and Integrated Inference\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nPrivacy\n\n\n\nWhat a brain-computer interface company was doing at a bitcoin conference in Switzerland — and why it matters for the future of thought\n\n\n\n\n\nFeb 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nAt the Edge of Capacity\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nWriting\n\n\n\nHow well-designed support — physical, cognitive, and environmental — extends our range at the edge of what we can do alone\n\n\n\n\n\nFeb 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nCognitive Bodies\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nArt\n\n\n\nOn embodied intelligence, substrate constraints, and the disposition toward not-knowing\n\n\n\n\n\nJan 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBloom’s Taxonomy as Vocabulary for System 0\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nEducation\n\n\n\nUsing educational frameworks to develop a language for human-AI cognitive distribution\n\n\n\n\n\nJan 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSystem 0 and the Grey Space\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nTechnology\n\n\n\nOn AI, cognition, and the meaning-making gap.\n\n\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHuman or Dancer?\n\n\n\n\n\n\ntheology\n\n\ntechnology\n\n\nculture\n\n\n\nReflecting on Midson’s Cyborg Theology, Haraway’s cyborg provocation, and why The Killers might have more to do with theology than we think.\n\n\n\n\n\nSep 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding Cognitive Scaffolds: Instruction Verbs and Language Proficiency\n\n\n\n\n\n\nLearning Science\n\n\nLanguage\n\n\nCognitive Psychology\n\n\n\nInstruction verbs as cognitive building blocks, linked to CEFR levels, with insights from skill acquisition, levels of processing, and cognitive load.\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWhat a Piece of Work\n\n\n\n\n\n\nAI & Society\n\n\nHistory of Ideas\n\n\nLiterature & Ideas\n\n\n\nFrom Shannon’s playful machines to Hamlet’s ambivalence, a reflection on reason, fragility, and what defines us.\n\n\n\n\n\nSep 22, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLocal Augmentation\n\n\n\n\n\n\nKnowledge management\n\n\nCognitive augmentation\n\n\n\nPutting things together\n\n\n\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe Shape of Ideas\n\n\n\n\n\n\nThematic analysis\n\n\nTextual visualisation\n\n\n\nPart 2 - Focused Frequencies\n\n\n\n\n\nNov 24, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe Shape of Ideas\n\n\n\n\n\n\nThematic analysis\n\n\nTextual visualisation\n\n\n\nPart 1 - Frequencies\n\n\n\n\n\nNov 2, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMeasuring Meaning\n\n\n\n\n\n\nSemantic quantification\n\n\n\nTurning words into numbers\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBeyond Responding\n\n\n\n\n\n\nPsychometric validation\n\n\n\nUsing behaviours as meaning\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded vectors as linguistic objects\n\n\n\n\n\n\nSemantic quantification\n\n\nSemantic and Conceptual clustering\n\n\n\nFinding new structures of meaning\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nCultivating Journalling Habits with AI\n\n\n\n\n\n\nLarge Language Models\n\n\nKnowledge management\n\n\n\nLearning by doing it the hard way\n\n\n\n\n\nMay 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe SECI model & knowledge creation\n\n\n\n\n\n\nKnowledge\n\n\nLearning\n\n\n\nAs knowledge changes, so must we. \n\n\n\n\n\nJun 6, 2023\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Posts"
-    ]
+    "text": "Cognitive Sovereignty and Integrated Inference\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nPrivacy\n\n\n\nWhat a brain-computer interface company was doing at a bitcoin conference in Switzerland — and why it matters for the future of thought\n\n\n\n\n\nFeb 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nAt the Edge of Capacity\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nWriting\n\n\n\nHow well-designed support — physical, cognitive, and environmental — extends our range at the edge of what we can do alone\n\n\n\n\n\nFeb 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nCognitive Bodies\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nArt\n\n\n\nOn embodied intelligence, substrate constraints, and the disposition toward not-knowing\n\n\n\n\n\nJan 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBloom’s Taxonomy as Vocabulary for System 0\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nEducation\n\n\n\nUsing educational frameworks to develop a language for human-AI cognitive distribution\n\n\n\n\n\nJan 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSystem 0 and the Grey Space\n\n\n\n\n\n\nAI\n\n\nCognition\n\n\nTechnology\n\n\n\nOn AI, cognition, and the meaning-making gap.\n\n\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHuman or Dancer?\n\n\n\n\n\n\ntheology\n\n\ntechnology\n\n\nculture\n\n\n\nReflecting on Midson’s Cyborg Theology, Haraway’s cyborg provocation, and why The Killers might have more to do with theology than we think.\n\n\n\n\n\nSep 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding Cognitive Scaffolds: Instruction Verbs and Language Proficiency\n\n\n\n\n\n\nLearning Science\n\n\nLanguage\n\n\nCognitive Psychology\n\n\n\nInstruction verbs as cognitive building blocks, linked to CEFR levels, with insights from skill acquisition, levels of processing, and cognitive load.\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWhat a Piece of Work\n\n\n\n\n\n\nAI & Society\n\n\nHistory of Ideas\n\n\nLiterature & Ideas\n\n\n\nFrom Shannon’s playful machines to Hamlet’s ambivalence, a reflection on reason, fragility, and what defines us.\n\n\n\n\n\nSep 22, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLocal Augmentation\n\n\n\n\n\n\nKnowledge management\n\n\nCognitive augmentation\n\n\n\nPutting things together\n\n\n\n\n\nMar 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe Shape of Ideas\n\n\n\n\n\n\nThematic analysis\n\n\nTextual visualisation\n\n\n\nPart 2 - Focused Frequencies\n\n\n\n\n\nNov 24, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe Shape of Ideas\n\n\n\n\n\n\nThematic analysis\n\n\nTextual visualisation\n\n\n\nPart 1 - Frequencies\n\n\n\n\n\nNov 2, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMeasuring Meaning\n\n\n\n\n\n\nSemantic quantification\n\n\n\nTurning words into numbers\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBeyond Responding\n\n\n\n\n\n\nPsychometric validation\n\n\n\nUsing behaviours as meaning\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nEmbedded vectors as linguistic objects\n\n\n\n\n\n\nSemantic quantification\n\n\nSemantic and Conceptual clustering\n\n\n\nFinding new structures of meaning\n\n\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nCultivating Journalling Habits with AI\n\n\n\n\n\n\nLarge Language Models\n\n\nKnowledge management\n\n\n\nLearning by doing it the hard way\n\n\n\n\n\nMay 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe SECI model & knowledge creation\n\n\n\n\n\n\nKnowledge\n\n\nLearning\n\n\n\nAs knowledge changes, so must we. \n\n\n\n\n\nJun 6, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/interface/index.html",
@@ -681,5 +663,19 @@
     "title": "Interface",
     "section": "",
     "text": "Interface is an in-development cognitive augmentation product. It has been designed in light of recent developments in cognitive ergonomic theories relating to the idea that our minds are extended into the world outside and embodied in a variety of substrates.\nRecently developed AI capabilities have been characterised as ‘system 0’, a distinct layer of the cognitive system which is tasked with performing inference - transforming, condensing, reformatting, linguistic content. The emergence of these capabilities, and defining them within this framework, provides new opportunities for us to explore and visualise our cognitive processes. To embody them in external processes, and in doing so expand the range of our capabilities and insights.\nSoftware for cognitive integration should be designed around trust, agency, sovereignty, oversight, and the option for exit. Interface is built to support privacy, self-sovereignty, and comparability — an open system sitting between your volition and your externalised cognitive structures. Good design supports, strengthens, and empowers.\nWe create our tools and our tools reshape us and the world around us.\n\nLink"
+  },
+  {
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "Lumos Insight",
+    "section": "Background",
+    "text": "Background\nLumos Insight began with psychometric survey development — inferring meaning from human behaviour through validated measurement. This foundation in cognitive assessment design — operationalising constructs, validating instruments, measuring latent variables — now informs how I approach questions of semantic quantification and human-AI interaction.\nMore recently, I’ve been exploring related questions:\n\nHow do we quantify and represent meaning in language?\nHow do knowledge and understanding emerge from human-AI collaboration?\nWhat changes in how we think when our cognitive partners are machines?\n\nPosts here trace a path from knowledge creation (SECI model, cognitive scaffolding) through semantic quantification (measuring meaning, embeddings as linguistic objects) to the lived experience of thinking with AI systems (journaling, local augmentation, System 0).\nAlongside this theoretical work, I’m experimenting with augmentation software — exploring the interface between human cognition and machine intelligence through hands-on development and testing. This work draws on principles from cognitive assessment design: how do we instrument thought, measure understanding, and validate that our tools actually augment rather than distort?"
+  },
+  {
+    "objectID": "index.html#approach",
+    "href": "index.html#approach",
+    "title": "Lumos Insight",
+    "section": "Approach",
+    "text": "Approach\nThis is research in motion, not marketing. Posts are snapshots of thinking in progress — experiments that failed, methods being refined, questions still open. Some build on previous work. Some contradict it. That’s the point.\nThe underlying thread: understanding how humans and machines create, share, and augment knowledge. The method: treating learning as a lived process, documented in public.\n\n\n◉ Recent Posts\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Post\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nPost\n\n\n\n\n\n\n28 Feb 2026\n\n\nCognitive Sovereignty and Integrated Inference\n\n\n\n\n13 Feb 2026\n\n\nAt the Edge of Capacity\n\n\n\n\n20 Jan 2026\n\n\nCognitive Bodies\n\n\n\n\n9 Jan 2026\n\n\nBloom’s Taxonomy as Vocabulary for System 0\n\n\n\n\n31 Dec 2025\n\n\nSystem 0 and the Grey Space\n\n\n\n\n\nNo matching items"
   }
 ]

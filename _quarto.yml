@@ -4,27 +4,25 @@ project:
 website:
   title: "Lumos Insight"
   description: "Exploring knowledge, measurement, behaviour, and technology"
-  site-url: https://www.lumosinsight.co.uk   # enables absolute OG/Twitter URLs
+  site-url: https://www.lumosinsight.co.uk
   open-graph: true
   favicon: "images/logo.PNG"
-  sidebar:
+  navbar:
     logo: "images/logo.PNG"
-    style: "docked"
-    search: false
-    contents:
-      - text: "About"
-        href: about.qmd
+    logo-alt: "Lumos Insight"
+    left:
       - text: "Posts"
         href: posts.qmd
       - text: "Projects"
         href: projects.qmd
       - text: "Subjects"
         href: subjects.qmd
+      - text: "About"
+        href: about.qmd
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: [cosmo, styles.scss]
     toc: true
     include-in-header:
       text: |
