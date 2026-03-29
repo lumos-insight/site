@@ -40,6 +40,7 @@ toc-depth: 2
 
 # Measurement as Architecture
 
+![](header.png){fig-align="center" width="100%"}
 
 Measures are never just measures. They reflect our theories about the system being studied — decisions about what phenomena are worth attending to, how to parcel them up, quantise and quantify them. In that sense, every measurement framework encodes a prior commitment about what matters.
 

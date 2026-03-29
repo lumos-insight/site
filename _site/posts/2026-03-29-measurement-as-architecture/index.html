@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-03-29">
+<meta name="description" content="Why the frameworks we use to measure systems don’t just describe them — they shape what those systems become">
+
+<title>Lumos Insight - Measurement as Architecture</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/logo.PNG" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+<meta property="og:title" content="Measurement as Architecture">
+<meta property="og:description" content="Why the frameworks we use to measure systems don’t just describe them — they shape what those systems become">
+<meta property="og:image" content="https://www.lumosinsight.co.uk/posts/2026-03-29-measurement-as-architecture/header.png">
+<meta property="og:site_name" content="Lumos Insight">
+<meta property="og:image:alt" content="Art deco all-seeing eye with golden radiating lines on a dark teal background">
+<meta name="twitter:title" content="Measurement as Architecture">
+<meta name="twitter:description" content="Why the frameworks we use to measure systems don’t just describe them — they shape what those systems become">
+<meta name="twitter:image" content="https://www.lumosinsight.co.uk/posts/2026-03-29-measurement-as-architecture/header.png">
+<meta name="twitter:image:alt" content="Art deco all-seeing eye with golden radiating lines on a dark teal background">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.lumosinsight.co.uk/posts/2026-03-29-measurement-as-architecture/">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.PNG" alt="Lumos Insight" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Lumos Insight</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../subjects.html"> 
+<span class="menu-text">Subjects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#measurement-as-architecture" id="toc-measurement-as-architecture" class="nav-link active" data-scroll-target="#measurement-as-architecture">Measurement as Architecture</a>
+  <ul class="collapse">
+  <li><a href="#measurement-and-its-consequences" id="toc-measurement-and-its-consequences" class="nav-link" data-scroll-target="#measurement-and-its-consequences">Measurement and its consequences</a></li>
+  <li><a href="#measurement-as-participation" id="toc-measurement-as-participation" class="nav-link" data-scroll-target="#measurement-as-participation">Measurement as participation</a></li>
+  <li><a href="#metrics-as-product-architecture" id="toc-metrics-as-product-architecture" class="nav-link" data-scroll-target="#metrics-as-product-architecture">Metrics as product architecture</a></li>
+  <li><a href="#evaluation-and-the-shape-of-intelligence" id="toc-evaluation-and-the-shape-of-intelligence" class="nav-link" data-scroll-target="#evaluation-and-the-shape-of-intelligence">Evaluation and the shape of intelligence</a></li>
+  <li><a href="#frameworks-as-governance" id="toc-frameworks-as-governance" class="nav-link" data-scroll-target="#frameworks-as-governance">Frameworks as governance</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Measurement as Architecture</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">Systems</div>
+    <div class="quarto-category">Design</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Why the frameworks we use to measure systems don’t just describe them — they shape what those systems become
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 29, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="measurement-as-architecture" class="level1">
+<h1>Measurement as Architecture</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="header.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+<p>Measures are never just measures. They reflect our theories about the system being studied — decisions about what phenomena are worth attending to, how to parcel them up, quantise and quantify them. In that sense, every measurement framework encodes a prior commitment about what matters.</p>
+<p>Once embedded in decision processes, those commitments propagate. The systems that depend on our measures inherit their assumptions. The consequences and outcomes those systems produce are downstream of them. And critically, the relationship between our measures and the world they describe may itself change as a result of their use. By measuring — perceiving, making concrete our approximations, and making them part of our decisions — we alter the world our measures were built to describe, and in doing so, change the utility of the measures themselves.</p>
+<section id="measurement-and-its-consequences" class="level2">
+<h2 class="anchored" data-anchor-id="measurement-and-its-consequences">Measurement and its consequences</h2>
+<p>These are not abstract concerns. They are rooted in psychometric theory but carry implications for how we design systems of all kinds, and are increasingly relevant to how we evaluate artificial intelligence.</p>
+<p>Validity is a foundational concept in psychometrics. Broadly, it addresses whether what we claim to measure is actually being measured — how our models of the world relate to it. But validity goes beyond questions of accuracy. In <em>Meaning and Values in Test Validation: The Science and Ethics of Assessment</em>, Samuel Messick argued that measurement choices are also value choices. The consequences of using a particular measure — who is affected, how, and under what conditions — are not incidental to its validity. They are part of it.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>The consequences of measurement extend beyond what Messick had in mind. His concern was with the ethics of assessment — the social effects of deploying a measure. But there is a second and distinct problem: measurement does not merely reveal the world as it is. By making explicit what is being tracked, it creates new opportunities for the world to change. Incentive structures form around what is counted. Behaviour orients toward what is observed. Through the act of measurement, the system being measured is altered.</p>
+<p>Donald Campbell, writing in the context of social policy evaluation, identified one mechanism by which this occurs:</p>
+<blockquote class="blockquote">
+<p>The more any quantitative social indicator is used for social decision-making, the more subject it will be to corruption pressures and the more apt it will be to distort and corrupt the social processes it is intended to monitor.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</blockquote>
+<p>Where Campbell emphasised corruption under institutional pressure, the economist Charles Goodhart identified the same dynamic at the level of policy targets.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> In its most cited formulation — due to the anthropologist Marilyn Strathern — the principle is straightforward: “When a measure becomes a target, it ceases to be a good measure.”<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>Messick’s consequential validity and Campbell’s law are related but distinct. Messick is asking whether it is right to use a measure given its effects on people. Campbell and Goodhart are observing that use degrades the measure itself. The first is an ethical problem; the second is a systemic one. Together they suggest that the moment a measure enters a decision-making system, its relationship to the phenomenon it was designed to track begins to shift.</p>
+<p>Cybernetics names this more precisely. Rather than treating measurement-induced distortion as a pathology — something that happens when systems are badly designed or badly motivated — it treats it as a structural feature. When a measure is introduced into a system, it creates a feedback loop. The sensor becomes part of the system’s regulatory architecture. Measurement is not observation from outside; it is participation from within.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+</section>
+<section id="measurement-as-participation" class="level2">
+<h2 class="anchored" data-anchor-id="measurement-as-participation">Measurement as participation</h2>
+<p>The sociologist Donald MacKenzie took this argument furthest. In <em>An Engine, Not a Camera</em> (2006), he studied how financial models relate to the markets they were built to describe — and found that the relationship runs in both directions.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<p>His central case is the Black-Scholes options pricing model, developed in 1973. The model was designed to calculate the fair price of financial options based on a set of assumptions about how markets behave. When traders adopted it, something unexpected happened: markets began to behave more like the model assumed. The model’s widespread use shaped the very dynamics it was built to describe. It was not passively recording market behaviour. It was, in part, producing it.</p>
+<p>MacKenzie calls this <em>performativity</em>. A camera records what is already there. An engine transforms inputs into outputs — it acts on the world rather than merely representing it. Financial models, he argues, are engines. And the same logic extends to any measurement framework that becomes embedded in the operation of a live system.</p>
+<p>This is a harder claim than Campbell or Goodhart. They observe that measurement distorts incentives. MacKenzie observes that measurement can <em>constitute</em> the phenomenon it purports to measure. The model does not just change how people respond to the market — it changes what the market is.</p>
+<p>For the purposes of this argument, the distinction matters. Campbell and Goodhart describe a degradation problem: measures start accurate and become less so under pressure. MacKenzie describes a generative problem: the measure and the system co-evolve from the outset. There is no prior state of undistorted measurement to return to. The framework, once embedded, is part of the system’s structure.</p>
+</section>
+<section id="metrics-as-product-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="metrics-as-product-architecture">Metrics as product architecture</h2>
+<p>MacKenzie’s argument was made in the context of financial markets, but the logic transfers directly to how products are built and governed.</p>
+<p>Once a metric is embedded in a dashboard, a sprint review, or a funding conversation, it begins to select for behaviours that serve it. Teams optimise toward what is tracked. Roadmaps orient around what moves the number. Features that do not register in the measurement framework struggle to attract resources regardless of their actual value. Over time, the product evolves not toward what it was intended to be, but toward what its metrics reward.</p>
+<p>This is not a failure of discipline. It is the system working as designed. OKRs, NPS, engagement rates, retention curves — these are not neutral instruments for observing a product. They are feedback architectures. The choice of which metrics to adopt, and when, is an architectural decision about what the product will become. It shapes what the team can perceive about their own system, and therefore what they can respond to.</p>
+<p>The planning moment — when a team under complexity reaches for a measurement framework to create traction — is precisely when this risk is highest. The instinct is correct: structure is needed. But the framework chosen in that moment is also a commitment. It will begin to select, to reward, to constrain, often before anyone has noticed it doing so.</p>
+</section>
+<section id="evaluation-and-the-shape-of-intelligence" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-and-the-shape-of-intelligence">Evaluation and the shape of intelligence</h2>
+<p>Nowhere is this more visible at present than in the development of artificial intelligence.</p>
+<p>AI systems are trained and assessed against benchmarks — standardised evaluations designed to measure capability across tasks. Benchmarks like MMLU, which tests knowledge across academic domains, or HumanEval, which measures code generation, have become the primary language through which progress in AI is claimed and communicated. They define, operationally, what capability means.</p>
+<p>The problem is that systems optimise toward what they are evaluated on. As benchmarks become targets, performance on them saturates — not necessarily because the underlying capability has been achieved, but because the system has learned the shape of the evaluation. New benchmarks are introduced; the cycle continues. The evaluation framework does not track the development of intelligence. It participates in determining what intelligence, in this context, becomes.</p>
+<p>This dynamic is visible to those closest to it. Speaking with Dwarkesh Patel, Ilya Sutskever — co-founder of OpenAI and SSI — observed the growing disconnect between benchmark performance and real-world impact, and offered a candid account of one mechanism behind it:</p>
+<blockquote class="blockquote">
+<p>When people do RL training, they do need to think… What would be RL training that could help on this task? I think that is something that happens — taking inspiration from the evals — and it could explain a lot of what’s going on.</p>
+</blockquote>
+<p>Patel’s gloss was characteristically direct: “The real reward hacking is the human researchers who are too focused on the evals.”<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+<p>This is Campbell’s law operating at the frontier of AI development. The researchers are not acting in bad faith. They are responding rationally to the incentive structure created by the measurement framework. The evals are the target; the training orients toward them; the gap between eval performance and genuine capability widens. The framework, designed to assess progress, is shaping what progress means.</p>
+<p>The cybernetician Stafford Beer captured this with characteristic economy: “the purpose of a system is what it does.”<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Whatever an evaluation framework claims to measure, what it actually does is define the gradient along which the system develops. That is its purpose, functionally speaking — regardless of the intentions of those who designed it.</p>
+<p>The governance implication is direct: who designs the benchmark designs the direction of travel. Evaluation frameworks for AI systems are not measurement instruments in any neutral sense. They are, in MacKenzie’s terms, engines. They produce the capabilities they claim to assess.</p>
+<p>This raises a question that applies equally to product metrics and to AI evaluation: at what point does a measurement framework stop describing a system and start structuring it? The answer, given everything above, is that it begins structuring the system from the moment it is introduced. The question is whether those designing the framework are aware that this is what they are doing.</p>
+</section>
+<section id="frameworks-as-governance" class="level2">
+<h2 class="anchored" data-anchor-id="frameworks-as-governance">Frameworks as governance</h2>
+<p>The most consequential design decisions in complex systems are often not visible in the interface. They live in the measurement frameworks that quietly shape how the system evolves.</p>
+<p>Messick understood that choosing how to measure something is a value judgement. Campbell and Goodhart showed that embedding a measure in a decision system degrades it. MacKenzie demonstrated that the model and the system co-evolve — that there is no neutral vantage point from which to observe without participating. Cybernetics formalised all of this as a structural property, not a failure mode.</p>
+<p>What follows is not that measurement should be avoided, or that metrics are inherently corrupting. It is that measurement frameworks deserve the same deliberateness we bring to any other consequential design decision. They are not analytics. They are governance.</p>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Messick, S. (1989). “Meaning and values in test validation: The science and ethics of assessment”. <em>Educational Researcher</em>. 18(2): 5–11.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Campbell, Donald T. (1979). “Assessing the impact of planned social change”. <em>Evaluation and Program Planning</em>. 2(1): 67–90.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Goodhart, C. A. E. (1975). “Problems of Monetary Management: The U.K. Experience”. In <em>Papers in Monetary Economics</em>. Reserve Bank of Australia.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Strathern, M. (1997). “‘Improving ratings’: audit in the British University system”. <em>European Review</em>. 5(3): 305–321.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Wiener, N. (1948). <em>Cybernetics: Or Control and Communication in the Animal and the Machine</em>. MIT Press.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>MacKenzie, D. (2006). <em>An Engine, Not a Camera: How Financial Models Shape Markets</em>. MIT Press.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Patel, D. (2025). “Ilya Sutskever — We’re moving from the age of scaling to the age of research”. <em>The Dwarkesh Podcast</em>. <a href="https://www.dwarkesh.com/p/ilya-sutskever-2" class="uri">https://www.dwarkesh.com/p/ilya-sutskever-2</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Beer, S. (1985). <em>Diagnosing the System for Organizations</em>. Wiley. The POSIWID principle appears across Beer’s work but is most concisely stated here.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script src="https://giscus.app/client.js" data-repo="Lumons/site" data-repo-id="R_kgDOITI-Jg" data-category="General" data-category-id="DIC_kwDOITI-Js4Cj8Qx" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/www\.lumosinsight\.co\.uk");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
