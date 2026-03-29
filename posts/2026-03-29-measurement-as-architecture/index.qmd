@@ -1,0 +1,133 @@
+---
+title: "Measurement as Architecture"
+description: "Why the frameworks we use to measure systems don't just describe them — they shape what those systems become"
+date: 2026-03-29
+draft: false
+categories: [AI, Systems, Design]
+tags: [measurement, goodhart, campbell, performativity, metrics, ai-evaluation, cybernetics, benchmarks, governance, psychometrics]
+canonical-url: https://www.lumosinsight.co.uk/posts/2026-03-29-measurement-as-architecture/
+cover-image: header.png
+cover-image-alt: "Art deco all-seeing eye with golden radiating lines on a dark teal background"
+
+open-graph:
+  title: "Measurement as Architecture"
+  description: "Why the frameworks we use to measure systems don't just describe them — they shape what those systems become"
+  image: https://www.lumosinsight.co.uk/posts/2026-03-29-measurement-as-architecture/header.png
+  image-alt: "Art deco all-seeing eye with golden radiating lines on a dark teal background"
+  site-url: https://www.lumosinsight.co.uk/posts/2026-03-29-measurement-as-architecture/
+
+twitter-card:
+  card: "summary_large_image"
+  title: "Measurement as Architecture"
+  description: "Why the frameworks we use to measure systems don't just describe them — they shape what those systems become"
+  image: https://www.lumosinsight.co.uk/posts/2026-03-29-measurement-as-architecture/header.png
+  image-alt: "Art deco all-seeing eye with golden radiating lines on a dark teal background"
+
+format:
+  html:
+    include-after-body: "../../giscus.html"
+
+editor: visual
+
+execute:
+  echo: false
+  warning: false
+  message: false
+
+toc: true
+toc-depth: 2
+---
+
+# Measurement as Architecture
+
+
+Measures are never just measures. They reflect our theories about the system being studied — decisions about what phenomena are worth attending to, how to parcel them up, quantise and quantify them. In that sense, every measurement framework encodes a prior commitment about what matters.
+
+Once embedded in decision processes, those commitments propagate. The systems that depend on our measures inherit their assumptions. The consequences and outcomes those systems produce are downstream of them. And critically, the relationship between our measures and the world they describe may itself change as a result of their use. By measuring — perceiving, making concrete our approximations, and making them part of our decisions — we alter the world our measures were built to describe, and in doing so, change the utility of the measures themselves.
+
+## Measurement and its consequences
+
+These are not abstract concerns. They are rooted in psychometric theory but carry implications for how we design systems of all kinds, and are increasingly relevant to how we evaluate artificial intelligence.
+
+Validity is a foundational concept in psychometrics. Broadly, it addresses whether what we claim to measure is actually being measured — how our models of the world relate to it. But validity goes beyond questions of accuracy. In *Meaning and Values in Test Validation: The Science and Ethics of Assessment*, Samuel Messick argued that measurement choices are also value choices. The consequences of using a particular measure — who is affected, how, and under what conditions — are not incidental to its validity. They are part of it.[^2]
+
+The consequences of measurement extend beyond what Messick had in mind. His concern was with the ethics of assessment — the social effects of deploying a measure. But there is a second and distinct problem: measurement does not merely reveal the world as it is. By making explicit what is being tracked, it creates new opportunities for the world to change. Incentive structures form around what is counted. Behaviour orients toward what is observed. Through the act of measurement, the system being measured is altered.
+
+Donald Campbell, writing in the context of social policy evaluation, identified one mechanism by which this occurs:
+
+> The more any quantitative social indicator is used for social decision-making, the more subject it will be to corruption pressures and the more apt it will be to distort and corrupt the social processes it is intended to monitor.[^1]
+
+[^1]: Campbell, Donald T. (1979). "Assessing the impact of planned social change". *Evaluation and Program Planning*. 2(1): 67–90.
+
+[^2]: Messick, S. (1989). "Meaning and values in test validation: The science and ethics of assessment". *Educational Researcher*. 18(2): 5–11.
+
+Where Campbell emphasised corruption under institutional pressure, the economist Charles Goodhart identified the same dynamic at the level of policy targets.[^3] In its most cited formulation — due to the anthropologist Marilyn Strathern — the principle is straightforward: "When a measure becomes a target, it ceases to be a good measure."[^4]
+
+Messick's consequential validity and Campbell's law are related but distinct. Messick is asking whether it is right to use a measure given its effects on people. Campbell and Goodhart are observing that use degrades the measure itself. The first is an ethical problem; the second is a systemic one. Together they suggest that the moment a measure enters a decision-making system, its relationship to the phenomenon it was designed to track begins to shift.
+
+Cybernetics names this more precisely. Rather than treating measurement-induced distortion as a pathology — something that happens when systems are badly designed or badly motivated — it treats it as a structural feature. When a measure is introduced into a system, it creates a feedback loop. The sensor becomes part of the system's regulatory architecture. Measurement is not observation from outside; it is participation from within.[^5]
+
+## Measurement as participation
+
+The sociologist Donald MacKenzie took this argument furthest. In *An Engine, Not a Camera* (2006), he studied how financial models relate to the markets they were built to describe — and found that the relationship runs in both directions.[^6]
+
+His central case is the Black-Scholes options pricing model, developed in 1973. The model was designed to calculate the fair price of financial options based on a set of assumptions about how markets behave. When traders adopted it, something unexpected happened: markets began to behave more like the model assumed. The model's widespread use shaped the very dynamics it was built to describe. It was not passively recording market behaviour. It was, in part, producing it.
+
+MacKenzie calls this *performativity*. A camera records what is already there. An engine transforms inputs into outputs — it acts on the world rather than merely representing it. Financial models, he argues, are engines. And the same logic extends to any measurement framework that becomes embedded in the operation of a live system.
+
+This is a harder claim than Campbell or Goodhart. They observe that measurement distorts incentives. MacKenzie observes that measurement can *constitute* the phenomenon it purports to measure. The model does not just change how people respond to the market — it changes what the market is.
+
+For the purposes of this argument, the distinction matters. Campbell and Goodhart describe a degradation problem: measures start accurate and become less so under pressure. MacKenzie describes a generative problem: the measure and the system co-evolve from the outset. There is no prior state of undistorted measurement to return to. The framework, once embedded, is part of the system's structure.
+
+
+## Metrics as product architecture
+
+MacKenzie's argument was made in the context of financial markets, but the logic transfers directly to how products are built and governed.
+
+Once a metric is embedded in a dashboard, a sprint review, or a funding conversation, it begins to select for behaviours that serve it. Teams optimise toward what is tracked. Roadmaps orient around what moves the number. Features that do not register in the measurement framework struggle to attract resources regardless of their actual value. Over time, the product evolves not toward what it was intended to be, but toward what its metrics reward.
+
+This is not a failure of discipline. It is the system working as designed. OKRs, NPS, engagement rates, retention curves — these are not neutral instruments for observing a product. They are feedback architectures. The choice of which metrics to adopt, and when, is an architectural decision about what the product will become. It shapes what the team can perceive about their own system, and therefore what they can respond to.
+
+The planning moment — when a team under complexity reaches for a measurement framework to create traction — is precisely when this risk is highest. The instinct is correct: structure is needed. But the framework chosen in that moment is also a commitment. It will begin to select, to reward, to constrain, often before anyone has noticed it doing so.
+
+## Evaluation and the shape of intelligence
+
+Nowhere is this more visible at present than in the development of artificial intelligence.
+
+AI systems are trained and assessed against benchmarks — standardised evaluations designed to measure capability across tasks. Benchmarks like MMLU, which tests knowledge across academic domains, or HumanEval, which measures code generation, have become the primary language through which progress in AI is claimed and communicated. They define, operationally, what capability means.
+
+The problem is that systems optimise toward what they are evaluated on. As benchmarks become targets, performance on them saturates — not necessarily because the underlying capability has been achieved, but because the system has learned the shape of the evaluation. New benchmarks are introduced; the cycle continues. The evaluation framework does not track the development of intelligence. It participates in determining what intelligence, in this context, becomes.
+
+This dynamic is visible to those closest to it. Speaking with Dwarkesh Patel, Ilya Sutskever — co-founder of OpenAI and SSI — observed the growing disconnect between benchmark performance and real-world impact, and offered a candid account of one mechanism behind it:
+
+> When people do RL training, they do need to think... What would be RL training that could help on this task? I think that is something that happens — taking inspiration from the evals — and it could explain a lot of what's going on.
+
+Patel's gloss was characteristically direct: "The real reward hacking is the human researchers who are too focused on the evals."[^7]
+
+This is Campbell's law operating at the frontier of AI development. The researchers are not acting in bad faith. They are responding rationally to the incentive structure created by the measurement framework. The evals are the target; the training orients toward them; the gap between eval performance and genuine capability widens. The framework, designed to assess progress, is shaping what progress means.
+
+The cybernetician Stafford Beer captured this with characteristic economy: "the purpose of a system is what it does."[^8] Whatever an evaluation framework claims to measure, what it actually does is define the gradient along which the system develops. That is its purpose, functionally speaking — regardless of the intentions of those who designed it.
+
+The governance implication is direct: who designs the benchmark designs the direction of travel. Evaluation frameworks for AI systems are not measurement instruments in any neutral sense. They are, in MacKenzie's terms, engines. They produce the capabilities they claim to assess.
+
+This raises a question that applies equally to product metrics and to AI evaluation: at what point does a measurement framework stop describing a system and start structuring it? The answer, given everything above, is that it begins structuring the system from the moment it is introduced. The question is whether those designing the framework are aware that this is what they are doing.
+
+## Frameworks as governance
+
+The most consequential design decisions in complex systems are often not visible in the interface. They live in the measurement frameworks that quietly shape how the system evolves.
+
+Messick understood that choosing how to measure something is a value judgement. Campbell and Goodhart showed that embedding a measure in a decision system degrades it. MacKenzie demonstrated that the model and the system co-evolve — that there is no neutral vantage point from which to observe without participating. Cybernetics formalised all of this as a structural property, not a failure mode.
+
+What follows is not that measurement should be avoided, or that metrics are inherently corrupting. It is that measurement frameworks deserve the same deliberateness we bring to any other consequential design decision. They are not analytics. They are governance.
+
+[^3]: Goodhart, C. A. E. (1975). "Problems of Monetary Management: The U.K. Experience". In *Papers in Monetary Economics*. Reserve Bank of Australia.
+
+[^4]: Strathern, M. (1997). "'Improving ratings': audit in the British University system". *European Review*. 5(3): 305–321.
+
+[^5]: Wiener, N. (1948). *Cybernetics: Or Control and Communication in the Animal and the Machine*. MIT Press.
+
+[^6]: MacKenzie, D. (2006). *An Engine, Not a Camera: How Financial Models Shape Markets*. MIT Press.
+
+[^7]: Patel, D. (2025). "Ilya Sutskever — We're moving from the age of scaling to the age of research". *The Dwarkesh Podcast*. <https://www.dwarkesh.com/p/ilya-sutskever-2>
+
+[^8]: Beer, S. (1985). *Diagnosing the System for Organizations*. Wiley. The POSIWID principle appears across Beer's work but is most concisely stated here.
