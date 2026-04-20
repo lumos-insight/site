@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-20">
+<meta name="description" content="How the frameworks used to evaluate clinical AI systems shape what failures get seen — and what governance happens by default when they don’t">
+
+<title>Lumos Insight - Measurement as Architecture: Evaluation Frameworks in Clinical AI</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/logo.PNG" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+<meta property="og:title" content="Measurement as Architecture: Evaluation Frameworks in Clinical AI">
+<meta property="og:description" content="How the frameworks used to evaluate clinical AI systems shape what failures get seen — and what governance happens by default when they don’t">
+<meta property="og:image" content="https://www.lumosinsight.co.uk/posts/2026-04-20-blog-measurement-as-architecture-evaluation-frameworks-for-clinical-ai/header.png">
+<meta property="og:site_name" content="Lumos Insight">
+<meta property="og:image:alt" content="Symmetrical Art Deco architectural facade with gold chevron arches, geometric fan motifs, and radiating patterns on a dark background">
+<meta name="twitter:title" content="Measurement as Architecture: Evaluation Frameworks in Clinical AI">
+<meta name="twitter:description" content="How the frameworks used to evaluate clinical AI systems shape what failures get seen — and what governance happens by default when they don’t">
+<meta name="twitter:image" content="https://www.lumosinsight.co.uk/posts/2026-04-20-blog-measurement-as-architecture-evaluation-frameworks-for-clinical-ai/header.png">
+<meta name="twitter:image:alt" content="Symmetrical Art Deco architectural facade with gold chevron arches, geometric fan motifs, and radiating patterns on a dark background">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.lumosinsight.co.uk/posts/2026-04-20-blog-measurement-as-architecture-evaluation-frameworks-for-clinical-ai/">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.PNG" alt="Lumos Insight" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Lumos Insight</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../subjects.html"> 
+<span class="menu-text">Subjects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#measurement-as-architecture-evaluation-frameworks-in-clinical-ai" id="toc-measurement-as-architecture-evaluation-frameworks-in-clinical-ai" class="nav-link active" data-scroll-target="#measurement-as-architecture-evaluation-frameworks-in-clinical-ai">Measurement as Architecture: Evaluation Frameworks in Clinical AI</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Measurement as Architecture: Evaluation Frameworks in Clinical AI</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">Healthcare</div>
+    <div class="quarto-category">Systems</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    How the frameworks used to evaluate clinical AI systems shape what failures get seen — and what governance happens by default when they don’t
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 20, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="measurement-as-architecture-evaluation-frameworks-in-clinical-ai" class="level1">
+<h1>Measurement as Architecture: Evaluation Frameworks in Clinical AI</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="header.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+<p><em>Second in a series. The first post established that measurement frameworks are not neutral instruments — they are architectural commitments that shape the systems they are embedded in. This post applies that argument to clinical AI.</em></p>
+<hr>
+<p>The <a href="../TODO">previous post</a> argued that evaluation frameworks are not neutral instruments — that once embedded in a system, they become part of its architecture, selecting for certain behaviours over others. Applied to AI, this means the eval is not a check on the system. It is part of the system.</p>
+<p>That argument was made at the level of model training and product metrics. The same logic applies one layer up: to the tools used to decide whether a clinical AI system is ready to deploy, and whether it is working once it is. This is where a distinction that is often glossed over starts to matter — between a <strong>framework</strong> and an <strong>evaluation</strong>.</p>
+<p>A framework specifies what you should be paying attention to. It names the relevant dimensions, values, and risks. It is normative — it tells you what a responsible system looks like in principle. An evaluation gives you instruments to answer whether the system actually has those properties: metrics, criteria, scores, thresholds. It tells you what you can detect.</p>
+<p>Both are necessary, and they are not the same thing. The connection between them is often thin — frameworks produced early as design documents, evals later as implementation concerns, with few mechanisms connecting the two. That gap doesn’t stay empty. When no one has specified what the system should be doing and what failure looks like, the eval fills the vacuum. Engineering measures what it can measure, optimises for what it can optimise, and the product that results reflects those choices — not because anyone decided they were the right ones, but because no one made the competing decision explicitly. In clinical AI, where the consequences reach patients, that is a governance failure. It just looks like an engineering decision.</p>
+<hr>
+<section id="hinton-and-the-radiologists" class="level3">
+<h3 class="anchored" data-anchor-id="hinton-and-the-radiologists">Hinton and the radiologists</h3>
+<p>Geoffrey Hinton <a href="https://www.youtube.com/watch?v=2HMPRXstSvQ">said in 2016</a> that we should stop training radiologists. Models were hitting radiologist-level performance on benchmark chest X-ray datasets, and the trajectory looked clear. The prediction seemed entirely reasonable from inside the eval.</p>
+<p>Radiologists still exist. Deployment proved substantially harder than benchmarks suggested. Hinton later acknowledged he had spoken too broadly — <a href="https://www.nytimes.com/2025/05/14/technology/ai-jobs-radiologists-mayo-clinic.html">wrong on timing and scope, not direction</a>. In a few years, he said, most medical image interpretation will be done by a combination of AI and a radiologist, making radiologists more efficient and improving accuracy.</p>
+<p>Hinton wasn’t wrong about the evals. He was wrong about what the evals were measuring. The benchmarks assessed performance on a curated distribution of images under controlled conditions. They did not assess what clinical utility actually requires: reliability across the heterogeneous conditions of deployment, integration into clinical workflows, performance across patient subgroups, behaviour under distribution shift. The framework question — what would this system have to demonstrate to be trusted with a patient? — had not been answered. The eval had answered a different question, and the answer looked good.</p>
+<p>This is the tension the rest of this post examines.</p>
+<hr>
+</section>
+<section id="what-the-evals-show-and-what-they-miss" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-evals-show-and-what-they-miss">What the evals show and what they miss</h3>
+<p>AI models are trained against benchmarks. Performing well on a benchmark means doing well at what the benchmark measures. In clinical settings, that distinction has consequences. Three cases illustrate it, in escalating order of what it takes to see the problem.</p>
+<p><a href="https://doi.org/10.2196/58329">Seo et al.</a> were tackling the documentation burden on clinical staff — the time spent writing up clinical encounters that an LLM could, in principle, handle. To evaluate whether LLMs could do this reliably, they developed a dual methodology: expert reviewers assessed outputs using structured coding and inter-rater reliability scores across five categories covering clarity, completeness, correctness, extraneous information, and missing safety-relevant content. Inter-rater agreement was reasonable — Cohen’s Kappa of 0.542. This is careful evaluation work. The dimension it centres, though, is usability: whether the outputs are clear, complete, and acceptable to the reviewers in the room. The most common error type was invalid generation — hallucination — at 35% of cases. It was counted at point of generation. There is no specification in the methodology of what a hallucinated entry in a clinical record means six months later, when a different clinician reads it, or when it informs a prescribing decision. The eval answered a coherent question. It just wasn’t the question clinical safety required, and nothing in the methodology flagged that gap.</p>
+<p><a href="https://doi.org/10.1038/s41598-025-09138-0">Hakim et al.</a> were working on a different clinical workflow with higher regulatory stakes: the translation of Japanese Individual Case Safety Reports (ICSRs) into English for pharmacovigilance purposes. ICSRs are the structured documents through which suspected adverse drug reactions are reported to regulators — EMA, MHRA, FDA — and they must accurately capture the drug involved, the adverse event, patient details, and timeline. The volume arriving from Japan alone runs to tens of thousands annually; the manual translation burden is substantial. The researchers fine-tuned multilingual LLMs on a corpus of 131,000 ICSR examples and evaluated initial model selection using perplexity and BLEU scores — standard machine translation metrics measuring fluency and surface-level accuracy. The best-performing model reached a BLEU score of 0.39, considered indicative of high-quality translation. On that basis, it looked promising.</p>
+<p>Expert human evaluation told a different story. Pharmacovigilance specialists reviewed 210 translated cases. Drug name or information was wrong in 60% of cases. Adverse events were incorrect or missing in 71%. Dates and times were wrong in 64%. Only 35% of cases were judged clinically accurate overall. The fluency metrics had selected for a model that produced readable, well-formed text. What they hadn’t penalised was accuracy on the specific fields that determine whether a pharmacovigilance signal is real. This is Campbell’s law in the clinical domain: the measure became the target, and the system optimised toward it — not because anyone chose fluency over accuracy, but because fluency was what was being measured.</p>
+<p>Critically, Hakim et al.&nbsp;had anticipated this. Rather than discovering the failures at deployment, they built a guardrail suite as part of the study design — three instruments intended to enforce what the fluency metrics hadn’t. DL-UQ (document-level uncertainty quantification) identified submitted documents unlikely to be genuine ICSRs, flagging anomalous inputs before they entered the pipeline. MISMATCH was a hard guardrail: it compared drug names and adverse event terms between the source Japanese text and the LLM output using regulatory dictionaries, flagging any case where a term appeared in one but not the other — hallucinated drug names, the paper’s “never event,” were caught in every identified case. TL-UQ (token-level uncertainty quantification) assigned uncertainty scores at word level, highlighting spans for human reviewer attention. Cases flagged by any guardrail were routed for human-in-the-loop review rather than passed through automatically.</p>
+<p>This is what framework thinking looks like operationalised. The researchers identified a class of errors — wrong drug names in pharmacovigilance reports — that constituted an unacceptable failure mode regardless of overall output quality, then built an instrument specifically to enforce that constraint. MISMATCH is not an eval of translation quality; it is an eval of a normative claim about what the system must never do. That is the distinction between eval and framework made concrete — and Hakim et al.&nbsp;built both. What makes the case instructive is not that it failed, but that it shows how much additional work closing the gap requires beyond standard metrics.</p>
+<p><a href="https://doi.org/10.1038/s41746-026-02492-x">Mallinar et al.</a> were working at a different level: not evaluating a specific clinical AI application but trying to solve a structural problem with clinical AI evaluation itself. Expert evaluation is slow, expensive, and requires domain expertise, which means it happens less than it should at smaller scale than deployment contexts require. Their framework was designed to halve evaluation time and enable non-expert annotation without sacrificing reliability — genuine contributions to a real problem. But the framework was validated on metabolic health queries, a relatively lower-stakes context. Whether the methodology’s design choices hold in higher-stakes contexts, where the cost of a missed failure is substantially higher, was not asked — because the framework wasn’t designed to ask it. Scalability became the governing value not through a decision that it should be, but because it was the design priority and nothing upstream specified otherwise. The problem here is not visible in any error rate. It is in the choices made before the eval was built, about what the eval was for.</p>
+<p>Three cases, three different relationships to the same problem. Seo: the framework question goes unasked, and the eval measures what’s convenient. Hakim: the framework question is asked, never events are named, instruments built to enforce them — and the result shows how much additional work that requires. Mallinar: the problem runs deeper still, into the methodology for building evals, where design priorities become de facto values in the absence of anything upstream specifying otherwise.</p>
+<hr>
+</section>
+<section id="when-frameworks-come-first" class="level3">
+<h3 class="anchored" data-anchor-id="when-frameworks-come-first">When frameworks come first</h3>
+<p>The natural response to the evals section is to ask what it looks like when the framework question is answered first. Two papers attempt this, with different results.</p>
+<p><a href="https://doi.org/10.1016/j.lanprc.2025.100079">Allen et al.</a> published in The Lancet Primary Care a framework for AI in primary care built around five principles: Tailoring, Responsibility, Universality, Sustainability, Transparency — TRUST. Each principle is substantive. Tailoring requires AI tools to be validated in the specific deployment context, not just on benchmarks. Responsibility mandates audit trails, accountability structures, and clinician override mechanisms. Universality requires ongoing monitoring across patient subgroups to detect differential accuracy. Sustainability addresses model degradation and dataset drift over time. Transparency covers explainability and disclosure to patients.</p>
+<p>These are the right questions. Each principle reflects a genuine failure mode in clinical AI deployment. But none comes with an instrument for detecting whether a deployed system satisfies it. Tailoring says: validate in context. It does not specify what that requires, what evidence would demonstrate it, or who assesses it. Universality says: monitor subgroup performance over time. It does not specify which subgroups, what monitoring interval, what threshold would indicate a problem, or what follows when one is detected. A framework without evaluation instruments is normatively coherent and operationally empty. It names the right things to care about and provides no mechanism for detecting when they are being violated. The vacuum remains — and as the previous section showed, unfilled vacuums do not stay empty.</p>
+<p><a href="https://doi.org/10.1038/s41746-025-01900-y">FAIR-AI</a>, developed by Wells et al.&nbsp;and published in npj Digital Medicine, is the most serious attempt in this literature to actually bridge the two. Built through stakeholder consultation across patients, providers, operational leaders, and AI developers and synthesised by a multidisciplinary working group, its goal was explicit: a practical framework that health systems could use to govern AI deployment, not just describe it. The result is an end-to-end process with five components, each doing a different kind of work.</p>
+<p>The intake stage is framework work: submitting teams specify the problem, intended use, affected population, and anticipated worst-case failure scenario. This forces the framework question into writing before any evaluation begins. The low-risk screening stage is a rudimentary evaluation instrument: ten binary questions designed to identify solutions that can be approved without full committee review — approximately half of submitted solutions pass here. One question, whether the solution involves a vulnerable population, converts a normative commitment directly into a routing decision. The in-depth review makes the regulatory interface explicit: questions ask about FDA clearance, Software as a Medical Device classification, and regulatory approval pathway — coupling the evaluation to external accountability structures that carry legal weight. Risk categorisation produces a governance output through qualitative consensus rather than composite scoring, deliberately preserving the possibility that a single serious concern overrides low risk ratings elsewhere. The Safe AI Plan mandates ongoing performance attestation and transparency reporting — the only point where post-deployment measurement is required.</p>
+<p>The seams are visible nonetheless. The Safe AI Plan requires that monitoring exist and that results be reported. It does not specify what to monitor, what threshold indicates failure, or what the organisation should do when performance degrades — that content is left to the business owner. The normative values FAIR is named for — appropriate, fair — are articulated at intake and then not traceable through the instruments into the Safe AI Plan. Whether a deployed system remains appropriate and fair over time is not something FAIR can detect. And the framework predates agentic AI systems: a system taking sequences of autonomous actions in a clinical workflow is not well-captured by a process designed for evaluating a single-purpose tool.</p>
+<p>FAIR closes part of the gap. But even here the gap doesn’t disappear — it relocates, to the spaces where the framework’s reach runs out.</p>
+<hr>
+</section>
+<section id="the-vacuum-and-the-lever" class="level3">
+<h3 class="anchored" data-anchor-id="the-vacuum-and-the-lever">The vacuum and the lever</h3>
+<p>Hinton’s revised position is worth returning to. A combination of AI and radiologist, more efficient and more accurate than either alone — that is a framework claim, not an eval claim. It specifies what the system is for, who is in the loop, and what the relationship between human and machine judgment should be. It says nothing about how you would measure whether a deployed system actually achieves it: whether the radiologist is genuinely in the loop or rubber-stamping outputs at volume, whether efficiency gains produce better outcomes or just faster ones, whether accuracy improvements hold across all patient populations or only on the training distribution. Those remain eval questions, and they remain open.</p>
+<p>What changed between the 2016 prediction and the revised position wasn’t the technology. It was the framework. The original claim had an implicit one: AI replaces the radiologist; benchmark performance is the measure of readiness. The revised claim has a different one: AI augments the radiologist; clinical utility in practice is the measure. Different framework, different eval requirements, different system that would get built and deployed as a result.</p>
+<p>This is the pattern across every case examined here. Technical rigour in evaluation is necessary but not sufficient. You can measure precisely and still measure the wrong thing. You can build instruments that catch every error they were designed to catch and miss the ones they weren’t. You can produce a framework that names every relevant value and still have no mechanism for detecting when those values are violated. When framework and eval are disconnected, the eval makes the governance decision by default — not through negligence, but through the structural consequence of treating them as separate concerns.</p>
+<p>Someone has to own the connection. In clinical AI, the most actionable lever is regulatory requirements. SaMD classification, EU AI Act risk tiers, MHRA guidance — these are an external framework with accountability attached. They name failure categories that are unacceptable regardless of benchmark performance, specify what evidence of safety requires, and create a third party with standing to ask what the eval was actually measuring. A product team that engages with that layer seriously — as the framework specification eval design should start from, not a compliance exercise at the end — has the closest thing available to a worked answer to the question Hinton’s 2016 statement left open: not whether the technology works on a benchmark, but what it would have to demonstrate to be trusted with a patient.</p>
+<p>The choice is not between having a framework and not having one. In the absence of an explicit framework, the eval becomes the framework — as it did for fluency in pharmacovigilance, for usability in clinical documentation, for scalability in the methodology designed to make evaluation tractable at volume. The question is whether that happens by design or by default. Hinton got the direction right. Getting the eval right is what determines whether the direction leads somewhere worth going.</p>
+<p>The first post ended with a simple claim: measurement frameworks are not analytics. They are governance. In clinical AI, that claim is not abstract. It describes the difference between a system that can be trusted with a patient and one that merely performs well on the measure that happened to be chosen.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script src="https://giscus.app/client.js" data-repo="Lumons/site" data-repo-id="R_kgDOITI-Jg" data-category="General" data-category-id="DIC_kwDOITI-Js4Cj8Qx" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/www\.lumosinsight\.co\.uk");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

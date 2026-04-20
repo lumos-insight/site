@@ -1,0 +1,121 @@
+---
+title: "Measurement as Architecture: Evaluation Frameworks in Clinical AI"
+description: "How the frameworks used to evaluate clinical AI systems shape what failures get seen — and what governance happens by default when they don't"
+date: 2026-04-20
+draft: false
+categories: [AI, Healthcare, Systems]
+tags: [clinical-ai, evaluation, measurement, frameworks, healthcare, governance, benchmarks, guardrails, safety, goodhart]
+canonical-url: https://www.lumosinsight.co.uk/posts/2026-04-20-blog-measurement-as-architecture-evaluation-frameworks-for-clinical-ai/
+cover-image: header.png
+cover-image-alt: "Symmetrical Art Deco architectural facade with gold chevron arches, geometric fan motifs, and radiating patterns on a dark background"
+
+open-graph:
+  title: "Measurement as Architecture: Evaluation Frameworks in Clinical AI"
+  description: "How the frameworks used to evaluate clinical AI systems shape what failures get seen — and what governance happens by default when they don't"
+  image: https://www.lumosinsight.co.uk/posts/2026-04-20-blog-measurement-as-architecture-evaluation-frameworks-for-clinical-ai/header.png
+  image-alt: "Symmetrical Art Deco architectural facade with gold chevron arches, geometric fan motifs, and radiating patterns on a dark background"
+  site-url: https://www.lumosinsight.co.uk/posts/2026-04-20-blog-measurement-as-architecture-evaluation-frameworks-for-clinical-ai/
+
+twitter-card:
+  card: "summary_large_image"
+  title: "Measurement as Architecture: Evaluation Frameworks in Clinical AI"
+  description: "How the frameworks used to evaluate clinical AI systems shape what failures get seen — and what governance happens by default when they don't"
+  image: https://www.lumosinsight.co.uk/posts/2026-04-20-blog-measurement-as-architecture-evaluation-frameworks-for-clinical-ai/header.png
+  image-alt: "Symmetrical Art Deco architectural facade with gold chevron arches, geometric fan motifs, and radiating patterns on a dark background"
+
+format:
+  html:
+    include-after-body: "../../giscus.html"
+
+editor: visual
+
+execute:
+  echo: false
+  warning: false
+  message: false
+
+toc: true
+toc-depth: 2
+---
+
+# Measurement as Architecture: Evaluation Frameworks in Clinical AI
+
+![](header.png){fig-align="center" width="100%"}
+
+*Second in a series. The first post established that measurement frameworks are not neutral instruments — they are architectural commitments that shape the systems they are embedded in. This post applies that argument to clinical AI.*
+
+---
+
+The [previous post](../TODO) argued that evaluation frameworks are not neutral instruments — that once embedded in a system, they become part of its architecture, selecting for certain behaviours over others. Applied to AI, this means the eval is not a check on the system. It is part of the system.
+
+That argument was made at the level of model training and product metrics. The same logic applies one layer up: to the tools used to decide whether a clinical AI system is ready to deploy, and whether it is working once it is. This is where a distinction that is often glossed over starts to matter — between a **framework** and an **evaluation**.
+
+A framework specifies what you should be paying attention to. It names the relevant dimensions, values, and risks. It is normative — it tells you what a responsible system looks like in principle. An evaluation gives you instruments to answer whether the system actually has those properties: metrics, criteria, scores, thresholds. It tells you what you can detect.
+
+Both are necessary, and they are not the same thing. The connection between them is often thin — frameworks produced early as design documents, evals later as implementation concerns, with few mechanisms connecting the two. That gap doesn't stay empty. When no one has specified what the system should be doing and what failure looks like, the eval fills the vacuum. Engineering measures what it can measure, optimises for what it can optimise, and the product that results reflects those choices — not because anyone decided they were the right ones, but because no one made the competing decision explicitly. In clinical AI, where the consequences reach patients, that is a governance failure. It just looks like an engineering decision.
+
+---
+
+### Hinton and the radiologists
+
+Geoffrey Hinton [said in 2016](https://www.youtube.com/watch?v=2HMPRXstSvQ) that we should stop training radiologists. Models were hitting radiologist-level performance on benchmark chest X-ray datasets, and the trajectory looked clear. The prediction seemed entirely reasonable from inside the eval.
+
+Radiologists still exist. Deployment proved substantially harder than benchmarks suggested. Hinton later acknowledged he had spoken too broadly — [wrong on timing and scope, not direction](https://www.nytimes.com/2025/05/14/technology/ai-jobs-radiologists-mayo-clinic.html). In a few years, he said, most medical image interpretation will be done by a combination of AI and a radiologist, making radiologists more efficient and improving accuracy.
+
+Hinton wasn't wrong about the evals. He was wrong about what the evals were measuring. The benchmarks assessed performance on a curated distribution of images under controlled conditions. They did not assess what clinical utility actually requires: reliability across the heterogeneous conditions of deployment, integration into clinical workflows, performance across patient subgroups, behaviour under distribution shift. The framework question — what would this system have to demonstrate to be trusted with a patient? — had not been answered. The eval had answered a different question, and the answer looked good.
+
+This is the tension the rest of this post examines.
+
+---
+
+### What the evals show and what they miss
+
+AI models are trained against benchmarks. Performing well on a benchmark means doing well at what the benchmark measures. In clinical settings, that distinction has consequences. Three cases illustrate it, in escalating order of what it takes to see the problem.
+
+[Seo et al.](https://doi.org/10.2196/58329) were tackling the documentation burden on clinical staff — the time spent writing up clinical encounters that an LLM could, in principle, handle. To evaluate whether LLMs could do this reliably, they developed a dual methodology: expert reviewers assessed outputs using structured coding and inter-rater reliability scores across five categories covering clarity, completeness, correctness, extraneous information, and missing safety-relevant content. Inter-rater agreement was reasonable — Cohen's Kappa of 0.542. This is careful evaluation work. The dimension it centres, though, is usability: whether the outputs are clear, complete, and acceptable to the reviewers in the room. The most common error type was invalid generation — hallucination — at 35% of cases. It was counted at point of generation. There is no specification in the methodology of what a hallucinated entry in a clinical record means six months later, when a different clinician reads it, or when it informs a prescribing decision. The eval answered a coherent question. It just wasn't the question clinical safety required, and nothing in the methodology flagged that gap.
+
+[Hakim et al.](https://doi.org/10.1038/s41598-025-09138-0) were working on a different clinical workflow with higher regulatory stakes: the translation of Japanese Individual Case Safety Reports (ICSRs) into English for pharmacovigilance purposes. ICSRs are the structured documents through which suspected adverse drug reactions are reported to regulators — EMA, MHRA, FDA — and they must accurately capture the drug involved, the adverse event, patient details, and timeline. The volume arriving from Japan alone runs to tens of thousands annually; the manual translation burden is substantial. The researchers fine-tuned multilingual LLMs on a corpus of 131,000 ICSR examples and evaluated initial model selection using perplexity and BLEU scores — standard machine translation metrics measuring fluency and surface-level accuracy. The best-performing model reached a BLEU score of 0.39, considered indicative of high-quality translation. On that basis, it looked promising.
+
+Expert human evaluation told a different story. Pharmacovigilance specialists reviewed 210 translated cases. Drug name or information was wrong in 60% of cases. Adverse events were incorrect or missing in 71%. Dates and times were wrong in 64%. Only 35% of cases were judged clinically accurate overall. The fluency metrics had selected for a model that produced readable, well-formed text. What they hadn't penalised was accuracy on the specific fields that determine whether a pharmacovigilance signal is real. This is Campbell's law in the clinical domain: the measure became the target, and the system optimised toward it — not because anyone chose fluency over accuracy, but because fluency was what was being measured.
+
+Critically, Hakim et al. had anticipated this. Rather than discovering the failures at deployment, they built a guardrail suite as part of the study design — three instruments intended to enforce what the fluency metrics hadn't. DL-UQ (document-level uncertainty quantification) identified submitted documents unlikely to be genuine ICSRs, flagging anomalous inputs before they entered the pipeline. MISMATCH was a hard guardrail: it compared drug names and adverse event terms between the source Japanese text and the LLM output using regulatory dictionaries, flagging any case where a term appeared in one but not the other — hallucinated drug names, the paper's "never event," were caught in every identified case. TL-UQ (token-level uncertainty quantification) assigned uncertainty scores at word level, highlighting spans for human reviewer attention. Cases flagged by any guardrail were routed for human-in-the-loop review rather than passed through automatically.
+
+This is what framework thinking looks like operationalised. The researchers identified a class of errors — wrong drug names in pharmacovigilance reports — that constituted an unacceptable failure mode regardless of overall output quality, then built an instrument specifically to enforce that constraint. MISMATCH is not an eval of translation quality; it is an eval of a normative claim about what the system must never do. That is the distinction between eval and framework made concrete — and Hakim et al. built both. What makes the case instructive is not that it failed, but that it shows how much additional work closing the gap requires beyond standard metrics.
+
+[Mallinar et al.](https://doi.org/10.1038/s41746-026-02492-x) were working at a different level: not evaluating a specific clinical AI application but trying to solve a structural problem with clinical AI evaluation itself. Expert evaluation is slow, expensive, and requires domain expertise, which means it happens less than it should at smaller scale than deployment contexts require. Their framework was designed to halve evaluation time and enable non-expert annotation without sacrificing reliability — genuine contributions to a real problem. But the framework was validated on metabolic health queries, a relatively lower-stakes context. Whether the methodology's design choices hold in higher-stakes contexts, where the cost of a missed failure is substantially higher, was not asked — because the framework wasn't designed to ask it. Scalability became the governing value not through a decision that it should be, but because it was the design priority and nothing upstream specified otherwise. The problem here is not visible in any error rate. It is in the choices made before the eval was built, about what the eval was for.
+
+Three cases, three different relationships to the same problem. Seo: the framework question goes unasked, and the eval measures what's convenient. Hakim: the framework question is asked, never events are named, instruments built to enforce them — and the result shows how much additional work that requires. Mallinar: the problem runs deeper still, into the methodology for building evals, where design priorities become de facto values in the absence of anything upstream specifying otherwise.
+
+---
+
+### When frameworks come first
+
+The natural response to the evals section is to ask what it looks like when the framework question is answered first. Two papers attempt this, with different results.
+
+[Allen et al.](https://doi.org/10.1016/j.lanprc.2025.100079) published in The Lancet Primary Care a framework for AI in primary care built around five principles: Tailoring, Responsibility, Universality, Sustainability, Transparency — TRUST. Each principle is substantive. Tailoring requires AI tools to be validated in the specific deployment context, not just on benchmarks. Responsibility mandates audit trails, accountability structures, and clinician override mechanisms. Universality requires ongoing monitoring across patient subgroups to detect differential accuracy. Sustainability addresses model degradation and dataset drift over time. Transparency covers explainability and disclosure to patients.
+
+These are the right questions. Each principle reflects a genuine failure mode in clinical AI deployment. But none comes with an instrument for detecting whether a deployed system satisfies it. Tailoring says: validate in context. It does not specify what that requires, what evidence would demonstrate it, or who assesses it. Universality says: monitor subgroup performance over time. It does not specify which subgroups, what monitoring interval, what threshold would indicate a problem, or what follows when one is detected. A framework without evaluation instruments is normatively coherent and operationally empty. It names the right things to care about and provides no mechanism for detecting when they are being violated. The vacuum remains — and as the previous section showed, unfilled vacuums do not stay empty.
+
+[FAIR-AI](https://doi.org/10.1038/s41746-025-01900-y), developed by Wells et al. and published in npj Digital Medicine, is the most serious attempt in this literature to actually bridge the two. Built through stakeholder consultation across patients, providers, operational leaders, and AI developers and synthesised by a multidisciplinary working group, its goal was explicit: a practical framework that health systems could use to govern AI deployment, not just describe it. The result is an end-to-end process with five components, each doing a different kind of work.
+
+The intake stage is framework work: submitting teams specify the problem, intended use, affected population, and anticipated worst-case failure scenario. This forces the framework question into writing before any evaluation begins. The low-risk screening stage is a rudimentary evaluation instrument: ten binary questions designed to identify solutions that can be approved without full committee review — approximately half of submitted solutions pass here. One question, whether the solution involves a vulnerable population, converts a normative commitment directly into a routing decision. The in-depth review makes the regulatory interface explicit: questions ask about FDA clearance, Software as a Medical Device classification, and regulatory approval pathway — coupling the evaluation to external accountability structures that carry legal weight. Risk categorisation produces a governance output through qualitative consensus rather than composite scoring, deliberately preserving the possibility that a single serious concern overrides low risk ratings elsewhere. The Safe AI Plan mandates ongoing performance attestation and transparency reporting — the only point where post-deployment measurement is required.
+
+The seams are visible nonetheless. The Safe AI Plan requires that monitoring exist and that results be reported. It does not specify what to monitor, what threshold indicates failure, or what the organisation should do when performance degrades — that content is left to the business owner. The normative values FAIR is named for — appropriate, fair — are articulated at intake and then not traceable through the instruments into the Safe AI Plan. Whether a deployed system remains appropriate and fair over time is not something FAIR can detect. And the framework predates agentic AI systems: a system taking sequences of autonomous actions in a clinical workflow is not well-captured by a process designed for evaluating a single-purpose tool.
+
+FAIR closes part of the gap. But even here the gap doesn't disappear — it relocates, to the spaces where the framework's reach runs out.
+
+---
+
+### The vacuum and the lever
+
+Hinton's revised position is worth returning to. A combination of AI and radiologist, more efficient and more accurate than either alone — that is a framework claim, not an eval claim. It specifies what the system is for, who is in the loop, and what the relationship between human and machine judgment should be. It says nothing about how you would measure whether a deployed system actually achieves it: whether the radiologist is genuinely in the loop or rubber-stamping outputs at volume, whether efficiency gains produce better outcomes or just faster ones, whether accuracy improvements hold across all patient populations or only on the training distribution. Those remain eval questions, and they remain open.
+
+What changed between the 2016 prediction and the revised position wasn't the technology. It was the framework. The original claim had an implicit one: AI replaces the radiologist; benchmark performance is the measure of readiness. The revised claim has a different one: AI augments the radiologist; clinical utility in practice is the measure. Different framework, different eval requirements, different system that would get built and deployed as a result.
+
+This is the pattern across every case examined here. Technical rigour in evaluation is necessary but not sufficient. You can measure precisely and still measure the wrong thing. You can build instruments that catch every error they were designed to catch and miss the ones they weren't. You can produce a framework that names every relevant value and still have no mechanism for detecting when those values are violated. When framework and eval are disconnected, the eval makes the governance decision by default — not through negligence, but through the structural consequence of treating them as separate concerns.
+
+Someone has to own the connection. In clinical AI, the most actionable lever is regulatory requirements. SaMD classification, EU AI Act risk tiers, MHRA guidance — these are an external framework with accountability attached. They name failure categories that are unacceptable regardless of benchmark performance, specify what evidence of safety requires, and create a third party with standing to ask what the eval was actually measuring. A product team that engages with that layer seriously — as the framework specification eval design should start from, not a compliance exercise at the end — has the closest thing available to a worked answer to the question Hinton's 2016 statement left open: not whether the technology works on a benchmark, but what it would have to demonstrate to be trusted with a patient.
+
+The choice is not between having a framework and not having one. In the absence of an explicit framework, the eval becomes the framework — as it did for fluency in pharmacovigilance, for usability in clinical documentation, for scalability in the methodology designed to make evaluation tractable at volume. The question is whether that happens by design or by default. Hinton got the direction right. Getting the eval right is what determines whether the direction leads somewhere worth going.
+
+The first post ended with a simple claim: measurement frameworks are not analytics. They are governance. In clinical AI, that claim is not abstract. It describes the difference between a system that can be trusted with a patient and one that merely performs well on the measure that happened to be chosen.
