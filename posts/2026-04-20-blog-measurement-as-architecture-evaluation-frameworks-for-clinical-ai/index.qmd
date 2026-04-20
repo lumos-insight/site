@@ -44,9 +44,9 @@ toc-depth: 2
 
 *Second in a series. The first post established that measurement frameworks are not neutral instruments — they are architectural commitments that shape the systems they are embedded in. This post applies that argument to clinical AI.*
 
----
+------------------------------------------------------------------------
 
-The [previous post](../TODO) argued that evaluation frameworks are not neutral instruments — that once embedded in a system, they become part of its architecture, selecting for certain behaviours over others. Applied to AI, this means the eval is not a check on the system. It is part of the system.
+The [previous post](https://www.lumosinsight.co.uk/posts/2026-03-29-measurement-as-architecture/) argued that evaluation frameworks are not neutral instruments — that once embedded in a system, they become part of its architecture, selecting for certain behaviours over others. Applied to AI, this means the eval is not a check on the system. It is part of the system.
 
 That argument was made at the level of model training and product metrics. The same logic applies one layer up: to the tools used to decide whether a clinical AI system is ready to deploy, and whether it is working once it is. This is where a distinction that is often glossed over starts to matter — between a **framework** and an **evaluation**.
 
@@ -54,7 +54,7 @@ A framework specifies what you should be paying attention to. It names the relev
 
 Both are necessary, and they are not the same thing. The connection between them is often thin — frameworks produced early as design documents, evals later as implementation concerns, with few mechanisms connecting the two. That gap doesn't stay empty. When no one has specified what the system should be doing and what failure looks like, the eval fills the vacuum. Engineering measures what it can measure, optimises for what it can optimise, and the product that results reflects those choices — not because anyone decided they were the right ones, but because no one made the competing decision explicitly. In clinical AI, where the consequences reach patients, that is a governance failure. It just looks like an engineering decision.
 
----
+------------------------------------------------------------------------
 
 ### Hinton and the radiologists
 
@@ -66,7 +66,7 @@ Hinton wasn't wrong about the evals. He was wrong about what the evals were meas
 
 This is the tension the rest of this post examines.
 
----
+------------------------------------------------------------------------
 
 ### What the evals show and what they miss
 
@@ -86,7 +86,7 @@ This is what framework thinking looks like operationalised. The researchers iden
 
 Three cases, three different relationships to the same problem. Seo: the framework question goes unasked, and the eval measures what's convenient. Hakim: the framework question is asked, never events are named, instruments built to enforce them — and the result shows how much additional work that requires. Mallinar: the problem runs deeper still, into the methodology for building evals, where design priorities become de facto values in the absence of anything upstream specifying otherwise.
 
----
+------------------------------------------------------------------------
 
 ### When frameworks come first
 
@@ -104,7 +104,7 @@ The seams are visible nonetheless. The Safe AI Plan requires that monitoring exi
 
 FAIR closes part of the gap. But even here the gap doesn't disappear — it relocates, to the spaces where the framework's reach runs out.
 
----
+------------------------------------------------------------------------
 
 ### The vacuum and the lever
 
