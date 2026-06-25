@@ -1,0 +1,120 @@
+---
+title: "The Fault of Printers"
+subtitle: "Generativity, Authority, and the Bottleneck of Evaluation"
+description: "From a pseudo-Augustinian forgery printed in Venice in 1495 to Pope Leo XIV's encyclical on AI — on what happens when generative technologies expand the space of possible claims faster than the institutions built to evaluate them"
+date: 2026-06-25
+draft: false
+categories: [AI, History, Epistemology]
+tags: [printing-press, forgery, generativity, evaluation, epistemology, knowledge, governance, history, institutions, AI]
+canonical-url: https://www.lumosinsight.co.uk/posts/2026-6-25-the-fault-of-printers/
+cover-image: header.png
+cover-image-alt: "Grand ornate library hall with towering blue and gold Art Deco arched corridors, floor-to-ceiling bookshelves, and a domed ceiling receding into deep perspective"
+
+open-graph:
+  title: "The Fault of Printers"
+  description: "From a pseudo-Augustinian forgery printed in Venice in 1495 to Pope Leo XIV's encyclical on AI — on what happens when generative technologies expand the space of possible claims faster than the institutions built to evaluate them"
+  image: https://www.lumosinsight.co.uk/posts/2026-6-25-the-fault-of-printers/header.png
+  image-alt: "Grand ornate library hall with towering blue and gold Art Deco arched corridors, floor-to-ceiling bookshelves, and a domed ceiling receding into deep perspective"
+  site-url: https://www.lumosinsight.co.uk/posts/2026-6-25-the-fault-of-printers/
+
+twitter-card:
+  card: "summary_large_image"
+  title: "The Fault of Printers"
+  description: "From a pseudo-Augustinian forgery printed in Venice in 1495 to Pope Leo XIV's encyclical on AI — on what happens when generative technologies expand the space of possible claims faster than the institutions built to evaluate them"
+  image: https://www.lumosinsight.co.uk/posts/2026-6-25-the-fault-of-printers/header.png
+  image-alt: "Grand ornate library hall with towering blue and gold Art Deco arched corridors, floor-to-ceiling bookshelves, and a domed ceiling receding into deep perspective"
+
+format:
+  html:
+    include-after-body: "../../giscus.html"
+
+editor: visual
+
+execute:
+  echo: false
+  warning: false
+  message: false
+
+toc: true
+toc-depth: 2
+---
+
+> "Reader, the fault of printers is a new among evils; their hearts are clouded, buried in wine."[^1]
+
+So lamented Bishop Pietro Bruto in 1493. He wrote these lines as an apology for the hurried and error-ridden work of the Venetian printer Simon Gabi (also known as Bevilacqua). Since Bevilacqua translates literally as "water-drinker", the verse carried an additional irony, alluding to the printer's reputed preference for wine over water. Early printers were frequently criticised for poor workmanship. The combination of an immature technology, commercial pressure, and a still-emerging profession meant that typographical errors, omissions, and inconsistencies were commonplace.
+
+Yet the problems introduced by print extended beyond simple questions of reproduction.
+
+Between the thirteenth and fifteenth centuries, a dispute emerged between different branches of the Augustinian tradition, particularly the Augustinian Hermits and the Augustinian Canons, concerning questions of lineage, legitimacy, and institutional precedence within the Church. Central to the dispute was whether the Hermits could genuinely claim direct foundation and authority from Augustine of Hippo himself, rather than representing a later ecclesiastical development.
+
+A number of texts circulated under Augustine's name which appeared to support these claims, including the *Sermones ad heremitas* (Sermons to the Hermits). These sermons portrayed Augustine in ways highly favourable to the Hermit tradition and were widely accepted as authentic throughout much of the medieval period. They were repeatedly copied, cited, and eventually printed, including in a 1495 Venetian edition produced by Bevilacqua himself.[^2]
+
+Subsequent scholarship, particularly the textual criticism of the seventeenth-century Maurists, increasingly concluded that the sermons were pseudepigraphic. Augustine was almost certainly not their author. Rather, they appear to have been composed centuries later and attributed to him in order to reinforce institutional and theological claims during periods of intra-church competition.[^3]
+
+## Authority and Authentication
+
+What is striking about this episode is not that a forgery existed. Medieval Europe contained many. Rather, it is that the same period saw the emergence of new technologies and institutions for both the production and verification of knowledge.
+
+The printing press dramatically increased the scale at which texts could be reproduced, circulated, and cited. At the same time, inherited systems of authority remained poorly equipped to distinguish authentic works from persuasive imitations. The pseudo-Augustinian sermons did not become influential despite social and institutional networks; they became influential through them. The same communities, scholars, ecclesiastical authorities, and printers that preserved and propagated knowledge also contributed to the stabilisation and transmission of error.
+
+The eventual challenge to these texts did not arise from better intentions or superior individuals, but from the development of new evaluative practices. The Maurists compared manuscripts, analysed linguistic style, examined provenance, and sought consistency with independently verifiable historical evidence. In doing so, they helped establish a different basis for authority: one grounded not primarily in tradition and circulation, but in systematic methods of authentication.
+
+The significance of this development extends beyond ecclesiastical history. It illustrates a broader principle: as information systems scale, verification itself becomes a specialised activity requiring dedicated methods, institutions, and expertise.
+
+## Generativity and Evaluation
+
+This dynamic is hardly unfamiliar today.
+
+Large language models have generated renewed concern regarding fabricated citations, synthetic content, misinformation, provenance, and the reliability of machine-generated outputs. Yet the more interesting parallel may not be the existence of error itself. Errors are hardly novel. Medieval scribes made them, printers introduced them, and humans have always been capable of both deception and self-deception.
+
+Rather, the challenge concerns the relationship between abundance and evaluation.
+
+The printing press dramatically reduced the cost of reproducing text. Contemporary AI systems dramatically reduce the cost of producing it. In both cases, a technology expands the supply of information while simultaneously creating pressure on the institutions responsible for verification.
+
+One way of understanding this shift comes from design theory. Recent work on generative AI has argued that the significance of these systems lies not merely in their ability to generate outputs, but in their capacity to expand the space of what can be generated in the first place.[^4] Generative technologies do not simply produce more artefacts; they enlarge the space of possible artefacts.
+
+The printing press expanded the space of possible texts, interpretations, commentaries, and claims to authority. Generative AI expands the space of possible documents, analyses, measurement systems, software, media, and increasingly the models used to generate them. In both cases, the primary challenge shifts.
+
+The bottleneck is no longer production, but evaluation.
+
+This distinction is important. The challenge is not merely one of information overload or limited attention. Rather, societies become capable of generating more candidate knowledge claims, artefacts, and systems than they can meaningfully evaluate. In the language of C-K theory, the concept space expands faster than the knowledge space.[^5] The problem becomes one of navigating this expanding possibility space in ways that generate reliable knowledge rather than noise.
+
+## Evaluative Infrastructure
+
+Viewed in this light, the Maurists become interesting not simply because they exposed a forgery, but because they represent a recurring historical response to epistemic disruption. New technologies increase the scale, speed, and reach of information systems. In doing so, they expand the space of possible claims, interpretations, and authorities while simultaneously creating new failure modes. Societies respond by constructing forms of evaluative infrastructure capable of navigating and governing this expanded possibility space.
+
+The specific forms of evaluative infrastructure vary across domains. Science developed peer review and experimental replication. Finance developed auditing and regulatory oversight. Legal systems developed evidentiary standards and procedures for adjudicating competing claims. What these institutions share is not a particular methodology but a common function: they emerged to govern increasingly complex systems of knowledge production and decision-making.
+
+The question facing contemporary societies may therefore be less whether AI introduces novel risks and more what forms of evaluative infrastructure will emerge in response. If the printing press helped create the conditions that produced the Maurists, what equivalent institutions, methods, and practices will be required for an age of synthetic cognition?
+
+## Five Hundred and Thirty Years Later
+
+It is perhaps ironic that a copy of the *Sermones ad heremitas* appeared in a catalogue dedicated to revolutions in science, technology, politics, religion, and culture. Yet the placement seems appropriate. The significance of the volume lies not simply in its rarity, nor even in the forgery it contains. Rather, it captures a civilisation adapting to a transformation in how knowledge was produced, transmitted, authenticated, and trusted.
+
+More striking still is the timing. The copy appeared in Sotheran's catalogue for Firsts London, held between the 14th and 17th of May 2026. On the 16th of May, while visitors browsed examples of previous technological and intellectual revolutions, Pope Leo XIV published *Magnifica Humanitas*, his first encyclical, addressing the opportunities and challenges presented by artificial intelligence and emerging technologies.[^6]
+
+The juxtaposition is striking. One document emerged from a world adapting to the consequences of print; the other addresses a world adapting to the consequences of artificial intelligence. Five hundred and thirty years separate them. Yet both concern societies confronting changes in the way knowledge is produced, distributed, and trusted.
+
+## Governing Knowledge Production
+
+The lesson of the *Sermones* is not that new technologies are uniquely dangerous, nor that misinformation is a novel phenomenon. Medieval Europe was already grappling with questions of authenticity, attribution, legitimacy, and institutional authority. The printing press did not create these problems. It changed their scale, speed, and social consequences.
+
+Perhaps the same can be said of contemporary AI systems. The challenge is not simply that they generate errors, fabrications, or persuasive falsehoods. Human beings have always been capable of these. Rather, they alter the conditions under which information acquires authority and influence. As production becomes cheaper and more abundant, the burden placed upon evaluation, authentication, and governance inevitably increases.
+
+What ultimately resolved the question of the pseudo-Augustinian sermons was not better printing, nor the elimination of forgery, but the emergence of new scholarly methods and institutions capable of evaluating competing claims. The Maurists did not solve an information problem; they helped create the evaluative infrastructure required to govern one.
+
+They did not appear before the epistemic disruption created by print. They emerged because of it. The same forces that expanded the production of knowledge also created demand for new methods of verification. If history offers a lesson, it is not that technological transitions are free from disruption, but that they often generate the intellectual and institutional innovations required to govern the problems they create.
+
+That observation gives me cause for optimism. New technologies undoubtedly create new forms of disruption, confusion, and misuse. Yet history suggests that the accompanying challenge is rarely purely technical. It is institutional. The enduring question is not whether societies can eliminate error. Errors are a persistent feature of human and technological systems alike. The more important question is whether societies can develop the intellectual, social, and civic infrastructure required to evaluate competing claims and govern increasingly complex systems of knowledge production.
+
+[^1]: The verse is attributed to Bishop Pietro Bruto and is associated with the printer Simon Gabi (Bevilacqua). Contemporary accounts describe it as a satirical apology for the numerous typographical errors appearing in Bevilacqua's early printed works.
+
+[^2]: The edition discussed here is *Sermones Sancti Augustini ad heremitas* (Venice, 1495), printed by Simon Bevilacqua. I encountered the volume through Sotheran's catalogue for Firsts London 2026, which featured the work as part of a collection on revolutions in science, technology, religion, and culture.
+
+[^3]: The Maurists were a congregation of French Benedictine scholars whose critical editions and manuscript studies helped establish many of the methods associated with modern textual criticism and historical scholarship.
+
+[^4]: Bordas, A., Le Masson, P., Thomas, M., & Weil, B. (2024). What is generative in generative artificial intelligence? A design-based perspective. *Research in Engineering Design*, 35(4), 427–443.
+
+[^5]: Hatchuel, A., & Weil, B. (2009). C-K design theory: An advanced formulation. *Research in Engineering Design*, 19(4), 181–192.
+
+[^6]: Pope Leo XIV. *Magnifica Humanitas* (16 May 2026), addressing human dignity, responsibility, and governance in the context of artificial intelligence and emerging technologies.
