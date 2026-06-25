@@ -39,6 +39,8 @@ toc: true
 toc-depth: 2
 ---
 
+![](header.png){fig-align="center" width="100%"}
+
 > "Reader, the fault of printers is a new among evils; their hearts are clouded, buried in wine."[^1]
 
 So lamented Bishop Pietro Bruto in 1493. He wrote these lines as an apology for the hurried and error-ridden work of the Venetian printer Simon Gabi (also known as Bevilacqua). Since Bevilacqua translates literally as "water-drinker", the verse carried an additional irony, alluding to the printer's reputed preference for wine over water. Early printers were frequently criticised for poor workmanship. The combination of an immature technology, commercial pressure, and a still-emerging profession meant that typographical errors, omissions, and inconsistencies were commonplace.
