@@ -20,7 +20,7 @@ editor: visual
 ---
 
 ::: {style="text-align: center;"}
-<img src="header.png" alt="What is the shape of an idea?" width="75%"/>
+<img src="header.png" alt="What is the shape of an idea?" width="100%"/>
 :::
 
 There is a long-standing problem in psychological measurement. It concerns both the language we use to describe psychological phenomena and the extent to which those phenomena exist as distinct entities in the first place.
