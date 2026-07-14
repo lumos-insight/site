@@ -1,0 +1,99 @@
+---
+open-graph:
+  title: "The Shape of Ideas"
+  description: "Part 3 - Representation Before Measurement"
+  image: https://www.lumosinsight.co.uk/posts/2026-07-14-the-shape-of-ideas-part-3/header.png
+twitter-card:
+  card: "summary_large_image"
+  title: "The Shape of Ideas"
+  description: "Part 3 - Representation Before Measurement"
+  image: https://www.lumosinsight.co.uk/posts/2026-07-14-the-shape-of-ideas-part-3/header.png
+title: "The Shape of Ideas"
+description: Part 3 - Representation Before Measurement
+date: 2026-07-14
+format:
+    html:
+        include-after-body: "../../giscus.html"
+categories: [Psychometric validation, Semantic quantification, Large Language Models]
+image: header.png
+editor: visual
+---
+
+::: {style="text-align: center;"}
+<img src="header.png" alt="What is the shape of an idea?" width="75%"/>
+:::
+
+There is a long-standing problem in psychological measurement. It concerns both the language we use to describe psychological phenomena and the extent to which those phenomena exist as distinct entities in the first place.
+
+Psychology has accumulated thousands of constructs, each with its own definitions, questionnaires, and theories. Some undoubtedly capture genuinely different aspects of human experience. Others may simply represent different ways of partitioning the same conceptual landscape. The challenge has always been determining which is which.
+
+# Jingle, Jangle, and the Problem of Too Many Constructs
+
+This challenge is perhaps best known through the jingle and jangle fallacies. A jingle fallacy occurs when different psychological phenomena are assumed to be equivalent because they share the same label. A jangle fallacy occurs when conceptually similar phenomena are treated as distinct simply because they are given different names. Together, they expose a deeper issue: our scientific language does not always map cleanly onto the conceptual territory it seeks to describe.
+
+Recent work has renewed attention to this problem. Hanfstingl and colleagues (2025), for example, argue that jingle and jangle fallacies continue to impede cumulative theory building, encouraging researchers to move beyond superficial similarities and differences in terminology towards more systematic approaches to conceptual clarification.
+
+Likewise, Bowling and colleagues (2026) argue that psychology's continued proliferation of constructs risks fragmenting the discipline unless we develop better ways of understanding how our theories relate to one another. The concern is not simply that psychology has too many constructs. Rather, it is that we often lack principled ways of determining when two constructs represent genuinely different ideas and when they simply offer alternative descriptions of the same psychological territory.
+
+# When the Only Evidence Was Empirical
+
+For much of the twentieth century, our options for addressing this problem were necessarily empirical. If two constructs appeared similar, one of the only practical ways of investigating their relationship was to collect new data, administer multiple questionnaires, and compare their statistical behaviour. Correlations, factor analyses, structural equation models, and nomological networks became the principal tools through which conceptual relationships were evaluated.
+
+This approach has been enormously successful. It has underpinned much of modern psychometrics and provided a rigorous framework for evaluating psychological measures. Yet it is also shaped by the representational assumptions of classical psychometrics.[^1]
+
+If psychological constructs are primarily represented as latent variables inferred from questionnaire responses, then empirical covariance naturally becomes the dominant source of evidence for determining whether constructs differ. The kinds of questions we ask—and the statistical techniques we develop to answer them—are, to some extent, constrained by the ways in which we choose to represent psychological phenomena.
+
+This also helps explain why certain methodological debates have occupied psychology for decades. Common method variance is a natural consequence of measuring many constructs with the same response format, at the same time, from the same individual. Debates surrounding reliability, likewise, assume phenomena that exhibit stable individual differences—an awkward fit for learning, adaptation, exploration, and decision making, which are characterised precisely by change.
+
+This is not an argument against classical psychometrics. Rather, it illustrates a more general principle: changing our conception of the phenomenon often necessitates changing the methods by which we evaluate it. In our discussion of task-based assessment, for example, we argued that evaluating learning tasks required moving beyond traditional estimates of internal consistency towards longitudinal approaches such as latent growth curve modelling, precisely because the underlying phenomenon was conceptualised as change rather than a static attribute (Montuori, McMaster, Weekes, & McEvoy, 2026). The representational assumptions came first; the statistical framework followed.
+
+# Starting from Language
+
+Advances in natural language processing suggest another possibility.
+
+Rather than beginning with people's responses, we might begin with the language from which psychological constructs themselves are built. Definitions, questionnaire items, scale labels, and theoretical descriptions are not merely vehicles for communicating ideas—they are themselves representations of psychological concepts.
+
+If those representations themselves contain meaningful structure, they too become objects of scientific inquiry.
+
+In a commentary published earlier this year, Samo and Highhouse (2026) argue that much of the information required to refine psychological constructs may already exist within this linguistic content. Rather than repeatedly collecting new samples to determine whether two constructs overlap, modern embedding models allow researchers to compare the semantic organisation of constructs directly. Emerging approaches such as Semantic Scale Networks and embedding-based pseudo-factor analysis demonstrate how natural language can be used to identify conceptual overlap, redundancy, and opportunities for theoretical refinement before additional data collection even begins.
+
+This represents a subtle but important shift. Rather than asking only how people respond to psychological measures, we can begin asking how the measures themselves relate to one another. Importantly, this does not replace empirical validation. It changes where validation begins.
+
+# Maps, Not Dictionaries
+
+Naturally, this raises further questions.
+
+Are we simply replacing one representational framework with another?
+Why should we expect statistical relationships learned from language to reveal anything meaningful about the psychological phenomena that language attempts to describe?
+
+Work in mechanistic interpretability offers an intriguing perspective. Rather than behaving as arbitrary collections of numerical weights, modern neural networks appear to develop remarkably structured internal representations. Concepts organise into coherent geometric relationships—days of the week forming circular manifolds, spatial positions tracing continuous paths through activation space, and genomic models recovering the taxonomy of the tree of life (Geiger et al., 2026). The resulting embedding spaces increasingly resemble maps rather than dictionaries—representations in which relationships between ideas become visible through geometry rather than explicit symbolic definitions.
+
+This does not imply that embedding spaces are equivalent to human cognition, nor that semantic proximity should be mistaken for psychological equivalence. Those remain empirical and philosophical questions. Yet it does suggest that the geometry learned by these models may capture aspects of the conceptual organisation encoded within language in ways that previous computational approaches could not. Precisely what these geometries represent—statistical regularities in language, aspects of human conceptual organisation, broader principles of neural representation, or some combination thereof—remains an open question.
+
+As for the first question: yes, we are replacing one representational framework with another—and that is precisely the point. There is no view from nowhere in measurement. The choice is never between representation and no representation, but between frameworks whose assumptions remain implicit and those we adopt deliberately, with their limitations in view. Each framework determines which forms of evidence are available and which scientific questions it is possible to ask.
+
+# Representation, Behaviour, and the People In Between
+
+This perspective also shifts attention from behaviour alone to the relationship between representation and behaviour. Definitions, questionnaire items, and theoretical descriptions are not neutral descriptions of psychological phenomena. They are linguistic representations that interact with people's existing conceptual organisations to produce the responses upon which we subsequently build our theories. There is little reason to expect this process to be governed by a single mechanism. Different psychological phenomena may require different representational assumptions, and the same representation may evoke different conceptual organisations depending upon an individual's experiences, expertise, culture, or context.
+
+Seen in this light, embedding-based approaches do not resolve psychology's longstanding tension between nomothetic and idiographic perspectives. If anything, they provide another way of investigating it. Rather than assuming conceptual representations are identical across individuals, richer representational frameworks may allow us to ask which aspects of conceptual organisation appear broadly shared, which vary meaningfully between people, and how those differences influence the behaviours we subsequently observe.
+
+# Old Questions, New Ways of Asking
+
+This series began by asking what the shape of an idea might be. In the first two parts, that shape was sketched from the outside—through the frequencies and co-occurrences visible on the surface of texts. Embedding models take the question rather more literally: within them, ideas genuinely have geometry, and the distances between them can be measured, mapped, and argued over.
+
+Much of the information needed to refine our constructs may already exist in the language from which they are built. Whether that information ultimately proves sufficient remains an open question. What seems increasingly difficult to deny, however, is that psychology has acquired a fundamentally new way of asking old questions.
+
+[^1]: This is itself a consequence of a particular measurement ontology. If psychological constructs are primarily represented as questionnaire responses and latent variables, then empirical comparison naturally becomes the dominant means of investigating their relationships. Alternative representational frameworks may permit different forms of evidence and, perhaps more importantly, make different kinds of scientific questions possible.
+
+## References
+
+Bowling, N. A., Sessa, V. I., Shaffer, J. A., & Banks, G. C. (2026). Read my lips: No new constructs! Construct proliferation as a threat to the future of I-O psychology. *Industrial and Organizational Psychology, 19*(2), 186–202. <https://doi.org/10.1017/iop.2025.10067>
+
+Geiger, A., Lubana, E. S., Fel, T., Merullo, J., Byun, M. J., Lewis, O., & McGrath, T. (2026, May 7). The world inside neural networks. *Goodfire Research*. <https://www.goodfire.ai/research/the-world-inside-neural-networks>
+
+Hanfstingl, B., Mitterer, C., & Abbas, K. (2025). Uncovering jingle and jangle fallacies: A systematic review mapping future directions. *Zeitschrift für Psychologie, 233*(4), 261–266. <https://doi.org/10.1027/2151-2604/a000602>
+
+Montuori, L. M., McMaster, J. M. V., Weekes, S., & McEvoy, F. B. (2026). Realising the potential of task-based assessment approaches. *Occupational Psychology Outlook, 5*(1), 57–71. <https://doi.org/10.53841/bpsopo.2026.5.1.57>
+
+Samo, A., & Highhouse, S. (2026). The information needed to refine constructs is already there—we just need to use it. *Industrial and Organizational Psychology, 19*(2), 203–207. <https://doi.org/10.1017/iop.2026.10080>
