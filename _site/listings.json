@@ -8,6 +8,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2026-07-29-architectures-of-inference/index.html",
       "/posts/2026-07-14-the-shape-of-ideas-part-3/index.html",
       "/posts/2026-6-25-the-fault-of-printers/index.html",
       "/posts/2026-04-20-blog-measurement-as-architecture-evaluation-frameworks-for-clinical-ai/index.html",
@@ -33,6 +34,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/2026-07-29-architectures-of-inference/index.html",
       "/posts/2026-07-14-the-shape-of-ideas-part-3/index.html",
       "/posts/2026-6-25-the-fault-of-printers/index.html",
       "/posts/2026-04-20-blog-measurement-as-architecture-evaluation-frameworks-for-clinical-ai/index.html",

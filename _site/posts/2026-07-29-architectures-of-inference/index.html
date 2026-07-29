@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-07-29">
+<meta name="description" content="From a lecture on Britain’s AI future to the psychometrics of LLM raters — on why the harder problem is not building capable models but building the institutions that can judge what their outputs actually mean">
+
+<title>Lumos Insight - Architectures of Inference</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/logo.PNG" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+<meta property="og:title" content="Architectures of Inference">
+<meta property="og:description" content="From a lecture on Britain’s AI future to the psychometrics of LLM raters — on why the harder problem is not building capable models but building the institutions that can judge what their outputs actually mean">
+<meta property="og:image" content="https://www.lumosinsight.co.uk/posts/2026-07-29-architectures-of-inference/header.png">
+<meta property="og:site_name" content="Lumos Insight">
+<meta property="og:image:alt" content="Vast domed hall lit by a shaft of light through a central oculus, with a suspended sphere of golden wires above tiny figures at a reflecting pool">
+<meta name="twitter:title" content="Architectures of Inference">
+<meta name="twitter:description" content="From a lecture on Britain’s AI future to the psychometrics of LLM raters — on why the harder problem is not building capable models but building the institutions that can judge what their outputs actually mean">
+<meta name="twitter:image" content="https://www.lumosinsight.co.uk/posts/2026-07-29-architectures-of-inference/header.png">
+<meta name="twitter:image:alt" content="Vast domed hall lit by a shaft of light through a central oculus, with a suspended sphere of golden wires above tiny figures at a reflecting pool">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.lumosinsight.co.uk/posts/2026-07-29-architectures-of-inference/">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.PNG" alt="Lumos Insight" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Lumos Insight</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../subjects.html"> 
+<span class="menu-text">Subjects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#act-i-the-horse-has-bolted" id="toc-act-i-the-horse-has-bolted" class="nav-link active" data-scroll-target="#act-i-the-horse-has-bolted">Act I: The horse has bolted</a></li>
+  <li><a href="#act-ii-from-governance-to-assurance" id="toc-act-ii-from-governance-to-assurance" class="nav-link" data-scroll-target="#act-ii-from-governance-to-assurance">Act II: From governance to assurance</a></li>
+  <li><a href="#act-iii-when-models-become-assessors" id="toc-act-iii-when-models-become-assessors" class="nav-link" data-scroll-target="#act-iii-when-models-become-assessors">Act III: When models become assessors</a></li>
+  <li><a href="#towards-a-culture-of-our-own" id="toc-towards-a-culture-of-our-own" class="nav-link" data-scroll-target="#towards-a-culture-of-our-own">Towards a Culture of our own</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Architectures of Inference</h1>
+<p class="subtitle lead">Institutions, Assurance, and What Happens When Models Become Assessors</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">Governance</div>
+    <div class="quarto-category">Psychometric validation</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    From a lecture on Britain’s AI future to the psychometrics of LLM raters — on why the harder problem is not building capable models but building the institutions that can judge what their outputs actually mean
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 29, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="header.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+<p>Artificial intelligence is forcing us to ask not only what machines will be capable of, but what kinds of institutions we will need once those capabilities become ordinary. For years now, public discussion has centred on model performance. Can an AI system write, reason, code, diagnose disease, discover drugs or pass professional examinations? But as these capabilities move from demonstrations into workplaces, schools and public services, the more consequential questions concern what happens around the model.</p>
+<p>How should people be educated in a world where intelligent assistance is ubiquitous? How should organisations decide when an AI system is trustworthy? What evidence should support decisions made with, or delegated to, these systems?</p>
+<p>A recent discussion between Sir Demis Hassabis and Dame Wendy Hall provides one route into these questions. The UK Government’s work on AI assurance provides another. And a growing body of research into AI-based scoring shows why the scientific problem may be harder than simply producing another benchmark. Taken together, they point towards the emergence of something larger than any individual model: an architecture through which machine-generated inferences can be produced, evaluated and justified.</p>
+<section id="act-i-the-horse-has-bolted" class="level2">
+<h2 class="anchored" data-anchor-id="act-i-the-horse-has-bolted">Act I: The horse has bolted</h2>
+<p>In the Worshipful Company of Information Technologists’ annual lecture, Demis Hassabis and Wendy Hall discussed the future of artificial intelligence, Britain’s position within it and the changes required across science, education and government. The conversation ranged widely, but its most important subject was not the technical architecture of AI systems. It was the institutional architecture that will surround them.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>On education, Hassabis’ position was clear: the horse has bolted. Students are already using generative AI, and attempting to preserve the previous educational settlement by simply prohibiting it is unlikely to work.</p>
+<p>Instead, he proposed something closer to an inverted classroom or “Montessori Plus” model. AI tutors could support personalised instruction, factual learning and practice, while time spent with teachers and other students could concentrate on the things that are harder to automate: project work, collaboration, creativity, entrepreneurship, judgement and interpersonal capability.</p>
+<p>The argument is not that knowledge no longer matters. It is that the relationship between knowledge and capability is changing.</p>
+<p>Where information is abundant, locating an answer becomes less important than interpreting it. Where fluent content can be produced instantly, greater weight falls on deciding what should be produced, whether it is correct and what ought to follow from it. The educational task shifts from reproducing knowledge towards navigating, testing and applying it.</p>
+<p>Wendy Hall’s contribution placed this challenge within a longer institutional history. She has been involved in the development of the UK’s national AI capability across several stages, including the 2017 independent review of the UK AI industry and the institutions that followed. Her emphasis was not simply that individuals need to learn new skills, but that universities, governments and professional bodies must develop the capacity to respond coherently.</p>
+<p>That distinction matters. “AI literacy” can easily be reduced to teaching people how to prompt a chatbot. Institutional capability requires something more demanding: expertise, standards, curricula, professional roles, public infrastructure and a shared language for understanding what these systems do.</p>
+<p>Hassabis offered what amounted to a hierarchy of challenges.</p>
+<p>At the first level sit the technical questions. Can we understand, test and control increasingly capable systems? Can we establish meaningful evaluations and guardrails?</p>
+<p>Beyond those lie questions of political economy. Who owns the systems? Who benefits from the productivity they generate? What happens to labour markets, wages and the distribution of wealth?</p>
+<p>Finally come questions of meaning. If intelligent machines alter the relationship between labour, scarcity and human achievement, what becomes the basis of purpose and status?</p>
+<p>Those higher-order questions are difficult to answer while the underlying institutions remain underdeveloped. Before a society can decide how it wishes to live with advanced AI, it needs the capacity to understand what the systems are doing and to intervene when necessary.</p>
+<p>The future of AI is therefore not only a problem of technological development.</p>
+<p>It is a problem of institutional development.</p>
+</section>
+<section id="act-ii-from-governance-to-assurance" class="level2">
+<h2 class="anchored" data-anchor-id="act-ii-from-governance-to-assurance">Act II: From governance to assurance</h2>
+<p>One attempt to build that institutional capacity can be found in the UK Government’s <em>Introduction to AI assurance</em>, published by the Department for Science, Innovation and Technology in February 2024.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> It is deliberately introductory — the first in a promised series — and it inherits its framing from the 2023 white paper <em>A pro-innovation approach to AI regulation</em>, which set out five cross-sectoral principles for the responsible use of AI: safety, security and robustness; appropriate transparency and explainability; fairness; accountability and governance; and contestability and redress.</p>
+<p>Those principles describe outcomes. Assurance is what connects them to evidence. The distinction can be expressed simply:</p>
+<p>Governance describes <strong>what</strong> we expect. Assurance provides evidence about <strong>whether</strong> it is happening.</p>
+<p>The guidance defines assurance as the process of measuring, evaluating and communicating something about a system, process, product or organisation — in the case of AI, its trustworthiness. The term is not new. It is borrowed from accountancy and has been adapted before, for cyber security and quality management, fields the document returns to as its model for what a mature assurance ecosystem looks like. (The UK’s cyber security industry, it notes, is already worth close to £4 billion.)</p>
+<p>Each part of that definition carries weight.</p>
+<p><strong>Measurement</strong> involves gathering qualitative and quantitative information about how a system behaves: its performance, functionality, limitations and potential effects in different contexts.</p>
+<p><strong>Evaluation</strong> involves interpreting that evidence against standards, benchmarks, requirements and intended uses.</p>
+<p><strong>Communication</strong> makes the resulting evidence available to the people who must act on it, whether they are developers, senior leaders, regulators, purchasers, frontline workers or members of the public.</p>
+<p>The most useful idea in the document is a distinction it draws between three things that are easily conflated. <em>Trust</em> is whether a person or group is willing to rely on an AI system. <em>Trustworthiness</em> is whether the system actually deserves that reliance, on the basis of reliable evidence. <em>Justified trust</em> is the overlap: trust that is warranted because the evidence supports it.</p>
+<p>The gap between the first two is where the problems live. Trust without trustworthiness is misplaced confidence — a system relied upon that has not earned it. Trustworthiness without trust is wasted potential — a sound system no one is willing to use. Assurance is the machinery for closing that gap in both directions: producing the evidence that lets a trustworthy system be trusted, and withholding it from one that should not be.</p>
+<p>This reframes trust as something other than confidence in a brand, a model provider or the general promise of technological progress. It becomes a conclusion drawn from reliable, standardised and accessible evidence that a system works as intended, that its limitations are understood and that its risks are being managed.</p>
+<p>The guidance does not present a single test that can establish trustworthiness. It describes a toolbox.</p>
+<p>Depending on the system and its context, assurance might involve performance testing, conformity assessment, impact assessment, risk assessment, bias audit, formal verification, documentation, monitoring, certification or independent inspection. These mechanisms may be applied at different stages of the AI lifecycle and combined according to the nature of the claim being made.</p>
+<p>This is one of the document’s strengths. There is no universal assurance score that can tell us whether an AI system is “safe” or “fair.” Evidence must be connected to the system, its users, its environment and the consequences of error.</p>
+<p>A model used to recommend films does not require the same evidence as one used to allocate medical treatment. A system that drafts internal notes is not equivalent to one that scores candidates for employment. The technical component may be similar, but the inferential and social contexts are not.</p>
+<p>The programme also treats the surrounding ecosystem as an economic and professional domain in its own right: standards bodies, auditors, evaluators, technical specialists and regulators, alongside the organisations that commission and interpret their work. This is the institutional demand identified by Hassabis and Hall, now seen from the inside — and, as they argued, one that model developers alone cannot satisfy.</p>
+<p>Yet, being an introduction, the guidance stops short of the hardest part. It explains why organisations require evidence and outlines the mechanisms through which that evidence might be generated. It does not fully resolve the more difficult scientific question underneath them:</p>
+<p><strong>What makes the evidence good enough to justify a particular conclusion?</strong></p>
+<p>That problem becomes especially visible when AI systems stop merely producing content and begin producing measurements.</p>
+</section>
+<section id="act-iii-when-models-become-assessors" class="level2">
+<h2 class="anchored" data-anchor-id="act-iii-when-models-become-assessors">Act III: When models become assessors</h2>
+<p>Consider an employment interview.</p>
+<p>A candidate provides a series of answers. An assessor observes the candidate’s behaviour, identifies evidence relevant to particular competencies and converts those observations into scores. Those scores may then contribute to a decision about whether the candidate progresses or receives an offer.</p>
+<p>Even in a conventional interview, the decision depends on a chain of inference.</p>
+<p>Does the response demonstrate the intended competency? Did the assessor interpret it consistently? Does the scoring system distinguish relevant differences between candidates? Does performance in the interview predict anything important outside it? Are the conclusions equally defensible across demographic groups?</p>
+<p>Psychometric practice developed in large part to evaluate chains of inference such as these. Tests and assessments are not considered trustworthy merely because they produce numbers. Their use must be supported by evidence concerning reliability, construct representation, relationships with other variables, fairness and the consequences of interpretation.</p>
+<p>These questions are now being transferred to AI systems.</p>
+<p>A recent study by Kayden Stockdale, Louis Hickman and Siyi Liu put this transfer to the test.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Asking whether large language models can serve as alternative raters of employment interviews — systems that evaluate open-ended responses against behavioural criteria, personality constructs or competency frameworks without a separately trained model for each scoring task — they scored two datasets and then subjected the resulting scores to the full apparatus of psychometric validation: intrarater reliability, test–retest stability, convergent, discriminant and criterion evidence, group differences and measurement bias, benchmarked wherever possible against human raters and against earlier supervised machine-learning models.</p>
+<p>The attraction is obvious. Human scoring is expensive and time-consuming. Assessors disagree, become fatigued and require training. A language model can apply the same instructions across thousands of responses and generate scores almost instantly.</p>
+<p>But consistency of application is not the same as validity of inference.</p>
+<p>A model may produce highly repeatable scores while systematically attending to the wrong features. It may agree with human raters because it reproduces their shared biases. Its apparent accuracy may change with the wording of the prompt, the model version, the temperature setting, the number of examples provided or the order in which criteria are presented.</p>
+<p>Stockdale and colleagues found exactly this pattern. Choices that look like mere configuration — model size and version, temperature, how much construct detail the prompt carries, whether candidates are scored singly or in batches, whether several runs are pooled into an ensemble — proved psychometrically consequential, and their benefits could plateau or even reverse, echoing a long-known result in human interviewing where added structure raises validity only to a ceiling. Their verdict was carefully hedged: ensembles of larger, newer models given detailed construct information could match or exceed supervised machine-learning models and single human raters — yet they still urged caution before such systems are trusted with high-stakes decisions, precisely because the evidence needed to justify that trust is only beginning to accumulate.</p>
+<p>The introduction of an AI rater does not remove the measurement problem. It adds new components to it.</p>
+<p>If the interview study shows what validating an AI rater demands, automated essay scoring shows how quickly the underlying capability is moving.</p>
+<p>Earlier automated scoring systems often predicted a single overall score. Multi-trait assessment — separately evaluating content, organisation, fluency, word choice, conventions and other dimensions — typically required multiple output layers or separate trait-specific models.</p>
+<p>The autoregressive multi-trait scoring approach proposed by Do, Kim and Lee<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> treats the task differently. Rather than framing essay assessment as ordinary regression or classification, it reframes scoring as sequence generation. A single language model generates several trait scores as an ordered sequence, with each later prediction able to condition on the scores already produced.</p>
+<p>This allows relationships among traits to become part of the inferential process. A judgement about overall quality need not be generated independently of judgements about content or organisation. The scores become an interconnected profile rather than a collection of isolated predictions.</p>
+<p>In experiments using the ASAP and ASAP++ datasets, the authors reported average improvements of more than five per cent across prompts and traits relative to their baseline. The approach also allowed one model to generate multiple scores across several prompts, avoiding the need to duplicate large scoring architectures for each criterion.</p>
+<p>The paper is careful about its limitations. Performance deteriorated for traits with very small amounts of training data. The ordering of score generation remained an open question. The authors also noted that further work was needed to explore alternative pretrained models and the conditions under which autoregressive scoring works best.</p>
+<p>Those limitations are not incidental. They show why an assurance framework must extend beyond a headline performance result.</p>
+<p>Changing the order in which traits are scored may change the resulting profile. Data scarcity may affect some dimensions more than others. A model may show strong average agreement while remaining unreliable for particular prompts, groups or score ranges. Efficiency gains may make a system easier to deploy while also concentrating several consequential judgements inside one opaque inferential process.</p>
+<p>The engineering question is whether a model can generate the scores.</p>
+<p>The validation question is what those scores allow us to conclude.</p>
+<p>This distinction is essential as AI moves into recruitment, education, healthcare and other settings where outputs are interpreted as evidence about people. A fluent explanation, a candidate rating and a competency profile may all be generated as text, but they occupy different epistemic roles.</p>
+<p>One is content.</p>
+<p>The other is measurement.</p>
+<p>Once a model’s output becomes a measurement, its quality cannot be established by surface plausibility alone. Nor is agreement with a human rater sufficient. We need to ask what construct the score represents, how stable it is, how it relates to external criteria, where it fails and whether its intended use is justified.</p>
+<p>This is where psychometric validation and AI assurance begin to converge.</p>
+<p>AI assurance supplies the organisational requirement: systems should be measured, evaluated and their trustworthiness communicated.</p>
+<p>Validation supplies the evidential discipline: the claims made from those measurements must be supported by an explicit argument and an appropriate body of evidence.</p>
+<p>The resulting architecture includes the model, but it does not end there. It also includes the scoring framework, data, prompts, benchmarks, monitoring processes, standards, documentation, human oversight and the institutions responsible for deciding whether the resulting evidence is adequate.</p>
+<p>These are architectures of inference: structures through which observations are transformed into conclusions, and through which those conclusions acquire sufficient legitimacy to be acted upon.</p>
+</section>
+<section id="towards-a-culture-of-our-own" class="level2">
+<h2 class="anchored" data-anchor-id="towards-a-culture-of-our-own">Towards a Culture of our own</h2>
+<p>Near the end of the discussion, Hassabis pointed towards Iain M. Banks’ <em>Culture</em> novels as a useful vision of a world after the development of advanced artificial intelligence.</p>
+<p>It is a reference he has made elsewhere. Hassabis has described the series as an optimistic depiction of a post-AGI future: a civilisation in which humans coexist with enormously capable machine intelligences and are able to flourish alongside them.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>The contrast with another familiar science-fiction response is instructive.</p>
+<p>In <em>Dune</em>, the Butlerian Jihad leads to a prohibition against thinking machines. The lesson often drawn is that human freedom requires their rejection.</p>
+<p>Banks imagines something different. The Culture has not protected humanity by preventing machine intelligence from emerging. It has developed a civilisation capable of living with it.</p>
+<p>That does not make the Culture uncomplicated. Its machine Minds possess extraordinary power, and the novels repeatedly examine intervention, paternalism, freedom and the moral compromises of apparently benevolent systems. But that ambiguity is part of what makes the reference useful. The question is not simply whether advanced AI is good or bad. It is what political, cultural and institutional conditions would allow coexistence without surrendering human agency.</p>
+<p>The Culture is optimistic not only because its machines are intelligent, but because its civilisation has become capable of accommodating that intelligence.</p>
+<p>The three acts of the present moment may therefore be inseparable. We need educational and social institutions suited to a world in which intelligent assistance is widespread; an assurance ecosystem capable of producing credible evidence about the systems we deploy; and scientific practices of validation that can tell us when the outputs of those systems actually support the conclusions we draw from them.</p>
+<p>Building more capable models is only one part of that task. The larger part is building institutions capable of understanding, evaluating and governing what the models do — which may be the real work required before we can begin moving towards a Culture of our own.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><em>The Future of AI</em> with Sir Demis Hassabis and Dame Wendy Hall, the Worshipful Company of Information Technologists’ annual lecture. <a href="https://www.youtube.com/watch?v=HlLa5iA8lOs" class="uri">https://www.youtube.com/watch?v=HlLa5iA8lOs</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Department for Science, Innovation and Technology. <em>Introduction to AI assurance</em> (February 2024). <a href="https://www.gov.uk/government/publications/introduction-to-ai-assurance/introduction-to-ai-assurance" class="uri">https://www.gov.uk/government/publications/introduction-to-ai-assurance/introduction-to-ai-assurance</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Stockdale, K., Hickman, L., &amp; Liu, S. (2026). Scoring employment interviews with large language models: Evaluation design components, validity investigations, and best practice recommendations. <em>Journal of Applied Psychology</em>. <a href="https://doi.org/10.1037/apl0001396" class="uri">https://doi.org/10.1037/apl0001396</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Do, H., Kim, Y., &amp; Lee, G. G. (2024). <em>Autoregressive Score Generation for Multi-trait Essay Scoring</em>. <a href="https://arxiv.org/abs/2403.08332" class="uri">https://arxiv.org/abs/2403.08332</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Demis Hassabis on <em>Culture</em> by Iain M. Banks, Recommentions. <a href="https://recommentions.com/demis-hassabis/books/culture-by-iain-banks/" class="uri">https://recommentions.com/demis-hassabis/books/culture-by-iain-banks/</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script src="https://giscus.app/client.js" data-repo="Lumons/site" data-repo-id="R_kgDOITI-Jg" data-category="General" data-category-id="DIC_kwDOITI-Js4Cj8Qx" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/www\.lumosinsight\.co\.uk");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
