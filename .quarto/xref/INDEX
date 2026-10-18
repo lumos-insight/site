@@ -193,5 +193,14 @@
   },
   "posts/2026-07-14-the-shape-of-ideas-part-3/index.qmd": {
     "index.html": "9c00968f"
+  },
+  "posts/2026-07-30-architectures-of-inference/index.qmd": {
+    "index.html": "575ebb56"
+  },
+  "posts/2026-07-29-architectures-of-inference/index.qmd": {
+    "index.html": "54498116"
+  },
+  "research.qmd": {
+    "research.html": "0d5cde78"
   }
 }

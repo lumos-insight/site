@@ -9,51 +9,38 @@ title: "Lumos Insight"
 </div>
 
 
-This site documents ongoing research at the intersection of knowledge systems,
-measurement, and artificial intelligence—exploring how we extend, augment, and
-embody cognition through human-machine collaboration.
+Lumos Insight is the research and consulting practice of Luke Montuori. The
+work sits at the intersection of measurement, knowledge systems, and artificial
+intelligence — how we make the invisible visible, the tacit explicit, and the
+immeasurable measurable.
 
-The questions may have evolved from measuring human behavior to measuring meaning
-itself, but the core challenge remains: how do we make the invisible visible, the
-tacit explicit, and the immeasurable measurable?
+## Research
 
-## Background
+Lumos Insight began with psychometric survey development — inferring meaning
+from human behaviour through validated measurement. That foundation now informs
+work on semantic quantification, cognitive extension, and the role of
+evaluation in AI systems. The [Research](research.qmd) page sets out the three
+lines of work and the publications behind them; the [Posts](posts.qmd) are
+snapshots of thinking in progress.
 
-Lumos Insight began with psychometric survey development—inferring meaning from
-human behavior through validated measurement. This foundation in cognitive
-assessment design—operationalizing constructs, validating instruments, measuring
-latent variables—now informs how I approach questions of semantic quantification
-and human-AI interaction.
+## Consulting
 
-More recently, I've been exploring related questions:
+Alongside the research, I work as a freelance psychometrician. Clients have
+included test publishers, leadership and talent consultancies, and HR firms,
+usually on workplace and educational assessments: leadership and capability
+questionnaires, personality and ability measures, situational judgement tests
+and screening batteries.
 
-- How do we quantify and represent meaning in language?
-- How do knowledge and understanding emerge from human-AI collaboration?
-- What changes in how we think when our cognitive partners are machines?
+The work tends to sit between design and evidence:
 
-Posts here trace a path from knowledge creation (SECI model, cognitive scaffolding)
-through semantic quantification (measuring meaning, embeddings as linguistic objects)
-to the lived experience of thinking with AI systems (journaling, local augmentation,
-System 0).
+- writing and reviewing items against construct definitions
+- piloting new instruments and diagnosing problems before standardisation
+- factor structure and validity: EFA/CFA, network psychometrics, links to performance and 360 data
+- semantic pre-validation: using language-model embeddings to screen item pools before anyone responds
+- scoring models, weighting and technical documentation
 
-Alongside this theoretical work, I'm experimenting with augmentation software—
-exploring the interface between human cognition and machine intelligence through
-hands-on development and testing. This work draws on principles from cognitive
-assessment design: how do we instrument thought, measure understanding, and
-validate that our tools actually augment rather than distort?
+If you're building or revising an assessment, get in touch.
 
-## Approach
-
-This is research in motion, not marketing. Posts are snapshots of thinking in progress—experiments that failed, methods being refined, questions still open. Some build on previous work. Some contradict it. That's the point.
-
-The underlying thread: understanding how humans and machines create, share, and
-augment knowledge. The method: treating learning as a lived process, documented
-in public.
-
-If this work intersects with yours, reach out:
+## Contact
 
 <i class="fa-solid fa-envelope"></i> [luke@lumosinsight.co.uk](mailto:luke@lumosinsight.co.uk) | <i class="fa-brands fa-x-twitter"></i> [@LumosInsight](https://twitter.com/LumosInsight) | <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/company/lumos-insight) | <i class="fa-solid fa-bolt"></i> [Nostr](https://primal.net/p/nprofile1qqsru8js46pw2f4t9ufcdn0jm2wpjpf5thc64603e6w80s5jxvj37vc6pl92r)
-
----
-
-*Previous work in psychometric consulting available on request.*

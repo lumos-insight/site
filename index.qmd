@@ -52,6 +52,8 @@ hands-on development and testing. This work draws on principles from cognitive
 assessment design: how do we instrument thought, measure understanding, and
 validate that our tools actually augment rather than distort?
 
+I still do that assessment work for clients — see [Consulting](about.qmd#consulting).
+
 ## Approach
 
 This is research in motion, not marketing. Posts are snapshots of thinking in

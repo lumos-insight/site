@@ -1,0 +1,107 @@
+---
+title: "Research"
+toc: false
+title-block-banner: false
+---
+
+Three lines of work run through this site. Each connects the posts here to
+published research, talks, and software in development.
+
+The through-line has been **representation** — how experience changes the
+discriminability of similar things, and what follows for how we measure them.
+
+---
+
+<p class="section-label">◉ Representation and Measurement</p>
+
+The early work was experimental: how associative learning and perceptual
+experience alter the discriminability of similar stimuli, and what general
+processes of representation that implies.
+
+The same question now arises in psychological measurement. Psychology has
+accumulated thousands of constructs, many of which may be alternative
+descriptions of the same conceptual territory. Determining which are genuinely
+distinct has historically required new data. Advances in language modelling
+suggest the linguistic content from which constructs are built may already
+carry much of the necessary structure.
+
+Current work asks whether the geometry of language can differentiate profiles
+that scalar construct scores collapse — and what that implies for what
+measurement is delivering in the first place.
+
+*In progress:* Bloom's taxonomy verbs in embedding space (London Text Analysis
+Conference, 2026); semantic maps of self-concept (in preparation).
+
+Posts: [Beyond Responding](posts/2024-09-06-beyond-responding/) ·
+[Measuring Meaning](posts/2024-09-06-measuring-meaning/) ·
+[Embedded Vectors as Linguistic Objects](posts/2024-09-07-embedded-vectors-linguistic-objects/) ·
+The Shape of Ideas
+[1](posts/2024-11-02-the-shape-of-ideas-part-1/),
+[2](posts/2024-11-24-the-shape-of-ideas-part-2/),
+[3](posts/2026-07-14-the-shape-of-ideas-part-3/)
+
+---
+
+<p class="section-label">◉ Cognitive Extension and System Design</p>
+
+Recent AI capabilities have been characterised as *System 0* — a layer of the
+cognitive stack that performs inference, shaping information before it reaches
+intuitive or analytical thought. This raises design questions rather than
+merely philosophical ones: how tightly should such systems integrate, along
+what dimensions, and what makes the resulting cognitive ergonomics good or bad.
+
+Posts: [System 0 and the Grey Space](posts/2025-12-31-system-0-and-the-grey-space/) ·
+[Bloom's Taxonomy as Vocabulary for System 0](posts/2026-01-09-blooms-taxonomy-as-vocabulary-for-system-0/) ·
+[Cognitive Bodies](posts/2026-01-20-cognitive-bodies/) ·
+[At the Edge of Capacity](posts/2026-02-13-at-the-edge-of-capacity/) ·
+[Cognitive Sovereignty and Integrated Inference](posts/2026-02-28-cognitive-sovereignty-from-switzerland/)
+
+Related: [Interface](projects/interface/) — cognitive augmentation software,
+in development.
+
+---
+
+<p class="section-label">◉ Evaluation and Institutions</p>
+
+Measurement frameworks are not neutral instruments. Once embedded in a
+decision process they become part of a system's architecture, selecting for
+some behaviours over others. This matters increasingly for AI, where
+evaluation frameworks do not merely track capability but participate in
+determining what capability comes to mean — and where model outputs are
+beginning to be interpreted as measurements about people.
+
+Posts: [Measurement as Architecture](posts/2026-03-29-measurement-as-architecture/) ·
+[Evaluation Frameworks in Clinical AI](posts/2026-04-20-blog-measurement-as-architecture-evaluation-frameworks-for-clinical-ai/) ·
+[The Fault of Printers](posts/2026-6-25-the-fault-of-printers/) ·
+[Architectures of Inference](posts/2026-07-29-architectures-of-inference/)
+
+---
+
+<p class="section-label">◉ Publications</p>
+
+<!-- TODO: volume/issue/page numbers needed for 2015 NBR, 2016 JEP, 2022 JoI -->
+
+Montuori, L. M., McMaster, J. M. V., Weekes, S., & McEvoy, F. B. (2026).
+Realising the potential of task-based assessment approaches.
+*Occupational Psychology Outlook, 5*(1), 57–71.
+<https://doi.org/10.53841/bpsopo.2026.5.1.57>
+
+Montuori, L. M., & Montefiori, L. (2022). Selecting for learning potential:
+is implicit learning the new cognitive ability? *Journal of Intelligence*.
+
+Montuori, L. M., & Honey, R. C. (2016). Perceptual learning with tactile
+stimuli in rats: changes in the processing of a dimension. *Journal of
+Experimental Psychology: Animal Learning and Cognition*.
+
+Montuori, L. M. (2015). *Investigating perceptual learning with textured
+stimuli in rats*. PhD thesis, Cardiff University.
+
+Montuori, L. M., & Honey, R. C. (2015). Representation in development: from a
+model system to some general processes. *Neuroscience & Biobehavioral
+Reviews*.
+
+---
+
+*I also consult on assessment design and validation — [more here](about.qmd#consulting).*
+
+<i class="fa-solid fa-envelope"></i> [luke@lumosinsight.co.uk](mailto:luke@lumosinsight.co.uk)
