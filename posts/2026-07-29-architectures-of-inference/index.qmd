@@ -51,6 +51,8 @@ A recent discussion between Sir Demis Hassabis and Dame Wendy Hall provides one 
 
 In the Worshipful Company of Information Technologists’ annual lecture, Demis Hassabis and Wendy Hall discussed the future of artificial intelligence, Britain’s position within it and the changes required across science, education and government. The conversation ranged widely, but its most important subject was not the technical architecture of AI systems. It was the institutional architecture that will surround them.[^1]
 
+[^1]: *The Future of AI* with Sir Demis Hassabis and Dame Wendy Hall, the Worshipful Company of Information Technologists' annual lecture. <https://www.youtube.com/watch?v=HlLa5iA8lOs>
+
 On education, Hassabis’ position was clear: the horse has bolted. Students are already using generative AI, and attempting to preserve the previous educational settlement by simply prohibiting it is unlikely to work.
 
 Instead, he proposed something closer to an inverted classroom or “Montessori Plus” model. AI tutors could support personalised instruction, factual learning and practice, while time spent with teachers and other students could concentrate on the things that are harder to automate: project work, collaboration, creativity, entrepreneurship, judgement and interpersonal capability.
@@ -80,6 +82,8 @@ It is a problem of institutional development.
 ## Act II: From governance to assurance
 
 One attempt to build that institutional capacity can be found in the UK Government’s *Introduction to AI assurance*, published by the Department for Science, Innovation and Technology in February 2024.[^2] It is deliberately introductory — the first in a promised series — and it inherits its framing from the 2023 white paper *A pro-innovation approach to AI regulation*, which set out five cross-sectoral principles for the responsible use of AI: safety, security and robustness; appropriate transparency and explainability; fairness; accountability and governance; and contestability and redress.
+
+[^2]: Department for Science, Innovation and Technology. *Introduction to AI assurance* (February 2024). <https://www.gov.uk/government/publications/introduction-to-ai-assurance/introduction-to-ai-assurance>
 
 Those principles describe outcomes. Assurance is what connects them to evidence. The distinction can be expressed simply:
 
@@ -133,6 +137,8 @@ These questions are now being transferred to AI systems.
 
 A recent study by Kayden Stockdale, Louis Hickman and Siyi Liu put this transfer to the test.[^3] Asking whether large language models can serve as alternative raters of employment interviews — systems that evaluate open-ended responses against behavioural criteria, personality constructs or competency frameworks without a separately trained model for each scoring task — they scored two datasets and then subjected the resulting scores to the full apparatus of psychometric validation: intrarater reliability, test–retest stability, convergent, discriminant and criterion evidence, group differences and measurement bias, benchmarked wherever possible against human raters and against earlier supervised machine-learning models.
 
+[^3]: Stockdale, K., Hickman, L., & Liu, S. (2026). Scoring employment interviews with large language models: Evaluation design components, validity investigations, and best practice recommendations. *Journal of Applied Psychology*. <https://doi.org/10.1037/apl0001396>
+
 The attraction is obvious. Human scoring is expensive and time-consuming. Assessors disagree, become fatigued and require training. A language model can apply the same instructions across thousands of responses and generate scores almost instantly.
 
 But consistency of application is not the same as validity of inference.
@@ -148,6 +154,8 @@ If the interview study shows what validating an AI rater demands, automated essa
 Earlier automated scoring systems often predicted a single overall score. Multi-trait assessment — separately evaluating content, organisation, fluency, word choice, conventions and other dimensions — typically required multiple output layers or separate trait-specific models.
 
 The autoregressive multi-trait scoring approach proposed by Do, Kim and Lee[^4] treats the task differently. Rather than framing essay assessment as ordinary regression or classification, it reframes scoring as sequence generation. A single language model generates several trait scores as an ordered sequence, with each later prediction able to condition on the scores already produced.
+
+[^4]: Do, H., Kim, Y., & Lee, G. G. (2024). *Autoregressive Score Generation for Multi-trait Essay Scoring*. <https://arxiv.org/abs/2403.08332>
 
 This allows relationships among traits to become part of the inferential process. A judgement about overall quality need not be generated independently of judgements about content or organisation. The scores become an interconnected profile rather than a collection of isolated predictions.
 
@@ -187,6 +195,8 @@ Near the end of the discussion, Hassabis pointed towards Iain M. Banks’ *Cultu
 
 It is a reference he has made elsewhere. Hassabis has described the series as an optimistic depiction of a post-AGI future: a civilisation in which humans coexist with enormously capable machine intelligences and are able to flourish alongside them.[^5]
 
+[^5]: Demis Hassabis on *Culture* by Iain M. Banks, Recommentions. <https://recommentions.com/demis-hassabis/books/culture-by-iain-banks/>
+
 The contrast with another familiar science-fiction response is instructive.
 
 In *Dune*, the Butlerian Jihad leads to a prohibition against thinking machines. The lesson often drawn is that human freedom requires their rejection.
@@ -200,14 +210,3 @@ The Culture is optimistic not only because its machines are intelligent, but bec
 The three acts of the present moment may therefore be inseparable. We need educational and social institutions suited to a world in which intelligent assistance is widespread; an assurance ecosystem capable of producing credible evidence about the systems we deploy; and scientific practices of validation that can tell us when the outputs of those systems actually support the conclusions we draw from them.
 
 Building more capable models is only one part of that task. The larger part is building institutions capable of understanding, evaluating and governing what the models do — which may be the real work required before we can begin moving towards a Culture of our own.
-
-[^1]: *The Future of AI* with Sir Demis Hassabis and Dame Wendy Hall, the Worshipful Company of Information Technologists' annual lecture. <https://www.youtube.com/watch?v=HlLa5iA8lOs>
-
-[^2]: Department for Science, Innovation and Technology. *Introduction to AI assurance* (February 2024). <https://www.gov.uk/government/publications/introduction-to-ai-assurance/introduction-to-ai-assurance>
-
-[^3]: Stockdale, K., Hickman, L., & Liu, S. (2026). Scoring employment interviews with large language models: Evaluation design components, validity investigations, and best practice recommendations. *Journal of Applied Psychology*. <https://doi.org/10.1037/apl0001396>
-
-[^4]: Do, H., Kim, Y., & Lee, G. G. (2024). *Autoregressive Score Generation for Multi-trait Essay Scoring*. <https://arxiv.org/abs/2403.08332>
-
-[^5]: Demis Hassabis on *Culture* by Iain M. Banks, Recommentions. <https://recommentions.com/demis-hassabis/books/culture-by-iain-banks/>
-
